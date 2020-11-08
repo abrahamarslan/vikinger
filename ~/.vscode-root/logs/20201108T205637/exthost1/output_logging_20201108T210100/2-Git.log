@@ -55,3 +55,47 @@ Use '--' to separate paths from revisions, like this:
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git ls-files --stage -- /var/www/vik/.gitignore
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git cat-file -s 43548a4d790dd80617353c693fa61c13055bb778
+> git config --get commit.template
+> git show --textconv :.gitignore
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git ls-files --stage -- /var/www/vik/.gitignore
+> git config --get commit.template
+> git cat-file -s 43548a4d790dd80617353c693fa61c13055bb778
+> git show --textconv :.gitignore
+> git show --textconv :README.md
+> git ls-files --stage -- /var/www/vik/README.md
+> git cat-file -s f3decb12334f80c2f5825e350f66d1310937b874
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /var/www/vik/README.md
+> git cat-file -s d62b46ccc0f65dab5d954957d12a6e97dde8aad5
+> git symbolic-ref --short HEAD
+> git show --textconv :README.md
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
