@@ -1,0 +1,5 @@
+[Info  - 9:01:19 PM] Angular language server process ID: 9062
+[Info  - 9:01:19 PM] Using typescript/lib/tsserverlibrary v4.0.2 from /root/.vscode/extensions/angular.ng-template-0.1001.1/node_modules/typescript/lib/tsserverlibrary.js
+[Info  - 9:01:19 PM] Using @angular/language-service v10.2.1 from /root/.vscode/extensions/angular.ng-template-0.1001.1/server/node_modules/@angular/language-service/bundles/language-service.js
+[Info  - 9:01:19 PM] Log file: /var/www/vik/~/.vscode-root/logs/20201108T205637/exthost1/Angular.ng-template/nglangsvc.log
+[Error - 9:01:34 PM] No config file for /root/.vscode/extensions/eamodio.gitlens-10.2.3/dist/webviews/welcome.html

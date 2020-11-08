@@ -1,0 +1,17 @@
+[2020-11-08 20:56:54.004] [sharedprocess] [info] main {"machineId":"65ec9cf43ae62cd43d6c785935021dfaad06fc54a1e64210bb1987a46c1da34b","windowId":2}
+[2020-11-08 20:57:03.449] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/var/www/vik/~/.vscode-root/User/snippets'
+[2020-11-08 20:57:34.020] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-11-08 20:58:44.694] [sharedprocess] [info] Deleted from disk formulahendry.auto-close-tag /root/.vscode/extensions/formulahendry.auto-close-tag-0.5.8
+[2020-11-08 20:58:45.109] [sharedprocess] [info] Deleted from disk eamodio.gitlens /root/.vscode/extensions/eamodio.gitlens-10.2.2
+[2020-11-08 20:58:59.158] [sharedprocess] [info] Deleted from disk formulahendry.auto-rename-tag /root/.vscode/extensions/formulahendry.auto-rename-tag-0.1.4
+[2020-11-08 20:59:37.387] [sharedprocess] [info] Deleted from disk formulahendry.code-runner /root/.vscode/extensions/formulahendry.code-runner-0.11.0
+[2020-11-08 20:59:39.715] [sharedprocess] [info] Deleted from disk angular.ng-template /root/.vscode/extensions/angular.ng-template-0.1001.0
+[2020-11-08 20:59:39.715] [sharedprocess] [info] Deleted from disk ms-azuretools.vscode-docker /root/.vscode/extensions/ms-azuretools.vscode-docker-1.6.0
+[2020-11-08 20:59:39.869] [sharedprocess] [info] Deleted from disk redhat.vscode-yaml /root/.vscode/extensions/redhat.vscode-yaml-0.11.1
+[2020-11-08 20:59:40.001] [sharedprocess] [info] Deleted from disk octref.vetur /root/.vscode/extensions/octref.vetur-0.28.0
+[2020-11-08 20:59:43.250] [sharedprocess] [info] Installing extension: octref.vetur
+[2020-11-08 21:01:22.005] [sharedprocess] [info] Downloaded extension: octref.vetur /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/octref.vetur-0.29.1
+[2020-11-08 21:01:59.589] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.octref.vetur-0.29.1: octref.vetur
+[2020-11-08 21:01:59.589] [sharedprocess] [info] Renamed to /root/.vscode/extensions/octref.vetur-0.29.1
+[2020-11-08 21:01:59.591] [sharedprocess] [info] Installation completed. octref.vetur
+[2020-11-08 21:02:15.950] [sharedprocess] [info] Extensions installed successfully: octref.vetur
