@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    {{--    App CSS--}}
+    <link href="{!! asset('css/app.css') !!}" rel="stylesheet" type="text/css" />
+    <link href="{!! asset('css/custom.css') !!}" rel="stylesheet" type="text/css" />
+    <!--begin::Layout Themes(used by all pages)-->
+    <link href="{!! asset('fonts/fa-pro/css/all.css') !!}" rel="stylesheet" type="text/css" />
     <!-- bootstrap 4.3.1 -->
     <link rel="stylesheet" href="{!! asset('theme/css/vendor/bootstrap.min.css') !!}" />
     <!-- styles -->
     <link rel="stylesheet" href="{!! asset('theme/css/styles.min.css') !!}" />
-    <link href="{!! asset('css/custom.css') !!}" rel="stylesheet" type="text/css" />
-
     <!-- favicon -->
     <link rel="icon" href="{!! asset('theme/img/favicon.ico') !!}">
     <title>@yield('title') | {!! env('APP_NAME') !!}</title>
@@ -18,7 +21,7 @@
 <body>
 
 <!-- LANDING -->
-<div class="landing">
+<div class="landing" id="app">
     <!-- LANDING DECORATION -->
     <div class="landing-decoration"></div>
     <!-- /LANDING DECORATION -->
@@ -83,7 +86,7 @@
                         <!-- FORM INPUT -->
                         <div class="form-input">
                             <label for="login-username">Username or Email</label>
-                            {!! Form::email('email', null, ['class' => '', 'id' => 'login-username', 'placeholder' => __('authentication/form.login.email'), 'autocomplete' => 'off'] ) !!}                            
+                            {!! Form::text('email', null, ['class' => '', 'id' => 'login-username', 'autocomplete' => 'off'] ) !!}
                         </div>
                         <!-- /FORM INPUT -->
                     </div>
@@ -98,7 +101,7 @@
                         <!-- FORM INPUT -->
                         <div class="form-input">
                             <label for="login-password">Password</label>
-                            {!! Form::password('password',['class' => '', 'id' => 'login-password', 'placeholder' => __('authentication/form.login.password'), 'autocomplete' => 'off']) !!}                            
+                            {!! Form::password('password',['class' => '', 'id' => 'login-password', 'autocomplete' => 'off']) !!}
                         </div>
                         <!-- /FORM INPUT -->
                     </div>
@@ -222,7 +225,7 @@
                         <!-- FORM INPUT -->
                         <div class="form-input">
                             <label for="register-email">Your Email</label>
-                            {!! Form::email('email', null, ['class' => '', 'id' => 'register-email', 'placeholder' => __('authentication/form.login.email'), 'autocomplete' => 'off'] ) !!}                                                        
+                            {!! Form::text('email', null, ['class' => '', 'id' => 'register-email', 'autocomplete' => 'off'] ) !!}
                         </div>
                         <!-- /FORM INPUT -->
                     </div>
@@ -237,7 +240,7 @@
                         <!-- FORM INPUT -->
                         <div class="form-input">
                             <label for="register-username">Username</label>
-                            {!! Form::email('username', null, ['class' => '', 'id' => 'login-username', 'placeholder' => __('authentication/form.login.username'), 'autocomplete' => 'off'] ) !!}                            
+                            {!! Form::text('username', null, ['class' => '', 'id' => 'login-username', 'autocomplete' => 'off'] ) !!}
                         </div>
                         <!-- /FORM INPUT -->
                     </div>
@@ -252,7 +255,7 @@
                         <!-- FORM INPUT -->
                         <div class="form-input">
                             <label for="register-password">Password</label>
-                            {!! Form::password('password',['class' => '', 'id' => 'register-password', 'placeholder' => __('authentication/form.login.password'), 'autocomplete' => 'off']) !!}                            
+                            {!! Form::password('password',['class' => '', 'id' => 'register-password', 'autocomplete' => 'off']) !!}
                         </div>
                         <!-- /FORM INPUT -->
                     </div>
@@ -267,7 +270,7 @@
                         <!-- FORM INPUT -->
                         <div class="form-input">
                             <label for="register-password-repeat">Repeat Password</label>
-                            {!! Form::password('password_confirm',['class' => '', 'id' => 'register-password-repeat', 'placeholder' => __('authentication/form.login.confirm_password'), 'autocomplete' => 'off']) !!}                            
+                            {!! Form::password('password_confirm',['class' => '', 'id' => 'register-password-repeat', 'autocomplete' => 'off']) !!}
                         </div>
                         <!-- /FORM INPUT -->
                     </div>
@@ -320,10 +323,12 @@
         <!-- /FORM BOX -->
     </div>
     <!-- /LANDING FORM -->
+@include('authentication._partials.notification')
 </div>
-@include('authentication._partials.notifications')
-<!-- /LANDING -->
 
+<!-- /LANDING -->
+{{--App Scripts--}}
+<script src="{!! asset('js/app.js') !!}"></script>
 <!-- app -->
 <script src="{!! asset('theme/js/utils/app.js') !!}"></script>
 <!-- XM_Plugins -->
@@ -334,5 +339,6 @@
 <script src="{!! asset('theme/js/landing/landing.tabs.js') !!}"></script>
 <!-- SVG icons -->
 <script src="{!! asset('theme/js/utils/svg-loader.js') !!}"></script>
+
 </body>
 </html>

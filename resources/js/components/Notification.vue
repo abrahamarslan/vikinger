@@ -31,6 +31,7 @@
             }
         },
         mounted: function() {
+            console.log('here');
             this.toasts = [
                 { type:'warning', title: 'Warning!', content: '', cssClass: 'e-toast-warning', icon: 'fas fa-exclamation-triangle', showCloseButton: true, timeOut: 0 },
                 { type:'success', title: 'Success!', content: '', cssClass: 'e-toast-success', icon: 'fas fa-check-circle',  showCloseButton: true, timeOut: 0 },
@@ -88,11 +89,22 @@
     }
 
     #toast_type .toast-icons.e-error::before {
-        content: "\e700";
+        font-family: 'Font Awesome 5 Pro' !important;
+        content: "\f00d";
     }
 
     #toast_type .toast-icons.e-info::before {
         content: "\e704";
+    }
+
+    #toast_type .e-toast-close-icon::before {
+        font-family: 'Font Awesome 5 Pro';
+        content: "\f00d";
+    }
+
+    .e-toast .e-toast-close-icon::before {
+        font-family: 'Font Awesome 5 Pro';
+        content: "\f00d";
     }
 
     #toast_type .toast-icons.e-warning::before {

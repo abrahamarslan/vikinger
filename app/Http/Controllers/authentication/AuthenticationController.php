@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\authentication;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\authentication\UserStoreRequest;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\DefaultController;
 use Cartalyst\Alerts\Laravel\Facades\Alert;
@@ -226,7 +228,7 @@ class AuthenticationController extends DefaultController
             } elseif ($setRemember['code'] == 200) {
                 $this->data = $setRemember['data'];
                 \Mail::to($this->data['user']->email)->send(new Forgot($this->data));
-                \Session::flash('success_msg','Password reset link has been sent to your registered e-mail address.');
+                \Sesssion::flash('success_msg','Password reset link has been sent to your registered e-mail address.');
                 return \Redirect::route('authentication.getLogin');
             } else {
                 // Redirect to the login page
