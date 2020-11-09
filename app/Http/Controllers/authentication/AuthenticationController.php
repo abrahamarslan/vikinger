@@ -141,6 +141,7 @@ class AuthenticationController extends DefaultController
                 ->log(__('authentication/log.registration.action'));
         }
         catch(\Exception $e) {
+
             //Exception Message log
             activity()
                 ->withProperties([
