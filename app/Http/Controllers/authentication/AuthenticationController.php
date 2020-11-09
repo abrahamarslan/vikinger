@@ -300,4 +300,18 @@ class AuthenticationController extends DefaultController
             return redirect()->route('authentication.getLogin');
         }
     }
+
+    /**
+     * Temporary
+     * @todo: Remove this function
+     */
+    public function createUserRole(Request $request) {
+        $role = Sentinel::getRoleRepository()->createModel()->create([
+            'name' => 'Users',
+            'slug' => 'users',
+            'permissions' => '{"dashboard.access":true}'
+        ]);
+        dd('Role created. Do not visit this route again.');
+
+    }
 }

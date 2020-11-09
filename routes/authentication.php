@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
  * Authentication Routes
  */
 Route::group(array('prefix' => 'authentication'), function () {
+    Route::get('/make-role', array('uses'=>'authentication\AuthenticationController@createUserRole', 'as'=>'authentication.createUserRole'));
+
     Route::get('/login', array('uses'=>'authentication\AuthenticationController@getLogin', 'as'=>'authentication.getLogin'));
     Route::post('/login', array('uses'=>'authentication\AuthenticationController@postLogin', 'as'=>'authentication.postLogin'));
     Route::post('/register', array('uses'=>'authentication\AuthenticationController@postRegister', 'as'=>'authentication.postRegister'));
