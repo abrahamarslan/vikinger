@@ -1,1 +1,3 @@
-2020/11/08-20:56:39.408 1f4e Reusing MANIFEST /var/www/vik/~/.vscode-root/Local Storage/leveldb/MANIFEST-000001
+2020/11/09-13:38:25.711 2dc6 Reusing MANIFEST /var/www/vik/~/.vscode-root/Local Storage/leveldb/MANIFEST-000001
+2020/11/09-13:38:25.712 2dc6 Recovering log #3
+2020/11/09-13:38:25.712 2dc6 Reusing old log /var/www/vik/~/.vscode-root/Local Storage/leveldb/000003.log 

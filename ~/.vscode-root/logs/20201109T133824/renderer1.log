@@ -1,0 +1,16 @@
+[2020-11-09 13:39:09.441] [renderer1] [warning] UNRESPONSIVE extension host, 'ritwickdey.LiveServer' took 100% of 5405.177ms, saved PROFILE here: '/tmp/exthost-81f96a.cpuprofile' [{"id":"gc","total":5353,"percentage":0},{"id":"ritwickdey.LiveServer","total":5399495,"percentage":100}]
+[2020-11-09 22:10:26.429] [renderer1] [error] Illegal argument: character must be non-negative: Error: Illegal argument: character must be non-negative
+    at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:10:662)
+    at new b (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:499:424)
+    at new b (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:497:187)
+    at asPosition (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:53:16)
+    at asRange (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:59:31)
+    at asHover (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:134:63)
+[2020-11-09 22:10:27.352] [renderer1] [error] Illegal argument: character must be non-negative: Error: Illegal argument: character must be non-negative
+    at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:10:662)
+    at new b (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:499:424)
+    at new b (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:497:187)
+    at asPosition (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:53:16)
+    at asRange (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:59:31)
+    at asHover (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:134:63)
+[2020-11-09 22:11:14.503] [renderer1] [warning] UNRESPONSIVE extension host, 'octref.vetur' took 91% of 1409.2ms, saved PROFILE here: '/tmp/exthost-b229f3.cpuprofile' [{"id":"eamodio.gitlens","total":49835,"percentage":4},{"id":"gc","total":1236,"percentage":0},{"id":"octref.vetur","total":1289342,"percentage":91},{"id":"self","total":2205,"percentage":0},{"id":"vscode.git","total":65565,"percentage":5}]

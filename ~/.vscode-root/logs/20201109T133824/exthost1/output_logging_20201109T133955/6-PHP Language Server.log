@@ -1,0 +1,1271 @@
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     The xdebug extension is loaded (2.9.6)
+DEBUG     Process restarting (PHPLS_ALLOW_XDEBUG=internal|2.9.6|1|*|*)
+DEBUG     Running '/usr/bin/php7.4' '-n' '-c' '/tmp/6EBeqg' '/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/bin/php-language-server.php' '--tcp=127.0.0.1:41645' '--memory-limit=4095M'
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     Restarted (60 ms). The xdebug extension is not loaded
+
+[Info  - 1:40:33 PM] 6340 files total
+[Info  - 1:40:33 PM] Indexing project for definitions and static references
+Parsing file:///var/www/vik/bootstrap/app.php
+Parsing file:///var/www/vik/bootstrap/cache/packages.php
+Parsing file:///var/www/vik/bootstrap/cache/services.php
+Parsing file:///var/www/vik/server.php
+Parsing file:///var/www/vik/tests/Feature/ExampleTest.php
+Parsing file:///var/www/vik/tests/Unit/ExampleTest.php
+Parsing file:///var/www/vik/tests/CreatesApplication.php
+Parsing file:///var/www/vik/tests/TestCase.php
+Parsing file:///var/www/vik/routes/channels.php
+Parsing file:///var/www/vik/routes/console.php
+Parsing file:///var/www/vik/routes/api.php
+Parsing file:///var/www/vik/routes/web.php
+Parsing file:///var/www/vik/database/seeds/DatabaseSeeder.php
+Parsing file:///var/www/vik/database/factories/UserFactory.php
+Parsing file:///var/www/vik/database/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php
+Parsing file:///var/www/vik/database/migrations/2014_10_12_100000_create_password_resets_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_08_223731_create_activity_log_table.php
+Parsing file:///var/www/vik/database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+Parsing file:///var/www/vik/resources/lang/en/validation.php
+Parsing file:///var/www/vik/resources/lang/en/pagination.php
+Parsing file:///var/www/vik/resources/lang/en/passwords.php
+Parsing file:///var/www/vik/resources/lang/en/auth.php
+Parsing file:///var/www/vik/resources/views/authentication/authentication.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/emails/activation.blade.php
+Parsing file:///var/www/vik/resources/views/welcome.blade.php
+Parsing file:///var/www/vik/resources/views/_layouts/layout.blade.php
+Parsing file:///var/www/vik/storage/framework/views/ba793b46f54e17cf35b0cd3fbd59fc46600c049e.php
+Parsing file:///var/www/vik/vendor/composer/ClassLoader.php
+Parsing file:///var/www/vik/vendor/composer/autoload_static.php
+[Info  - 1:40:34 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_static.php because it exceeds size limit of 150000 bytes (662047)
+Parsing file:///var/www/vik/vendor/composer/autoload_psr4.php
+Parsing file:///var/www/vik/vendor/composer/autoload_files.php
+Parsing file:///var/www/vik/vendor/composer/autoload_real.php
+Parsing file:///var/www/vik/vendor/composer/autoload_namespaces.php
+Parsing file:///var/www/vik/vendor/composer/autoload_classmap.php
+[Info  - 1:40:34 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_classmap.php because it exceeds size limit of 150000 bytes (600445)
+Parsing file:///var/www/vik/vendor/autoload.php
+Parsing file:///var/www/vik/app/Exceptions/Handler.php
+Parsing file:///var/www/vik/app/User.php
+Parsing file:///var/www/vik/app/Http/Kernel.php
+Parsing file:///var/www/vik/app/Http/Controllers/Controller.php
+Parsing file:///var/www/vik/app/Http/Middleware/VerifyCsrfToken.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustProxies.php
+Parsing file:///var/www/vik/app/Http/Middleware/EncryptCookies.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustHosts.php
+Parsing file:///var/www/vik/app/Http/Middleware/RedirectIfAuthenticated.php
+Parsing file:///var/www/vik/app/Http/Middleware/Authenticate.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrimStrings.php
+Parsing file:///var/www/vik/app/Http/Middleware/CheckForMaintenanceMode.php
+Parsing file:///var/www/vik/app/Providers/RouteServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/BroadcastServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/EventServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AuthServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AppServiceProvider.php
+Parsing file:///var/www/vik/app/Console/Kernel.php
+Parsing file:///var/www/vik/public/index.php
+Parsing file:///var/www/vik/config/app.php
+Parsing file:///var/www/vik/config/hashing.php
+Parsing file:///var/www/vik/config/database.php
+Parsing file:///var/www/vik/config/translatable.php
+Parsing file:///var/www/vik/config/mail.php
+Parsing file:///var/www/vik/config/view.php
+Parsing file:///var/www/vik/config/logging.php
+Parsing file:///var/www/vik/config/cartalyst.sentinel.php
+Parsing file:///var/www/vik/config/queue.php
+Parsing file:///var/www/vik/config/session.php
+Parsing file:///var/www/vik/config/broadcasting.php
+Parsing file:///var/www/vik/config/activitylog.php
+Parsing file:///var/www/vik/config/services.php
+Parsing file:///var/www/vik/config/filesystems.php
+Parsing file:///var/www/vik/config/image.php
+Parsing file:///var/www/vik/config/cartalyst.alerts.php
+Parsing file:///var/www/vik/config/cors.php
+Parsing file:///var/www/vik/config/auth.php
+Parsing file:///var/www/vik/config/cache.php
+[Info  - 1:40:35 PM] Indexing project for dynamic references
+Parsing file:///var/www/vik/bootstrap/app.php
+Parsing file:///var/www/vik/bootstrap/cache/packages.php
+Parsing file:///var/www/vik/bootstrap/cache/services.php
+Parsing file:///var/www/vik/server.php
+Parsing file:///var/www/vik/tests/Feature/ExampleTest.php
+Parsing file:///var/www/vik/tests/Unit/ExampleTest.php
+Parsing file:///var/www/vik/tests/CreatesApplication.php
+Parsing file:///var/www/vik/tests/TestCase.php
+Parsing file:///var/www/vik/routes/channels.php
+Parsing file:///var/www/vik/routes/console.php
+Parsing file:///var/www/vik/routes/api.php
+Parsing file:///var/www/vik/routes/web.php
+Parsing file:///var/www/vik/database/seeds/DatabaseSeeder.php
+Parsing file:///var/www/vik/database/factories/UserFactory.php
+Parsing file:///var/www/vik/database/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php
+Parsing file:///var/www/vik/database/migrations/2014_10_12_100000_create_password_resets_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_08_223731_create_activity_log_table.php
+Parsing file:///var/www/vik/database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+Parsing file:///var/www/vik/resources/lang/en/validation.php
+Parsing file:///var/www/vik/resources/lang/en/pagination.php
+Parsing file:///var/www/vik/resources/lang/en/passwords.php
+Parsing file:///var/www/vik/resources/lang/en/auth.php
+Parsing file:///var/www/vik/resources/views/authentication/authentication.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/emails/activation.blade.php
+Parsing file:///var/www/vik/resources/views/welcome.blade.php
+Parsing file:///var/www/vik/resources/views/_layouts/layout.blade.php
+Parsing file:///var/www/vik/storage/framework/views/ba793b46f54e17cf35b0cd3fbd59fc46600c049e.php
+Parsing file:///var/www/vik/vendor/composer/ClassLoader.php
+Parsing file:///var/www/vik/vendor/composer/autoload_static.php
+[Info  - 1:40:35 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_static.php because it exceeds size limit of 150000 bytes (662047)
+Parsing file:///var/www/vik/vendor/composer/autoload_psr4.php
+Parsing file:///var/www/vik/vendor/composer/autoload_files.php
+Parsing file:///var/www/vik/vendor/composer/autoload_real.php
+Parsing file:///var/www/vik/vendor/composer/autoload_namespaces.php
+Parsing file:///var/www/vik/vendor/composer/autoload_classmap.php
+[Info  - 1:40:35 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_classmap.php because it exceeds size limit of 150000 bytes (600445)
+Parsing file:///var/www/vik/vendor/autoload.php
+Parsing file:///var/www/vik/app/Exceptions/Handler.php
+Parsing file:///var/www/vik/app/User.php
+Parsing file:///var/www/vik/app/Http/Kernel.php
+Parsing file:///var/www/vik/app/Http/Controllers/Controller.php
+Parsing file:///var/www/vik/app/Http/Middleware/VerifyCsrfToken.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustProxies.php
+Parsing file:///var/www/vik/app/Http/Middleware/EncryptCookies.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustHosts.php
+Parsing file:///var/www/vik/app/Http/Middleware/RedirectIfAuthenticated.php
+Parsing file:///var/www/vik/app/Http/Middleware/Authenticate.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrimStrings.php
+Parsing file:///var/www/vik/app/Http/Middleware/CheckForMaintenanceMode.php
+Parsing file:///var/www/vik/app/Providers/RouteServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/BroadcastServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/EventServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AuthServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AppServiceProvider.php
+Parsing file:///var/www/vik/app/Console/Kernel.php
+Parsing file:///var/www/vik/public/index.php
+Parsing file:///var/www/vik/config/app.php
+Parsing file:///var/www/vik/config/hashing.php
+Parsing file:///var/www/vik/config/database.php
+Parsing file:///var/www/vik/config/translatable.php
+Parsing file:///var/www/vik/config/mail.php
+Parsing file:///var/www/vik/config/view.php
+Parsing file:///var/www/vik/config/logging.php
+Parsing file:///var/www/vik/config/cartalyst.sentinel.php
+Parsing file:///var/www/vik/config/queue.php
+Parsing file:///var/www/vik/config/session.php
+Parsing file:///var/www/vik/config/broadcasting.php
+Parsing file:///var/www/vik/config/activitylog.php
+Parsing file:///var/www/vik/config/services.php
+Parsing file:///var/www/vik/config/filesystems.php
+Parsing file:///var/www/vik/config/image.php
+Parsing file:///var/www/vik/config/cartalyst.alerts.php
+Parsing file:///var/www/vik/config/cors.php
+Parsing file:///var/www/vik/config/auth.php
+Parsing file:///var/www/vik/config/cache.php
+[Info  - 1:40:35 PM] 111 Packages
+[Info  - 1:40:35 PM] Restored egulias/email-validator:2.1.23 from cache
+[Info  - 1:40:35 PM] Restored psr/event-dispatcher:1.0.0 from cache
+[Info  - 1:40:35 PM] Restored psr/http-message:1.0.1 from cache
+[Info  - 1:40:35 PM] Restored psr/container:1.0.0 from cache
+[Info  - 1:40:35 PM] Restored psr/log:1.1.3 from cache
+[Info  - 1:40:35 PM] Restored psr/http-client:1.0.1 from cache
+[Info  - 1:40:35 PM] Restored psr/simple-cache:1.0.1 from cache
+[Info  - 1:40:35 PM] Restored tijsverkoyen/css-to-inline-styles:2.2.3 from cache
+[Info  - 1:40:38 PM] Restored hamcrest/hamcrest-php:2.0.1 from cache
+[Info  - 1:40:38 PM] Restored monolog/monolog:2.1.1 from cache
+[Info  - 1:40:38 PM] Restored league/mime-type-detection:1.5.1 from cache
+[Info  - 1:40:38 PM] Restored league/commonmark:1.5.7 from cache
+[Info  - 1:40:38 PM] Restored league/flysystem:1.1.3 from cache
+[Info  - 1:40:38 PM] Restored brick/math:0.9.1 from cache
+[Info  - 1:40:38 PM] Restored webmozart/assert:1.9.1 from cache
+[Info  - 1:40:38 PM] Restored ramsey/uuid:4.1.1 from cache
+[Info  - 1:40:38 PM] Restored ramsey/collection:1.1.1 from cache
+[Info  - 1:40:38 PM] Restored dragonmantank/cron-expression:2.3.1 from cache
+[Info  - 1:40:38 PM] Restored sebastian/global-state:5.0.2 from cache
+[Info  - 1:40:38 PM] Restored sebastian/comparator:4.0.6 from cache
+[Info  - 1:40:39 PM] Restored sebastian/lines-of-code:1.0.2 from cache
+[Info  - 1:40:39 PM] Restored sebastian/exporter:4.0.3 from cache
+[Info  - 1:40:39 PM] Restored sebastian/code-unit-reverse-lookup:2.0.3 from cache
+[Info  - 1:40:39 PM] Restored sebastian/resource-operations:3.0.3 from cache
+[Info  - 1:40:39 PM] Restored sebastian/type:2.3.1 from cache
+[Info  - 1:40:39 PM] Restored sebastian/object-enumerator:4.0.4 from cache
+[Info  - 1:40:39 PM] Restored sebastian/recursion-context:4.0.4 from cache
+[Info  - 1:40:39 PM] Restored sebastian/code-unit:1.0.8 from cache
+[Info  - 1:40:39 PM] Restored sebastian/environment:5.1.3 from cache
+[Info  - 1:40:39 PM] Restored sebastian/diff:4.0.4 from cache
+[Info  - 1:40:39 PM] Restored sebastian/cli-parser:1.0.1 from cache
+[Info  - 1:40:39 PM] Restored sebastian/complexity:2.0.2 from cache
+[Info  - 1:40:39 PM] Restored sebastian/object-reflector:2.0.4 from cache
+[Info  - 1:40:39 PM] Restored sebastian/version:3.0.2 from cache
+[Info  - 1:40:39 PM] Restored laravel/tinker:2.5.0 from cache
+[Info  - 1:40:39 PM] Indexing laravel/ui:2.5.0 for definitions and static references
+Parsing file:///var/www/vik/vendor/laravel/ui/src/UiServiceProvider.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/AuthCommand.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/Bootstrap.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/Preset.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/React.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/Vue.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/UiCommand.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/ControllersCommand.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/AuthRouteMethods.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/ResetsPasswords.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/RegistersUsers.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/ConfirmsPasswords.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/ThrottlesLogins.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/VerifiesEmails.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/SendsPasswordResetEmails.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/RedirectsUsers.php
+Parsing file:///var/www/vik/vendor/laravel/ui/stubs/migrations/2014_10_12_100000_create_password_resets_table.php
+[Info  - 1:40:39 PM] Indexing laravel/ui:2.5.0 for dynamic references
+Parsing file:///var/www/vik/vendor/laravel/ui/src/UiServiceProvider.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/AuthCommand.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/Bootstrap.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/Preset.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/React.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/Presets/Vue.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/UiCommand.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/ControllersCommand.php
+Parsing file:///var/www/vik/vendor/laravel/ui/src/AuthRouteMethods.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/ResetsPasswords.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/RegistersUsers.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/ConfirmsPasswords.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/ThrottlesLogins.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/VerifiesEmails.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/SendsPasswordResetEmails.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php
+Parsing file:///var/www/vik/vendor/laravel/ui/auth-backend/RedirectsUsers.php
+Parsing file:///var/www/vik/vendor/laravel/ui/stubs/migrations/2014_10_12_100000_create_password_resets_table.php
+[Info  - 1:40:40 PM] Storing laravel/ui:2.5.0 in cache
+[Info  - 1:40:40 PM] Restored laravel/framework:7.29.3 from cache
+[Info  - 1:40:40 PM] Restored phpspec/prophecy:1.12.1 from cache
+[Info  - 1:40:40 PM] Restored dnoegel/php-xdg-base-dir:0.1.1 from cache
+[Info  - 1:40:40 PM] Restored phpoption/phpoption:1.7.5 from cache
+[Info  - 1:40:40 PM] Indexing cartalyst/support:4.0.0 for definitions and static references
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Contracts/ValidatorInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Contracts/NamespacedEntityInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Collection.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/ServiceProvider.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Validator.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Mailer.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Handlers/EventHandlerInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Handlers/EventHandler.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/MailerTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/RepositoryTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/EventTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/ValidatorTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/ContainerTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/NamespacedEntityTrait.php
+[Info  - 1:40:40 PM] Indexing cartalyst/support:4.0.0 for dynamic references
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Contracts/ValidatorInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Contracts/NamespacedEntityInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Collection.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/ServiceProvider.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Validator.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Mailer.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Handlers/EventHandlerInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Handlers/EventHandler.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/MailerTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/RepositoryTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/EventTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/ValidatorTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/ContainerTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/support/src/Traits/NamespacedEntityTrait.php
+[Info  - 1:40:40 PM] Storing cartalyst/support:4.0.0 in cache
+[Info  - 1:40:40 PM] Indexing cartalyst/sentinel:4.0.0 for definitions and static references
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/RoleInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/IlluminateRoleRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/RoleableInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/EloquentRole.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/RoleRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Reminders/IlluminateReminderRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Reminders/ReminderRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Reminders/EloquentReminder.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sessions/IlluminateSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sessions/NativeSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sessions/SessionInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Native/ConfigRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Native/SentinelBootstrapper.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Native/Facades/Sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/PersistenceInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/IlluminatePersistenceRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/PersistableInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/EloquentPersistence.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/PersistenceRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/NativeCookie.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/IlluminateCookie.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/CookieInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/NullCookie.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/WhirlpoolHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/BcryptHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/Sha256Hasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/Hasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/NativeHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/CallbackHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/HasherInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/AuthenticatedCheckpoint.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/ThrottlingException.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/CheckpointInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/NotActivatedException.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/ActivationCheckpoint.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/ThrottleCheckpoint.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissibleTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/StrictPermissions.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissibleInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissionsInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/StandardPermissions.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissionsTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/config/config.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/ActivationRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/EloquentActivation.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/IlluminateActivationRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/ActivationInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/EloquentUser.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/IlluminateUserRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/UserRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/UserInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Throttling/IlluminateThrottleRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Throttling/ThrottleRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Throttling/EloquentThrottle.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/SentinelServiceProvider.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/Facades/Reminder.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/Facades/Sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/Facades/Activation.php
+[Info  - 1:40:41 PM] Indexing cartalyst/sentinel:4.0.0 for dynamic references
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/RoleInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/IlluminateRoleRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/RoleableInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/EloquentRole.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Roles/RoleRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Reminders/IlluminateReminderRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Reminders/ReminderRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Reminders/EloquentReminder.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sessions/IlluminateSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sessions/NativeSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sessions/SessionInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Native/ConfigRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Native/SentinelBootstrapper.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Native/Facades/Sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/PersistenceInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/IlluminatePersistenceRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/PersistableInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/EloquentPersistence.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Persistences/PersistenceRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/NativeCookie.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/IlluminateCookie.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/CookieInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Cookies/NullCookie.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/WhirlpoolHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/BcryptHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/Sha256Hasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/Hasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/NativeHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/CallbackHasher.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Hashing/HasherInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/AuthenticatedCheckpoint.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/ThrottlingException.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/CheckpointInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/NotActivatedException.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/ActivationCheckpoint.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Checkpoints/ThrottleCheckpoint.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissibleTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/StrictPermissions.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissibleInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissionsInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/StandardPermissions.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Permissions/PermissionsTrait.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/config/config.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/ActivationRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/EloquentActivation.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/IlluminateActivationRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Activations/ActivationInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/EloquentUser.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/IlluminateUserRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/UserRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Users/UserInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Throttling/IlluminateThrottleRepository.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Throttling/ThrottleRepositoryInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Throttling/EloquentThrottle.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/SentinelServiceProvider.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/Facades/Reminder.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/Facades/Sentinel.php
+Parsing file:///var/www/vik/vendor/cartalyst/sentinel/src/Laravel/Facades/Activation.php
+[Info  - 1:40:41 PM] Storing cartalyst/sentinel:4.0.0 in cache
+[Info  - 1:40:41 PM] Indexing cartalyst/alerts:4.0.0 for definitions and static references
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Storage/StorageInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Storage/IlluminateSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Storage/NativeSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Notifiers/Notifier.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Notifiers/NotifierInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Notifiers/FlashNotifier.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Alerts.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Native/AlertsBootstrapper.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Native/Facades/Alert.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/config/config.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Message.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Laravel/Facades/Alert.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Laravel/AlertsServiceProvider.php
+[Info  - 1:40:41 PM] Indexing cartalyst/alerts:4.0.0 for dynamic references
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Storage/StorageInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Storage/IlluminateSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Storage/NativeSession.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Notifiers/Notifier.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Notifiers/NotifierInterface.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Notifiers/FlashNotifier.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Alerts.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Native/AlertsBootstrapper.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Native/Facades/Alert.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/config/config.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Message.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Laravel/Facades/Alert.php
+Parsing file:///var/www/vik/vendor/cartalyst/alerts/src/Laravel/AlertsServiceProvider.php
+[Info  - 1:40:41 PM] Storing cartalyst/alerts:4.0.0 in cache
+[Info  - 1:40:42 PM] Restored phpdocumentor/reflection-docblock:5.2.2 from cache
+[Info  - 1:40:42 PM] Restored phpdocumentor/type-resolver:1.4.0 from cache
+[Info  - 1:40:42 PM] Restored phpdocumentor/reflection-common:2.2.0 from cache
+[Info  - 1:40:42 PM] Restored asm89/stack-cors:2.0.2 from cache
+[Info  - 1:40:42 PM] Indexing voku/portable-ascii:1.5.4 for definitions and static references
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x084.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x053.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x051.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cf.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x058.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x056.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x093.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x061.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x015.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x052.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x055.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x057.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x076.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x092.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x068.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x023.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x074.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x097.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x062.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x011.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x027.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ac.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_by_languages.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ad.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ff.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fd.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x000.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ce.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x069.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x04f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x065.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x090.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bd.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fc.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x026.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x04e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c8.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x006.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x028.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x099.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bf.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1f1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x030.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x078.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x007.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x022.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ae.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x016.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x033.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cb.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x067.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x031.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x081.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x013.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x021.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x01d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x071.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x012.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x083.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x024.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x087.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x025.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x098.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x001.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x003.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x050.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x002.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fb.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x085.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x094.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x082.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x077.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x091.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x014.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0af.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x064.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b9.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fa.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x070.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b8.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fe.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x018.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x079.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x01e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_extras_by_languages.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x089.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x032.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_ord.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x020.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c9.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cc.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x086.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x060.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x059.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_language_max_key.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x075.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x072.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x04d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x01f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x063.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0be.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x004.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x005.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x095.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cd.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x029.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x010.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x096.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x080.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bb.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0f9.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x088.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bc.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ba.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x017.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x009.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x073.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x066.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ca.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x054.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/ASCII.php
+[Error - 1:40:45 PM] Error parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/ASCII.php: RuntimeException: A type is missing in a collection expression in /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php:263
+Stack trace:
+#0 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php(439): phpDocumentor\Reflection\TypeResolver->parseTypes()
+#1 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php(224): phpDocumentor\Reflection\TypeResolver->resolveCollection()
+#2 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php(146): phpDocumentor\Reflection\TypeResolver->parseTypes()
+#3 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Var_.php(68): phpDocumentor\Reflection\TypeResolver->resolve()
+#4 [internal function]: phpDocumentor\Reflection\DocBlock\Tags\Var_::create()
+#5 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlock/StandardTagFactory.php(201): call_user_func_array()
+#6 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlock/StandardTagFactory.php(122): phpDocumentor\Reflection\DocBlock\StandardTagFactory->createTag()
+#7 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php(231): phpDocumentor\Reflection\DocBlock\StandardTagFactory->create()
+#8 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php(96): phpDocumentor\Reflection\DocBlockFactory->parseTagBlock()
+#9 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/DefinitionResolver.php(166): phpDocumentor\Reflection\DocBlockFactory->create()
+#10 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/DefinitionResolver.php(1195): LanguageServer\DefinitionResolver->getDocBlock()
+#11 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/DefinitionResolver.php(240): LanguageServer\DefinitionResolver->getTypeFromNode()
+#12 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(157): LanguageServer\DefinitionResolver->createDefinitionFromNode()
+#13 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(124): LanguageServer\TreeAnalyzer->collectDefinitionsAndReferences()
+#14 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(136): LanguageServer\TreeAnalyzer->traverse()
+#15 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(140): LanguageServer\TreeAnalyzer->traverse()
+#16 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(136): LanguageServer\TreeAnalyzer->traverse()
+#17 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(140): LanguageServer\TreeAnalyzer->traverse()
+#18 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(136): LanguageServer\TreeAnalyzer->traverse()
+#19 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(58): LanguageServer\TreeAnalyzer->traverse()
+#20 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocument.php(147): LanguageServer\TreeAnalyzer->__construct()
+#21 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocument.php(105): LanguageServer\PhpDocument->updateContent()
+#22 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocumentLoader.php(141): LanguageServer\PhpDocument->__construct()
+#23 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocumentLoader.php(120): LanguageServer\PhpDocumentLoader->create()
+#24 [internal function]: LanguageServer\PhpDocumentLoader->LanguageServer\{closure}()
+#25 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/coroutine.php(70): Generator->send()
+#26 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Promise.php(242): Sabre\Event\{closure}()
+#27 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/Loop.php(261): Sabre\Event\Promise->Sabre\Event\{closure}()
+#28 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/Loop.php(215): Sabre\Event\Loop\Loop->runNextTicks()
+#29 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/Loop.php(194): Sabre\Event\Loop\Loop->tick()
+#30 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/functions.php(122): Sabre\Event\Loop\Loop->run()
+#31 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/bin/php-language-server.php(55): Sabre\Event\Loop\run()
+#32 {main}
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/build/generate_max_key_length.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/build/generate_docs.php
+[Info  - 1:40:45 PM] Indexing voku/portable-ascii:1.5.4 for dynamic references
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x084.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x053.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x051.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cf.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x058.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x056.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x093.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x061.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x015.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x052.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x055.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x057.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x076.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x092.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x068.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x023.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x074.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x097.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x062.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x011.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x027.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ac.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_by_languages.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ad.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ff.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fd.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x000.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ce.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x069.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x04f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x065.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x090.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bd.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fc.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x026.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x04e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c8.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x006.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x028.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x099.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bf.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1f1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x030.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x078.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x007.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x022.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ae.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x016.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x033.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cb.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x067.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x031.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x081.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x013.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x021.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x01d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x071.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x012.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x083.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b7.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x024.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x087.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x025.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x098.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x001.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x003.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x050.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x002.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fb.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x085.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x094.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x082.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x077.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x091.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x014.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0af.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x064.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b9.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fa.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x070.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b8.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x1d4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0fe.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x02e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d6.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b4.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x018.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x079.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x01e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x00d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_extras_by_languages.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x089.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x032.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_ord.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x020.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c9.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cc.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b1.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x086.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x060.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x059.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/ascii_language_max_key.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x075.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x072.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x04d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0c5.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x01f.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x063.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0be.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x004.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x005.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x095.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0cd.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x029.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x010.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x09b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x096.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05b.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x08e.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x080.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bb.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x05d.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0f9.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b2.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0b3.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x088.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0d0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0bc.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ba.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x017.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x009.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x073.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0a0.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x066.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x0ca.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x06c.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x054.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/data/x07a.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/ASCII.php
+[Error - 1:40:48 PM] Error parsing file:///var/www/vik/vendor/voku/portable-ascii/src/voku/helper/ASCII.php: RuntimeException: A type is missing in a collection expression in /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php:263
+Stack trace:
+#0 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php(439): phpDocumentor\Reflection\TypeResolver->parseTypes()
+#1 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php(224): phpDocumentor\Reflection\TypeResolver->resolveCollection()
+#2 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/type-resolver/src/TypeResolver.php(146): phpDocumentor\Reflection\TypeResolver->parseTypes()
+#3 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Var_.php(68): phpDocumentor\Reflection\TypeResolver->resolve()
+#4 [internal function]: phpDocumentor\Reflection\DocBlock\Tags\Var_::create()
+#5 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlock/StandardTagFactory.php(201): call_user_func_array()
+#6 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlock/StandardTagFactory.php(122): phpDocumentor\Reflection\DocBlock\StandardTagFactory->createTag()
+#7 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php(231): phpDocumentor\Reflection\DocBlock\StandardTagFactory->create()
+#8 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php(96): phpDocumentor\Reflection\DocBlockFactory->parseTagBlock()
+#9 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/DefinitionResolver.php(166): phpDocumentor\Reflection\DocBlockFactory->create()
+#10 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/DefinitionResolver.php(1195): LanguageServer\DefinitionResolver->getDocBlock()
+#11 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/DefinitionResolver.php(240): LanguageServer\DefinitionResolver->getTypeFromNode()
+#12 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(157): LanguageServer\DefinitionResolver->createDefinitionFromNode()
+#13 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(124): LanguageServer\TreeAnalyzer->collectDefinitionsAndReferences()
+#14 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(136): LanguageServer\TreeAnalyzer->traverse()
+#15 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(140): LanguageServer\TreeAnalyzer->traverse()
+#16 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(136): LanguageServer\TreeAnalyzer->traverse()
+#17 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(140): LanguageServer\TreeAnalyzer->traverse()
+#18 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(136): LanguageServer\TreeAnalyzer->traverse()
+#19 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/TreeAnalyzer.php(58): LanguageServer\TreeAnalyzer->traverse()
+#20 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocument.php(147): LanguageServer\TreeAnalyzer->__construct()
+#21 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocument.php(105): LanguageServer\PhpDocument->updateContent()
+#22 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocumentLoader.php(141): LanguageServer\PhpDocument->__construct()
+#23 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/src/PhpDocumentLoader.php(120): LanguageServer\PhpDocumentLoader->create()
+#24 [internal function]: LanguageServer\PhpDocumentLoader->LanguageServer\{closure}()
+#25 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/coroutine.php(70): Generator->send()
+#26 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Promise.php(242): Sabre\Event\{closure}()
+#27 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/Loop.php(261): Sabre\Event\Promise->Sabre\Event\{closure}()
+#28 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/Loop.php(215): Sabre\Event\Loop\Loop->runNextTicks()
+#29 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/Loop.php(194): Sabre\Event\Loop\Loop->tick()
+#30 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/sabre/event/lib/Loop/functions.php(122): Sabre\Event\Loop\Loop->run()
+#31 /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/bin/php-language-server.php(55): Sabre\Event\Loop\run()
+#32 {main}
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/build/generate_max_key_length.php
+Parsing file:///var/www/vik/vendor/voku/portable-ascii/build/generate_docs.php
+[Info  - 1:40:48 PM] Storing voku/portable-ascii:1.5.4 in cache
+[Info  - 1:40:48 PM] Restored guzzlehttp/psr7:1.7.0 from cache
+[Info  - 1:40:48 PM] Restored guzzlehttp/promises:1.4.0 from cache
+[Info  - 1:40:48 PM] Restored guzzlehttp/guzzle:7.2.0 from cache
+[Info  - 1:40:48 PM] Restored ralouphie/getallheaders:3.0.3 from cache
+[Info  - 1:40:49 PM] Restored vlucas/phpdotenv:4.1.8 from cache
+[Info  - 1:40:49 PM] Restored swiftmailer/swiftmailer:6.2.3 from cache
+[Info  - 1:40:49 PM] Indexing spatie/laravel-activitylog:3.16.1 for definitions and static references
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Contracts/Activity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Exceptions/InvalidConfiguration.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Exceptions/CouldNotLogActivity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Exceptions/CouldNotLogChanges.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/helpers.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/ActivityLogStatus.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Models/Activity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/CleanActivitylogCommand.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Traits/DetectsChanges.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Traits/LogsActivity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Traits/CausesActivity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/ActivityLogger.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/ActivitylogServiceProvider.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/config/activitylog.php
+[Info  - 1:40:49 PM] Indexing spatie/laravel-activitylog:3.16.1 for dynamic references
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Contracts/Activity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Exceptions/InvalidConfiguration.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Exceptions/CouldNotLogActivity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Exceptions/CouldNotLogChanges.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/helpers.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/ActivityLogStatus.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Models/Activity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/CleanActivitylogCommand.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Traits/DetectsChanges.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Traits/LogsActivity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/Traits/CausesActivity.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/ActivityLogger.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/src/ActivitylogServiceProvider.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-activitylog/config/activitylog.php
+[Info  - 1:40:49 PM] Storing spatie/laravel-activitylog:3.16.1 in cache
+[Info  - 1:40:49 PM] Indexing spatie/laravel-translatable:4.5.2 for definitions and static references
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/Exceptions/AttributeIsNotTranslatable.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/TranslatableServiceProvider.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/HasTranslations.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/Events/TranslationHasBeenSet.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/config/translatable.php
+[Info  - 1:40:49 PM] Indexing spatie/laravel-translatable:4.5.2 for dynamic references
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/Exceptions/AttributeIsNotTranslatable.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/TranslatableServiceProvider.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/HasTranslations.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/src/Events/TranslationHasBeenSet.php
+Parsing file:///var/www/vik/vendor/spatie/laravel-translatable/config/translatable.php
+[Info  - 1:40:49 PM] Storing spatie/laravel-translatable:4.5.2 in cache
+[Info  - 1:40:49 PM] Restored opis/closure:3.6.1 from cache
+[Info  - 1:40:49 PM] Restored symfony/polyfill-intl-grapheme:1.20.0 from cache
+[Info  - 1:40:49 PM] Restored symfony/polyfill-mbstring:1.20.0 from cache
+[Info  - 1:40:49 PM] Restored symfony/http-kernel:5.1.8 from cache
+[Info  - 1:40:49 PM] Restored symfony/process:5.1.8 from cache
+[Info  - 1:40:49 PM] Restored symfony/event-dispatcher:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/polyfill-intl-normalizer:1.20.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/mime:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/translation:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/polyfill-php73:1.20.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/service-contracts:2.2.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/var-dumper:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/polyfill-php72:1.20.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/http-client-contracts:2.3.1 from cache
+[Info  - 1:40:50 PM] Restored symfony/event-dispatcher-contracts:2.2.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/css-selector:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/finder:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/http-foundation:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/polyfill-intl-idn:1.20.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/error-handler:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/console:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/string:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/polyfill-ctype:1.20.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/routing:5.1.8 from cache
+[Info  - 1:40:50 PM] Restored symfony/polyfill-php80:1.20.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/translation-contracts:2.3.0 from cache
+[Info  - 1:40:50 PM] Restored symfony/deprecation-contracts:2.2.0 from cache
+[Info  - 1:40:51 PM] Restored symfony/polyfill-iconv:1.20.0 from cache
+[Info  - 1:40:51 PM] Restored filp/whoops:2.9.1 from cache
+[Info  - 1:40:51 PM] Restored facade/ignition-contracts:1.0.2 from cache
+[Info  - 1:40:51 PM] Restored facade/flare-client-php:1.3.7 from cache
+[Info  - 1:40:51 PM] Restored facade/ignition:2.5.0 from cache
+[Info  - 1:40:51 PM] Restored mockery/mockery:1.4.2 from cache
+[Info  - 1:40:51 PM] Restored phar-io/manifest:2.0.1 from cache
+[Info  - 1:40:51 PM] Restored phar-io/version:3.0.2 from cache
+[Info  - 1:40:51 PM] Restored doctrine/instantiator:1.3.1 from cache
+[Info  - 1:40:51 PM] Restored doctrine/lexer:1.2.1 from cache
+[Info  - 1:40:51 PM] Restored doctrine/inflector:2.0.3 from cache
+[Info  - 1:40:51 PM] Restored fruitcake/laravel-cors:2.0.3 from cache
+[Info  - 1:40:51 PM] Indexing intervention/image:2.5.1 for definitions and static references
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotSupportedException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotReadableException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/ImageException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/InvalidArgumentException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotFoundException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotWritableException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/MissingDependencyException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/RuntimeException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/LineShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/EllipseShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/CircleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/RectangleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/PolygonShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Driver.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Color.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/OpacityCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GreyscaleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/WidenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/MaskCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InsertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCanvasCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ExifCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/RotateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InterlaceCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BackupCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/LimitColorsCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ColorizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PickColorCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/HeightenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ContrastCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResetCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InvertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BlurCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FlipCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GammaCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FillCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/SharpenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FitCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GetSizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BrightnessCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/DestroyCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/TrimCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/CropCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Decoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Font.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Encoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractDecoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Constraint.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/TextCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/ResponseCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/AbstractCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/IptcCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/ExifCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/StreamCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/Argument.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/PsrResponseCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/OrientateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/RectangleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/EllipseCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/CircleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/LineCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/PolygonCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageManager.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Facades/Image.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/File.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Size.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractDriver.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Response.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractEncoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractFont.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractColor.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageManagerStatic.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/LineShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/EllipseShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/CircleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/RectangleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/PolygonShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Color.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/OpacityCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GreyscaleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/WidenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PixelCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/MaskCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InsertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResizeCanvasCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/RotateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InterlaceCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BackupCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/LimitColorsCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ColorizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PixelateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PickColorCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/HeightenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ContrastCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResetCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InvertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BlurCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FlipCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GammaCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FillCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/SharpenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FitCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GetSizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BrightnessCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/DestroyCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/TrimCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/CropCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Font.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Encoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Point.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Image.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Filters/FilterInterface.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/config/config.php
+[Info  - 1:40:53 PM] Indexing intervention/image:2.5.1 for dynamic references
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotSupportedException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotReadableException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/ImageException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/InvalidArgumentException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotFoundException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/NotWritableException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/MissingDependencyException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Exception/RuntimeException.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/LineShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/EllipseShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/CircleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/RectangleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/PolygonShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Driver.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Color.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/OpacityCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GreyscaleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/WidenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/MaskCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InsertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCanvasCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ExifCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/RotateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InterlaceCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BackupCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/LimitColorsCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ColorizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PickColorCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/HeightenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ContrastCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResetCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InvertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BlurCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FlipCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GammaCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FillCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/SharpenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FitCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GetSizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BrightnessCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/DestroyCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/TrimCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/CropCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Decoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Font.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Imagick/Encoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractDecoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Constraint.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/TextCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/ResponseCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/AbstractCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/IptcCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/ExifCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/StreamCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/Argument.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/PsrResponseCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/OrientateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/RectangleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/EllipseCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/CircleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/LineCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Commands/PolygonCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageManager.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Facades/Image.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/File.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Size.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractDriver.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Response.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractEncoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractFont.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/AbstractColor.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageManagerStatic.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/LineShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/EllipseShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/CircleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/RectangleShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/PolygonShape.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Color.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/OpacityCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GreyscaleCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/WidenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PixelCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/MaskCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InsertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResizeCanvasCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/RotateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InterlaceCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BackupCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/LimitColorsCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ColorizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PixelateCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PickColorCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/HeightenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ContrastCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResetCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InvertCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BlurCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FlipCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GammaCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FillCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/SharpenCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FitCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GetSizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BrightnessCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/DestroyCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/TrimCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResizeCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Commands/CropCommand.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Font.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Gd/Encoder.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Point.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Image.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/Filters/FilterInterface.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php
+Parsing file:///var/www/vik/vendor/intervention/image/src/config/config.php
+[Info  - 1:40:56 PM] Storing intervention/image:2.5.1 in cache
+[Info  - 1:40:57 PM] Restored nunomaduro/collision:4.3.0 from cache
+[Info  - 1:40:57 PM] Restored psy/psysh:0.10.4 from cache
+[Info  - 1:40:57 PM] Restored fideloper/proxy:4.4.1 from cache
+[Info  - 1:40:57 PM] Indexing laravelcollective/html:6.2.0 for definitions and static references
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/helpers.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/HtmlBuilder.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/Componentable.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/FormBuilder.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/FormFacade.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/HtmlServiceProvider.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/HtmlFacade.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/Eloquent/FormAccessible.php
+[Info  - 1:41:01 PM] Indexing laravelcollective/html:6.2.0 for dynamic references
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/helpers.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/HtmlBuilder.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/Componentable.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/FormBuilder.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/FormFacade.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/HtmlServiceProvider.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/HtmlFacade.php
+Parsing file:///var/www/vik/vendor/laravelcollective/html/src/Eloquent/FormAccessible.php
+[Info  - 1:41:01 PM] Storing laravelcollective/html:6.2.0 in cache
+[Info  - 1:41:03 PM] Restored myclabs/deep-copy:1.10.1 from cache
+[Info  - 1:41:05 PM] Restored nesbot/carbon:2.41.5 from cache
+[Info  - 1:41:13 PM] Restored nikic/php-parser:4.10.2 from cache
+[Info  - 1:41:14 PM] Restored fakerphp/faker:1.10.1 from cache
+[Info  - 1:41:14 PM] Restored theseer/tokenizer:1.2.0 from cache
+[Info  - 1:41:14 PM] Restored phpunit/php-invoker:3.1.1 from cache
+[Info  - 1:41:14 PM] Restored phpunit/php-file-iterator:3.0.5 from cache
+[Info  - 1:41:14 PM] Restored phpunit/php-timer:5.0.3 from cache
+[Info  - 1:41:14 PM] Restored phpunit/php-text-template:2.0.4 from cache
+[Info  - 1:41:14 PM] Restored phpunit/php-code-coverage:9.2.3 from cache
+[Info  - 1:41:14 PM] Restored phpunit/phpunit:9.4.2 from cache
+[Info  - 1:41:14 PM] All 6340 PHP files parsed in 41 seconds. 463 MiB allocated.
