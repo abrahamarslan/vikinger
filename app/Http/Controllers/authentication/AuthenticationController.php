@@ -101,7 +101,7 @@ class AuthenticationController extends DefaultController
         /**
          * Todo: Get this value from the Settings table
          */
-        $defaultRole =  2;
+        $defaultRole = 1;
         $notifyUser = true;
 
         $validated = $request->validated();

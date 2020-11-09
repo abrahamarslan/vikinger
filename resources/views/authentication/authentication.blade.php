@@ -239,6 +239,21 @@
                     <div class="form-item">
                         <!-- FORM INPUT -->
                         <div class="form-input">
+                            <label for="register-name">Your Name</label>
+                            {!! Form::text('name', null, ['class' => '', 'id' => 'register-name', 'autocomplete' => 'off'] ) !!}
+                        </div>
+                        <!-- /FORM INPUT -->
+                    </div>
+                    <!-- /FORM ITEM -->
+                </div>
+                <!-- /FORM ROW -->
+
+                <!-- FORM ROW -->
+                <div class="form-row">
+                    <!-- FORM ITEM -->
+                    <div class="form-item">
+                        <!-- FORM INPUT -->
+                        <div class="form-input">
                             <label for="register-username">Username</label>
                             {!! Form::text('username', null, ['class' => '', 'id' => 'login-username', 'autocomplete' => 'off'] ) !!}
                         </div>
