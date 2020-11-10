@@ -13,7 +13,7 @@ class ActivationController extends DefaultController
     public function getActivateUser(User $user, $code) {
         if(\ActivationHelper::completeActivation($user->id,$code)) {
             session()->flash('success_message','Activation complete');
-            return redirect()->route('authentication.getLogin')->withInput()->withErrors($this->messageBag);
+            return redirect()->route('authentication.getLogin');
         } else {
             $this->messageBag->add('email', __('Wrong activation code.'));
             return redirect()->route('authentication.getLogin')->withInput()->withErrors($this->messageBag);
