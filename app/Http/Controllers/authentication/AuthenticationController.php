@@ -4,13 +4,14 @@ namespace App\Http\Controllers\authentication;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\authentication\UserStoreRequest;
+use App\Mail\Forgot;
+use App\Mail\Registration;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\DefaultController;
 use Cartalyst\Alerts\Laravel\Facades\Alert;
 use Cartalyst\Sentinel\Checkpoints\NotActivatedException;
 use Cartalyst\Sentinel\Checkpoints\ThrottlingException;
-use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use Cartalyst\Sentinel\Laravel\Facades\Reminder;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Cartalyst\Support\Mailer;
@@ -50,7 +51,8 @@ class AuthenticationController extends DefaultController
         try {
             //Log in the user
             if ($user = Sentinel::authenticate($request->only(['email', 'password']), $request->get('remember-me', false))) {
-                if($user->inRole('administrator') OR $user->inRole('instructor'))
+                //if($user->inRole('users') OR $user->inRole('instructor'))
+                if($user->inRole('users'))
                 {
                     //Add log of new login
                     activity()
@@ -66,7 +68,8 @@ class AuthenticationController extends DefaultController
                         ->log(__('authentication/log.login.action'));
                     //Flash login success message
                     Alert::success(__('authentication/messages.success.login'));
-                    return redirect()->route('dashboard.getDashboard');
+                    dd('Successful login');
+                    //return redirect()->route('dashboard.getDashboard');
                 } else {
                     Sentinel::logout();
                     session()->flash('success_message','Unauthorized Access');
@@ -124,6 +127,18 @@ class AuthenticationController extends DefaultController
                         ->log(__('authentication/log.registration.action'));
                     if($notifyUser) {
                         //Todo: Add email here
+                        $activation = \ActivationHelper::createActivation($user->id);
+                        if($activation) {
+                            // Data to be used on the email view
+                            $data = array(
+                                'user'          => $user,
+                                'link' => route('activation.getActivateUser', [$user->id, $activation->code]),
+                            );
+                            \Mail::to($user->email)->send(new Registration($data));
+                        }
+                        else {
+                            dd($activation);
+                        }
                     }
                     session()->flash('success_message',__('authentication/messages.success.register'));
                     //Redirect to login page
@@ -141,7 +156,6 @@ class AuthenticationController extends DefaultController
                 ->log(__('authentication/log.registration.action'));
         }
         catch(\Exception $e) {
-
             //Exception Message log
             activity()
                 ->withProperties([
@@ -177,10 +191,9 @@ class AuthenticationController extends DefaultController
 
     }
 
-    public function getActivation(Request $request, User $user) {
+    public function getActivation(Request $request, User $user, $code) {
         if(!Activation::exists($user)) {
-            $activation = Activation::create($user);
-            if (Activation::complete($user, $activation->code))
+            if (Activation::complete($user, $code))
             {
                 session()->flash('success_message','User successfully activated');
                 return redirect()->route("dashboard.getDashboard");
@@ -189,7 +202,7 @@ class AuthenticationController extends DefaultController
                 return redirect()->route("dashboard.getDashboard");
             }
         } else {
-            $this->messageBag->add('error', 'No activation exists for this user.');
+            $this->messageBag->add('error', 'ERR AC221: Sorry, this user is not authorized for this action.');
             return redirect()->route("dashboard.getDashboard");
         }
     }
@@ -212,8 +225,8 @@ class AuthenticationController extends DefaultController
             if(Sentinel::check())
             {
                 //Logged in
-                \Session::flash('success_msg','You are already logged in!');
-                return \Redirect::route('dashboard.getDashboard');
+                session()->flash('success_msg','You are already logged in!');
+                return redirect()->route('dashboard.getDashboard');
             }
             $setRemember = \ActivationHelper::generateRemember($request->get('email'));
             if($setRemember['code'] == 201) {
@@ -229,8 +242,8 @@ class AuthenticationController extends DefaultController
             } elseif ($setRemember['code'] == 200) {
                 $this->data = $setRemember['data'];
                 \Mail::to($this->data['user']->email)->send(new Forgot($this->data));
-                \Sesssion::flash('success_msg','Password reset link has been sent to your registered e-mail address.');
-                return \Redirect::route('authentication.getLogin');
+                session()->flash('success_message',__('You have received a reset link in your e-mail.'));
+                return redirect()->route('authentication.getLogin');
             } else {
                 // Redirect to the login page
                 $this->messageBag->add('error', __('authentication/messages.generic_error'));
@@ -244,7 +257,6 @@ class AuthenticationController extends DefaultController
             return redirect()->route('authentication.getLogin');
         } catch (\Exception $e)
         {
-            dd($e);
             // Redirect to the login page
             $this->messageBag->add('error', __('authentication/messages.generic_error'));
             return redirect()->route('authentication.getLogin');

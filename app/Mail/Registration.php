@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class Forgot extends Mailable
+class Registration extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -28,7 +28,7 @@ class Forgot extends Mailable
      */
     public function build()
     {
-        return $this->from('info@vikinger.com')->subject('Forgot Password | ' . env('APP_NAME'))
-            ->view('emails.forgot');
+        return $this->from('info@vikinger.com')->subject('Registration | ' . env('APP_NAME'))
+            ->view('emails.registration');
     }
 }
