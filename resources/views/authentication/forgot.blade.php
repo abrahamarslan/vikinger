@@ -24,7 +24,7 @@
                 <div class="form-item">
                     <!-- FORM INPUT -->
                     <div class="form-input">
-                        <label for="login-username">Username or Email</label>
+                        <label for="login-username">Registered Email</label>
                         {!! Form::text('email', null, ['class' => '', 'id' => 'login-username', 'autocomplete' => 'off'] ) !!}
                     </div>
                     <!-- /FORM INPUT -->

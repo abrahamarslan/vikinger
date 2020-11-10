@@ -67,6 +67,8 @@ class User extends EloquentUser
         'password', 'remember_token',
     ];
 
+    protected $loginNames = ['email', 'name'];
+
     /**
      * The attributes that should be cast to native types.
      *

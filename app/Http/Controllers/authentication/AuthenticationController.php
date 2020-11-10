@@ -40,7 +40,7 @@ class AuthenticationController extends DefaultController
     public function postLogin(Request $request) {
 
         $this->validate($request, [
-            'email' => 'required|email',
+            'email' => 'required',
             'password' => 'required|min:6'
         ],
             [
@@ -49,8 +49,9 @@ class AuthenticationController extends DefaultController
             ]);
 
         try {
+            $data = ['login' => $request->get('email'), 'password' => $request->get('password')];
             //Log in the user
-            if ($user = Sentinel::authenticate($request->only(['email', 'password']), $request->get('remember-me', false))) {
+            if ($user = Sentinel::authenticate($data, $request->get('remember-me', false))) {
                 //if($user->inRole('users') OR $user->inRole('instructor'))
                 if($user->inRole('users'))
                 {

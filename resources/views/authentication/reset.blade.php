@@ -24,7 +24,7 @@
                 <div class="form-item">
                     <!-- FORM INPUT -->
                     <div class="form-input">
-                        <label for="reset-password">Username or Email</label>
+                        <label for="reset-password">New Password</label>
                         {!! Form::password('password', null, ['class' => '', 'id' => 'reset-password', 'autocomplete' => 'off'] ) !!}
                     </div>
                     <!-- /FORM INPUT -->
