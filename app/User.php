@@ -53,7 +53,6 @@ class User extends EloquentUser
         'city_name',
         'state_name',
         'country_name',
-        'batch_id',
         'created_at',
         'updated_at'
     ];
@@ -67,7 +66,7 @@ class User extends EloquentUser
         'password', 'remember_token',
     ];
 
-    protected $loginNames = ['email', 'name'];
+    protected $loginNames = ['email', 'username'];
 
     /**
      * The attributes that should be cast to native types.
