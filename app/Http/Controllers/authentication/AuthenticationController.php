@@ -69,7 +69,6 @@ class AuthenticationController extends DefaultController
                         ->log(__('authentication/log.login.action'));
                     //Flash login success message
                     Alert::success(__('authentication/messages.success.login'));
-                    dd('Successful login');
                     //return redirect()->route('dashboard.getDashboard');
                 } else {
                     Sentinel::logout();

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 include 'authentication.php';
-
+include 'chat.php';
 Route::get('/', function () {
     return redirect()->route('authentication.getLogin');
 });
