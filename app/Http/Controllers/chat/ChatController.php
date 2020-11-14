@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Redis;
 class ChatController extends DefaultController
 {
     public function getKey() {
-        ChatInitiationRequest::dispatch();
+        return view('front.chat');
+    }
+
+    public function initiateRequest(Request $request) {
+        ChatInitiationRequest::dispatch(['1', 'Abraham A.']);
     }
 }

@@ -19,8 +19,12 @@
     <meta name="csrf-token" content="{{csrf_token()}}" />
 </head>
 <body>
-
-
+<div id="app">
+    <form action="">
+        <input type="text">
+        <button type="submit">Send</button>
+    </form>
+</div>
 <!-- /LANDING -->
 {{--App Scripts--}}
 <script src="{!! asset('js/app.js') !!}"></script>
@@ -34,6 +38,8 @@
 <script src="{!! asset('theme/js/landing/landing.tabs.js') !!}"></script>
 <!-- SVG icons -->
 <script src="{!! asset('theme/js/utils/svg-loader.js') !!}"></script>
+<script type="text/javascript">
 
+</script>
 </body>
 </html>

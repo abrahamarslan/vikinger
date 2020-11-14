@@ -77,6 +77,13 @@ class User extends EloquentUser
         'email_verified_at' => 'datetime',
         'permissions' => 'json',
     ];
+
+    /**
+     * Has-many relation with messages
+     */
+    public function messages() {
+        return $this->hasMany(Message::class, 'to_id');
+    }
     /**
      * Get table columns
      * @return array

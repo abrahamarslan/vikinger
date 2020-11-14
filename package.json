@@ -27,7 +27,9 @@
         "@syncfusion/ej2-icons": "^18.3.47",
         "@syncfusion/ej2-vue-notifications": "^18.3.47",
         "async": "^3.2.0",
+        "laravel-echo": "^1.9.0",
         "moment": "^2.29.1",
+        "pusher-js": "^7.0.1",
         "vue-loading-overlay": "^3.4.2",
         "vuex": "^3.5.1"
     }
