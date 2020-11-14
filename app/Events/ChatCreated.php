@@ -10,18 +10,21 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class ChatInitiationRequest implements ShouldBroadcast
+class ChatCreated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+
     public $user;
+    public $data;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($id)
+    public function __construct($user, $data)
     {
-        $this->user = $id;
+        $this->user = $user;
+        $this->data = $data;
     }
 
     /**
@@ -31,6 +34,6 @@ class ChatInitiationRequest implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('cir.'.$this->user);
+        return new PrivateChannel('ccr.'.$this->user);
     }
 }

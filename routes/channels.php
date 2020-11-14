@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-Broadcast::channel('App.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
+Broadcast::channel('cir.{id}', function ($id) {
+    return (int) \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()->id != null;
+});
+
+Broadcast::channel('ccr.{id}', function ($id) {
+    return (int) \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()->id != null;
 });

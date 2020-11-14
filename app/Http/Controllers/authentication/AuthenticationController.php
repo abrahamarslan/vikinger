@@ -25,7 +25,7 @@ class AuthenticationController extends DefaultController
     public function getLogin() {
         if(Sentinel::check()) {
             Alert::warning('You are already logged in!');
-            return redirect()->route('user.profile');
+            return redirect()->route('chat.index');
         }
         return view('authentication.authentication');
     }
@@ -69,7 +69,7 @@ class AuthenticationController extends DefaultController
                         ->log(__('authentication/log.login.action'));
                     //Flash login success message
                     Alert::success(__('authentication/messages.success.login'));
-                    //return redirect()->route('dashboard.getDashboard');
+                    return redirect()->route('chat.index');
                 } else {
                     Sentinel::logout();
                     session()->flash('success_message','Unauthorized Access');

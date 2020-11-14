@@ -20,10 +20,11 @@
 </head>
 <body>
 <div id="app">
-    <form action="">
-        <input type="text">
-        <button type="submit">Send</button>
-    </form>
+    @if($user->id==1)
+    <Chat :compID="2" :user="{{$user}}"></Chat>
+    @else
+    <Chat :compID="1" :user="{{$user}}"></Chat>
+    @endif
 </div>
 <!-- /LANDING -->
 {{--App Scripts--}}
