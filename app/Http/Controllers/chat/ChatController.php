@@ -33,9 +33,9 @@ class ChatController extends DefaultController
         $message = $request->get('message');
         array_push($this->data['messages'], $message);
         if($user->id == 1) {
-            ChatCreated::dispatch(2, $message);
+            event(new ChatCreated(2, $message));
         } else {
-            ChatCreated::dispatch(1, $message);
+            event(new ChatCreated(1, $message));
         }
 
     }
