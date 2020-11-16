@@ -20,7 +20,7 @@
 <body>
 
 <!-- LANDING -->
-<div class="landing" id="app">
+<div class="landing" id="vik">
     <!-- LANDING DECORATION -->
     <div class="landing-decoration"></div>
     <!-- /LANDING DECORATION -->

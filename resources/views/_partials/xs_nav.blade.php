@@ -19,7 +19,7 @@
                 <!-- USER AVATAR CONTENT -->
                 <div class="user-avatar-content">
                     <!-- HEXAGON -->
-                    <div class="hexagon-image-30-32" data-src="{!! asset('theme/img/avatar/01.jpg') !!}"></div>
+                    <div class="hexagon-image-30-32" data-src="{!! $user->thumbnail !!}"></div>
                     <!-- /HEXAGON -->
                 </div>
                 <!-- /USER AVATAR CONTENT -->
@@ -67,7 +67,7 @@
             <!-- /USER AVATAR -->
 
             <!-- NAVIGATION WIDGET INFO TITLE -->
-            <p class="navigation-widget-info-title"><a href="profile-timeline.html">Marina Valentine</a></p>
+            <p class="navigation-widget-info-title"><a href="profile-timeline.html">{!! $user->name !!}</a></p>
             <!-- /NAVIGATION WIDGET INFO TITLE -->
 
             <!-- NAVIGATION WIDGET INFO TEXT -->

@@ -40,7 +40,7 @@
 @include('_partials.floaty_bar')
 
 <!-- CONTENT GRID -->
-<div class="content-grid">
+<div class="content-grid" id="vik">
 
     @yield('content')
 
@@ -48,7 +48,7 @@
 <!-- /CONTENT GRID -->
 
 @yield('after_content')
-
+@include('authentication._partials.notification')
 
 {{--App Scripts--}}
 <script src="{!! asset('js/app.js') !!}"></script>

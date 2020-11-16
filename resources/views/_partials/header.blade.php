@@ -15,7 +15,7 @@
             <!-- /LOGO -->
 
             <!-- HEADER BRAND TEXT -->
-            <h1 class="header-brand-text">Vikinger</h1>
+            <h1 class="header-brand-text">{!! env('APP_NAME') !!}</h1>
             <!-- /HEADER BRAND TEXT -->
         </div>
         <!-- /HEADER BRAND -->
@@ -188,7 +188,7 @@
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
-                                    <div class="hexagon-image-30-32" data-src="{!! asset('theme/img/avatar/05.jpg') !!}"></div>
+                                    <div class="hexagon-image-30-32" data-src="{!! $user->thumbnail !!}"></div>
                                     <!-- /HEXAGON -->
                                 </div>
                                 <!-- /USER AVATAR CONTENT -->
@@ -2014,7 +2014,7 @@
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
-                                    <div class="hexagon-image-30-32" data-src="{!! asset('theme/img/avatar/01.jpg') !!}"></div>
+                                    <div class="hexagon-image-30-32" data-src="{!! $user->thumbnail !!}"></div>
                                     <!-- /HEXAGON -->
                                 </div>
                                 <!-- /USER AVATAR CONTENT -->
@@ -2064,11 +2064,11 @@
                         <!-- /USER STATUS AVATAR -->
 
                         <!-- USER STATUS TITLE -->
-                        <p class="user-status-title"><span class="bold">Hi Marina!</span></p>
+                        <p class="user-status-title"><span class="bold">{!! $user->name !!}</span></p>
                         <!-- /USER STATUS TITLE -->
 
                         <!-- USER STATUS TEXT -->
-                        <p class="user-status-text small"><a href="profile-timeline.html">@marinavalentine</a></p>
+                        <p class="user-status-text small"><a href="profile-timeline.html">{!! '@' . $user->username !!}</a></p>
                         <!-- /USER STATUS TEXT -->
                     </div>
                     <!-- /USER STATUS -->
@@ -2148,7 +2148,7 @@
                 <!-- /DROPDOWN NAVIGATION LINK -->
 
                 <!-- DROPDOWN NAVIGATION BUTTON -->
-                <p class="dropdown-navigation-button button small secondary">Logout</p>
+                <a href="{!! route('authentication.getLogout') !!}" class="dropdown-navigation-button button small secondary">Logout</a>
                 <!-- /DROPDOWN NAVIGATION BUTTON -->
             </div>
             <!-- /DROPDOWN NAVIGATION -->

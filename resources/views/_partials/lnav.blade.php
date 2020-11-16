@@ -6,7 +6,7 @@
         <!-- USER AVATAR CONTENT -->
         <div class="user-avatar-content">
             <!-- HEXAGON -->
-            <div class="hexagon-image-30-32" data-src="{!! asset('theme/img/avatar/01.jpg') !!}"></div>
+            <div class="hexagon-image-30-32" data-src="{!! $user->thumbnail !!}"></div>
             <!-- /HEXAGON -->
         </div>
         <!-- /USER AVATAR CONTENT -->

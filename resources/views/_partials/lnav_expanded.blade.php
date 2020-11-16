@@ -21,7 +21,7 @@
             <!-- USER AVATAR CONTENT -->
             <div class="user-avatar-content">
                 <!-- HEXAGON -->
-                <div class="hexagon-image-82-90" data-src="{!! asset('theme/img/avatar/01.jpg') !!}"></div>
+                <div class="hexagon-image-82-90" data-src="{!! $user->thumbnail !!}"></div>
                 <!-- /HEXAGON -->
             </div>
             <!-- /USER AVATAR CONTENT -->
@@ -69,11 +69,11 @@
         <!-- /USER SHORT DESCRIPTION AVATAR -->
 
         <!-- USER SHORT DESCRIPTION TITLE -->
-        <p class="user-short-description-title"><a href="profile-timeline.html">Marina Valentine</a></p>
+        <p class="user-short-description-title"><a href="profile-timeline.html">{!! $user->name !!}</a></p>
         <!-- /USER SHORT DESCRIPTION TITLE -->
 
         <!-- USER SHORT DESCRIPTION TEXT -->
-        <p class="user-short-description-text"><a href="#">www.gamehuntress.com</a></p>
+        <p class="user-short-description-text"><a href="#">{!! $user->status !!}</a></p>
         <!-- /USER SHORT DESCRIPTION TEXT -->
     </div>
     <!-- /USER SHORT DESCRIPTION -->

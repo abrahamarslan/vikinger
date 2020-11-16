@@ -7,6 +7,7 @@ use App\Events\ChatInitiationRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DefaultController;
 use App\Message;
+use App\User;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
@@ -20,6 +21,8 @@ class ChatController extends DefaultController
      */
     public function index() {
         if($user = Sentinel::check()) {
+            $this->data['user'] = $user;
+            $this->data['members'] = User::where('id', '!=', $user->id)->get();
             return view('front.user.chats', $this->data);
         }
         else {
