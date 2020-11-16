@@ -11,6 +11,15 @@ class Message extends Model
     protected $guarded = [];
 
 
+    /**
+    * A message belong to a user
+    *
+    */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     /*
      * From magic function (One-to-Many)
      */

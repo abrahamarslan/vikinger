@@ -6,15 +6,33 @@ use App\Events\ChatCreated;
 use App\Events\ChatInitiationRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DefaultController;
+use App\Message;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
 
 class ChatController extends DefaultController
 {
+
+    /**
+     * Check user and return the chat view.
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index() {
-        $this->data['user'] = Sentinel::check() ? Sentinel::getUser() : null;
-        return view('front.chat', $this->data);
+        if($user = Sentinel::check()) {
+            return view('front.chat', $this->data);
+        }
+        else {
+            abort(404);
+        }
+
+    }
+
+    /**
+     * Get all user messages
+     */
+    public function getUserMessages(Request $request) {
+        return Message::with('user')->get();
     }
 
     public function initiateRequest(Request $request) {
