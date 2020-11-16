@@ -831,4 +831,18 @@ class GeneralHelper
         }
     }
 
+    /**
+     * Mark user status as online or offline
+     */
+    public function markOnlineStatus($userID, $status) {
+        try {
+            $user = \App\User::findOrFail($userID);
+            $user->online_status = $status;
+            $user->save();
+            return true;
+        } catch (Exception $e) {
+            return false;
+        }
+    }
+
 }

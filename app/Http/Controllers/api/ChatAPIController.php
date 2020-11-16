@@ -5,6 +5,7 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DefaultController;
 use App\Message;
+use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
 
 class ChatAPIController extends DefaultController
@@ -12,21 +13,25 @@ class ChatAPIController extends DefaultController
     public function getChats(Request $request) {
         $data = array();
         try {
+            $user = Sentinel::check();
             $fromID = $request->get('from_id');
             $toID = $request->get('to_id');
             if($fromID != null && $fromID != '' && $toID != null && $toID!='') {
-                $chats = ['First Message', 'Second Message', 'Third Message'];
+                $chats = Message::where(function ($query) use ($fromID, $toID){
+                    $query->where('from_id',$fromID)->where('to_id',$toID);
+                })->orWhere(function ($query) use($fromID, $toID) {
+                    $query->where('from_id', $toID)->where('to_id', $fromID);
+                })->orderBy('created_at','ASC')->get();
                 $data = [
                     'type' => 'success',
                     'message' => 'records',
                     'data' => [
                         'chats' => $chats,
-                        //'last_active' => $lastChat->created_at
+                        'last_chat' => $chats->last()
                     ],
                     'code' => 200
                 ];
-                return response()->json($data,500);
-                //$chats = Message::where('')
+                return response()->json($data,200);
             } else {
                 $data = [
                     'type' => 'error',

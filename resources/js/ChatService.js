@@ -30,7 +30,11 @@ export default {
             let url = '/chat/post-chat';
             HTTP.post(url, data, {headers})
                 .then((response) => {
-                    console.log(response);
+                    if(response.data.code===200) {
+                        resolve(response.data);
+                    } else {
+                        reject(response.data.data.message);
+                    }
                 })
         }).catch(err => {
             console.log(err);
@@ -46,14 +50,13 @@ export default {
             'Content-Type': 'application/json'
         };
         return new Promise((resolve, reject) => {
-            let url = "get-chats";
+            let url = '/chat/get-chats';
             HTTP.post(url, data, {headers})
                 .then((response) => {
-                    console.log(response);
-                    if(response.data.success) {
-                        resolve(response.data.data);
+                    if(response.data.code===200) {
+                        resolve(response.data);
                     } else {
-                        reject(response.data.message);
+                        reject(response.data.data.message);
                     }
                 })
         }).catch(err => {

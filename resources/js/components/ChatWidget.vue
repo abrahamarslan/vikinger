@@ -253,9 +253,9 @@
                 <!-- /CHAT WIDGET HEADER -->
 
                 <!-- CHAT WIDGET CONVERSATION -->
-                <div class="chat-widget-conversation" data-simplebar>
+                <div class="chat-widget-conversation" data-simplebar v-chat-scroll="{smooth: true}">
                     <!-- CHAT WIDGET SPEAKER -->
-                    <div class="chat-widget-speaker left">
+                    <div class="chat-widget-speaker" v-for="(message,i) in messages" :key="i" :class="message.from_id === user.id ? 'right' : 'left'">
                         <!-- CHAT WIDGET SPEAKER AVATAR -->
                         <div class="chat-widget-speaker-avatar">
                             <!-- USER AVATAR -->
@@ -263,7 +263,7 @@
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
-                                    <div class="hexagon-image-24-26" :data-src="currentUser.thumbnail"></div>
+                                    <div class="hexagon-image-24-26" :data-src="message.from_id === user.id ? user.thumbnail : currentUser.thumbnail"></div>
                                     <!-- /HEXAGON -->
                                 </div>
                                 <!-- /USER AVATAR CONTENT -->
@@ -273,62 +273,15 @@
                         <!-- /CHAT WIDGET SPEAKER AVATAR -->
 
                         <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                        <p class="chat-widget-speaker-message">Hi Marina! It's been a long time!</p>
+                        <p class="chat-widget-speaker-message">{{ message.message }}</p>
                         <!-- /CHAT WIDGET SPEAKER MESSAGE -->
 
                         <!-- CHAT WIDGET SPEAKER TIMESTAMP -->
-                        <p class="chat-widget-speaker-timestamp">Yesterday at 8:36PM</p>
+                        <p class="chat-widget-speaker-timestamp">{{ message.created_at | moment("from") }}</p>
                         <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
                     </div>
                     <!-- /CHAT WIDGET SPEAKER -->
 
-                    <!-- CHAT WIDGET SPEAKER -->
-                    <div class="chat-widget-speaker right">
-                        <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                        <p class="chat-widget-speaker-message">Hey Nick!</p>
-                        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
-
-                        <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                        <p class="chat-widget-speaker-message">You're right, it's been a really long time! I think the last time we saw was at Neko's party</p>
-                        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
-
-                        <!-- CHAT WIDGET SPEAKER TIMESTAMP -->
-                        <p class="chat-widget-speaker-timestamp">10:05AM</p>
-                        <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
-                    </div>
-                    <!-- /CHAT WIDGET SPEAKER -->f
-
-                    <!-- CHAT WIDGET SPEAKER -->
-                    <div class="chat-widget-speaker left">
-                        <!-- CHAT WIDGET SPEAKER AVATAR -->
-                        <div class="chat-widget-speaker-avatar">
-                            <!-- USER AVATAR -->
-                            <div class="user-avatar tiny no-border">
-                                <!-- USER AVATAR CONTENT -->
-                                <div class="user-avatar-content">
-                                    <!-- HEXAGON -->
-                                    <div class="hexagon-image-24-26" :data-src="currentUser.thumbnail"></div>
-                                    <!-- /HEXAGON -->
-                                </div>
-                                <!-- /USER AVATAR CONTENT -->
-                            </div>
-                            <!-- /USER AVATAR -->
-                        </div>
-                        <!-- /CHAT WIDGET SPEAKER AVATAR -->
-
-                        <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                        <p class="chat-widget-speaker-message">Yeah! I remember now! The stream launch party</p>
-                        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
-
-                        <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                        <p class="chat-widget-speaker-message">That reminds me that I wanted to ask you something</p>
-                        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
-
-                        <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                        <p class="chat-widget-speaker-message">Can you stream the new game?</p>
-                        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
-                    </div>
-                    <!-- /CHAT WIDGET SPEAKER -->
                 </div>
                 <!-- /CHAT WIDGET CONVERSATION -->
 
@@ -396,6 +349,8 @@
 
 <script>
 import ChatService from "../ChatService";
+import VueChatScroll from 'vue-chat-scroll';
+Vue.use(VueChatScroll);
 export default {
     name: "ChatWidget",
     props: {
@@ -424,19 +379,26 @@ export default {
                 };
                 ChatService.postChat(data)
                     .then(response => {
-                        console.log('Success');
-                        console.log(response);
+                        this.messages = response.data.chats;
                     }).catch(error => {
-                    console.log('Error');
+                    alert('Error in fetching data');
                     console.log(error);
                 });
             }
 
         },
         selectChat(member) {
-            console.log('Selected Member', member);
-            this.currentUser = member;
-            this.currentUserId = this.currentUser.id;
+            if(member) {
+                this.currentUser = member;
+                this.currentUserId = this.currentUser.id;
+                ChatService.getUserChats({'from_id': this.currentUser.id, 'to_id': this.user.id})
+                    .then(response => {
+                        this.messages = response.data.chats;
+                    }).catch(error => {
+                    alert('Error in fetching data');
+                    console.log(error);
+                });
+            }
         },
 
     },
@@ -446,8 +408,7 @@ export default {
       }
     },
     mounted() {
-        this.currentUser = this.members[0];
-        this.currentUserId = this.currentUser.id;
+        this.selectChat(this.members[0]);
     }
 }
 </script>
