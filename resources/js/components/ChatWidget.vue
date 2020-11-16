@@ -36,7 +36,7 @@
                 <!-- CHAT WIDGET MESSAGES -->
                 <div class="chat-widget-messages" data-simplebar>
                     <!-- CHAT WIDGET MESSAGE -->
-                    <div class="chat-widget-message" v-for="member in members">
+                    <div class="chat-widget-message" v-for="(member, i) in members" :key="i" :class="member.id === currentUserId ? 'active' : ''" @click="selectChat(member)">
                         <!-- USER STATUS -->
                         <div class="user-status">
                             <!-- USER STATUS AVATAR -->
@@ -146,7 +146,7 @@
             <!-- /CHAT WIDGET -->
 
             <!-- CHAT WIDGET -->
-            <div class="chat-widget">
+            <div class="chat-widget" v-if="currentUser">
                 <!-- CHAT WIDGET HEADER -->
                 <div class="chat-widget-header">
                     <!-- CHAT WIDGET SETTINGS -->
@@ -192,7 +192,7 @@
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
-                                    <div class="hexagon-image-30-32" data-src="{!! asset('theme/img/avatar/03.jpg') !!}"></div>
+                                    <img class="hexagon-image-30-32" :src="currentUser.thumbnail"></img>
                                     <!-- /HEXAGON -->
                                 </div>
                                 <!-- /USER AVATAR CONTENT -->
@@ -242,11 +242,10 @@
                         <!-- /USER STATUS AVATAR -->
 
                         <!-- USER STATUS TITLE -->
-                        <p class="user-status-title"><span class="bold">Nick Grissom</span></p>
+                        <p v-if="currentUser" class="user-status-title"><span class="bold">{{ currentUser.name }}</span></p>
                         <!-- /USER STATUS TITLE -->
-
                         <!-- USER STATUS TAG -->
-                        <p class="user-status-tag online">Online</p>
+                        <p v-if="currentUser" class="user-status-tag" :class="currentUser.online_status==='Online' ? 'online' : 'offline'">{{ currentUser.online_status }}</p>
                         <!-- /USER STATUS TAG -->
                     </div>
                     <!-- /USER STATUS -->
@@ -264,7 +263,7 @@
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
-                                    <div class="hexagon-image-24-26" data-src="{!! asset('theme/img/avatar/03.jpg') !!}"></div>
+                                    <div class="hexagon-image-24-26" :data-src="currentUser.thumbnail"></div>
                                     <!-- /HEXAGON -->
                                 </div>
                                 <!-- /USER AVATAR CONTENT -->
@@ -297,7 +296,7 @@
                         <p class="chat-widget-speaker-timestamp">10:05AM</p>
                         <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
                     </div>
-                    <!-- /CHAT WIDGET SPEAKER -->
+                    <!-- /CHAT WIDGET SPEAKER -->f
 
                     <!-- CHAT WIDGET SPEAKER -->
                     <div class="chat-widget-speaker left">
@@ -308,7 +307,7 @@
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
-                                    <div class="hexagon-image-24-26" data-src="{!! asset('theme/img/avatar/03.jpg') !!}"></div>
+                                    <div class="hexagon-image-24-26" :data-src="currentUser.thumbnail"></div>
                                     <!-- /HEXAGON -->
                                 </div>
                                 <!-- /USER AVATAR CONTENT -->
@@ -334,14 +333,14 @@
                 <!-- /CHAT WIDGET CONVERSATION -->
 
                 <!-- CHAT WIDGET FORM -->
-                <form class="chat-widget-form">
+                <form class="chat-widget-form" @submit.prevent="postChat">
                     <!-- FORM ROW -->
                     <div class="form-row split">
                         <!-- FORM ITEM -->
                         <div class="form-item">
                             <!-- INTERACTIVE INPUT -->
                             <div class="interactive-input small">
-                                <input type="text" id="chat-widget-message-text-2" name="chat_widget_message_text_2" placeholder="Write a message...">
+                                <input v-model="chatMessage" type="text" id="chat-widget-message-text-2" name="chat_widget_message_text_2" placeholder="Write a message...">
                                 <!-- INTERACTIVE INPUT ICON WRAP -->
                                 <div class="interactive-input-icon-wrap actionable">
                                     <!-- TOOLTIP WRAP -->
@@ -373,13 +372,13 @@
                         <!-- FORM ITEM -->
                         <div class="form-item auto-width">
                             <!-- BUTTON -->
-                            <p class="button primary padded">
+                            <button class="button primary padded" :disabled="!canSend">
                                 <!-- BUTTON ICON -->
                                 <svg class="button-icon no-space icon-send-message">
                                     <use xlink:href="#svg-send-message"></use>
                                 </svg>
                                 <!-- /BUTTON ICON -->
-                            </p>
+                            </button>
                             <!-- /BUTTON -->
                         </div>
                         <!-- /FORM ITEM -->
@@ -396,6 +395,7 @@
 </template>
 
 <script>
+import ChatService from "../ChatService";
 export default {
     name: "ChatWidget",
     props: {
@@ -404,23 +404,58 @@ export default {
     },
     data() {
         return {
+            chatMessage: '',
+            currentUser: null,
+            currentUserId: 0,
             message: '',
             messages: []
         };
     },
     methods: {
-        sendChat() {
-            axios.post('/chat/send-message', {'message': this.message});
-            alert('Message sent');
-        }
+        clearData() {
+          this.chatMessage = '';
+        },
+        postChat() {
+            if(this.chatMessage!=='') {
+                let data = {
+                    'message': this.chatMessage,
+                    'from_id': this.user.id,
+                    'to_id': this.currentUserId
+                };
+                ChatService.postChat(data)
+                    .then(response => {
+                        console.log('Success');
+                        console.log(response);
+                    }).catch(error => {
+                    console.log('Error');
+                    console.log(error);
+                });
+            }
+
+        },
+        selectChat(member) {
+            console.log('Selected Member', member);
+            this.currentUser = member;
+            this.currentUserId = this.currentUser.id;
+        },
+
+    },
+    computed: {
+      canSend() {
+          return (this.chatMessage.length>0 && this.chatMessage!== '');
+      }
     },
     mounted() {
-        console.log(this.user);
-        console.log('Members', this.members);
+        this.currentUser = this.members[0];
+        this.currentUserId = this.currentUser.id;
     }
 }
 </script>
 
 <style scoped>
-
+    button:disabled, button[disabled], button:disabled:hover, button[disabled]:hover {
+        background-color: dimgrey;
+        box-shadow: none;
+        cursor: not-allowed;
+    }
 </style>

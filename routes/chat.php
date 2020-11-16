@@ -8,3 +8,5 @@ Route::group(array('prefix' => 'chat'), function () {
     Route::get('cir', array('uses'=>'chat\ChatController@initiateRequest', 'as'=>'chat.initiateRequest'));
     Route::post('send-message', array('uses'=>'chat\ChatController@insertChat', 'as'=>'chat.insertChat'));
 });
+
+

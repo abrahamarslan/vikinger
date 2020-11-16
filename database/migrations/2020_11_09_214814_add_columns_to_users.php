@@ -24,6 +24,7 @@ class AddColumnsToUsers extends Migration
             $table->string('status',255)->nullable();
             $table->integer('role_id')->default(1);
             $table->string('contact',255)->nullable();
+            $table->string('online_status',255)->nullable()->default('Offline');
             $table->longText('street_address')->nullable();
             $table->longText('landmark')->nullable();
             $table->string('city',255)->nullable();

@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 include 'authentication.php';
 include 'chat.php';
+@include('v1.php');
 Route::get('/', function () {
     return redirect()->route('authentication.getLogin');
 });
