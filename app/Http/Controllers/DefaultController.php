@@ -13,6 +13,7 @@ class DefaultController extends Controller
     protected $messageBag = null;
     public function __construct()
     {
-        $this->messageBag = new MessageBag;        
+        $this->data = array();
+        $this->messageBag = new MessageBag;
     }
 }
