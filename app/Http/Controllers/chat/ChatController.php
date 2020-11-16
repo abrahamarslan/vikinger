@@ -20,7 +20,7 @@ class ChatController extends DefaultController
      */
     public function index() {
         if($user = Sentinel::check()) {
-            return view('front.user.timeline', $this->data);
+            return view('front.user.chats', $this->data);
         }
         else {
             abort(404);
