@@ -22,6 +22,7 @@ Vue.use(require('vue-moment'));
 Vue.component('Notification', require('./components/Notification.vue').default);
 Vue.component('Chat', require('./components/Chat.vue').default);
 Vue.component('ChatWidget', require('./components/ChatWidget.vue').default);
+Vue.component('ChatBar', require('./components/ChatBar.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

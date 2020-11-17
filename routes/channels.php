@@ -17,6 +17,15 @@ Broadcast::channel('cir.{id}', function ($id) {
     return (int) \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()->id != null;
 });
 
-Broadcast::channel('ccr.{id}', function ($id) {
+Broadcast::channel('ccr-bar-{fromID}-{toID}', function () {
+    return (int) \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()->id != null;
+});
+
+Broadcast::channel('ccr-{fromID}-{toID}', function () {
+    return (int) \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()->id != null;
+});
+
+
+Broadcast::channel('cto-{toID}', function () {
     return (int) \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()->id != null;
 });

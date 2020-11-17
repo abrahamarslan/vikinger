@@ -20,9 +20,10 @@
     <link rel="icon" href="{!! asset('theme/img/favicon.ico') !!}">
     <title>@yield('title') | {!! env('APP_NAME') !!}</title>
     <meta name="description" content="Login to {!! env('APP_NAME') !!}" />
+    <meta name="csrf-token" content="{{csrf_token()}}" />
 </head>
 <body>
-
+<div id="vik">
 @include('_partials.loader')
 
 @include('_partials.lnav')
@@ -31,22 +32,20 @@
 
 @include('_partials.xs_nav')
 
-@include('_partials.chat_users')
-
-@include('_partials.chat')
+<chat-bar :user='@json($user)' :members='@json($members)'></chat-bar>
 
 @include('_partials.header')
 
 @include('_partials.floaty_bar')
 
 <!-- CONTENT GRID -->
-<div class="content-grid" id="vik">
+<div class="content-grid">
 
     @yield('content')
 
 </div>
 <!-- /CONTENT GRID -->
-
+</div>
 @yield('after_content')
 @include('authentication._partials.notification')
 

@@ -86,7 +86,7 @@
                                         <!-- /USER AVATAR BADGE CONTENT -->
 
                                         <!-- USER AVATAR BADGE TEXT -->
-                                        <p class="user-avatar-badge-text">6</p>
+                                        <p class="user-avatar-badge-text" :id="'unread-' + member.id">0</p>
                                         <!-- /USER AVATAR BADGE TEXT -->
                                     </div>
                                     <!-- /USER AVATAR BADGE -->
@@ -103,9 +103,6 @@
                             <p class="user-status-text">{{ member.status }}</p>
                             <!-- /USER STATUS TEXT -->
 
-                            <!-- USER STATUS TIMESTAMP -->
-                            <p class="user-status-timestamp floaty">2 hours ago</p>
-                            <!-- /USER STATUS TIMESTAMP -->
                         </div>
                         <!-- /USER STATUS -->
                     </div>
@@ -192,7 +189,7 @@
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
-                                    <img class="hexagon-image-30-32" :src="currentUser.thumbnail"></img>
+                                    <img class="hexagon-image-30-32" :src="currentUser.thumbnail" />
                                     <!-- /HEXAGON -->
                                 </div>
                                 <!-- /USER AVATAR CONTENT -->
@@ -232,7 +229,7 @@
                                     <!-- /USER AVATAR BADGE CONTENT -->
 
                                     <!-- USER AVATAR BADGE TEXT -->
-                                    <p class="user-avatar-badge-text">16</p>
+                                    <p class="user-avatar-badge-text">0</p>
                                     <!-- /USER AVATAR BADGE TEXT -->
                                 </div>
                                 <!-- /USER AVATAR BADGE -->
@@ -363,12 +360,42 @@ export default {
             currentUser: null,
             currentUserId: 0,
             message: '',
-            messages: []
+            messages: [],
+            isSubscribed: false
         };
     },
     methods: {
         clearData() {
           this.chatMessage = '';
+        },
+        getSyncedUserChats() {
+            let that = this;
+            var channel = window.Echo.private(`ccr-${this.currentUser.id}-${this.user.id}`)
+                .listen('ChatCreated', (e) => {
+                    that.isSubscribed = true;
+                    //If the current window open is the fromID
+                    if(e.message.from_id === that.currentUser.id) {
+                        that.messages.push(e.message.message);
+                    } else {
+                        let currentUnreadChats = parseInt(document.getElementById('unread-'+e.message.from_id)).innerText;
+                        currentUnreadChats += 1;
+                        document.getElementById('unread-'+e.message.from_id).innerHTML = currentUnreadChats;
+                    }
+                });
+        },
+        syncIncomingEvents() {
+          let that = this;
+          var syncedEvents = window.Echo.private(`cto-${this.user.id}`)
+            .listen('MessageToUser', (e) => {
+               if(e.message.from_id === that.currentUser.id) {
+                   // Already handled
+               }  else {
+                   let currentUnreadChats = parseInt(document.getElementById('unread-'+e.message.from_id).innerText);
+                   console.log(currentUnreadChats);
+                   currentUnreadChats += 1;
+                   document.getElementById('unread-'+e.message.from_id).innerHTML = currentUnreadChats;
+               }
+            });
         },
         postChat() {
             if(this.chatMessage!=='') {
@@ -377,9 +404,11 @@ export default {
                     'from_id': this.user.id,
                     'to_id': this.currentUserId
                 };
+                console.log('Sending data', data);
                 ChatService.postChat(data)
                     .then(response => {
-                        this.messages = response.data.chats;
+                        this.messages.push(response.data);
+                        this.clearData();
                     }).catch(error => {
                     alert('Error in fetching data');
                     console.log(error);
@@ -387,10 +416,19 @@ export default {
             }
 
         },
+        leaveCurrentUser() {
+            if(this.isSubscribed) {
+                window.Echo.leaveChannel(`ccr-${this.currentUser.id}-${this.user.id}`);
+            }
+        },
         selectChat(member) {
             if(member) {
+                //Leave current chat subscription event
+                this.leaveCurrentUser();
                 this.currentUser = member;
                 this.currentUserId = this.currentUser.id;
+                this.getSyncedUserChats();
+                //this.syncIncomingEvents();
                 ChatService.getUserChats({'from_id': this.currentUser.id, 'to_id': this.user.id})
                     .then(response => {
                         this.messages = response.data.chats;

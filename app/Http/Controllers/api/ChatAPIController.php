@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\api;
 
+use App\Events\ChatCreated;
+use App\Events\ChatCreatedBar;
+use App\Events\MessageToUser;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DefaultController;
 use App\Message;
@@ -74,8 +77,10 @@ class ChatAPIController extends DefaultController
                     'data' => $message,
                     'code' => 200
                 ];
+                $eventData = ['message' => $message, 'from_id' => $fromID, 'to_id' => $toID];
+                event(new ChatCreated($eventData));
+                broadcast(new ChatCreatedBar($eventData))->toOthers();
                 return response()->json($data,200);
-                //$chats = Message::where('')
             } else {
                 $data = [
                     'type' => 'error',

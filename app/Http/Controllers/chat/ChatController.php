@@ -23,7 +23,7 @@ class ChatController extends DefaultController
         if($user = Sentinel::check()) {
             $this->data['user'] = $user;
             $this->data['members'] = User::where('id', '!=', $user->id)->get();
-            return view('front.user.chats', $this->data);
+            return view('front.user.timeline', $this->data);
         }
         else {
             abort(404);
