@@ -74,20 +74,12 @@ export default {
         };
         Echo.join('online-now')
             .joining((user) => {
-                console.log('Joined', user);
                 let url = '/chat/online/' + user.id
                 HTTP.post(url);
             })
             .leaving((user) => {
-                console.log('Leaving', user);
                 let url = '/chat/offline/' + user.id
                 HTTP.post(url);
-            })
-            .listen('UserIsOnline', (e) => {
-                console.log('Online', e);
-            })
-            .listen('UserIsOffline', (e) => {
-                console.log('Offline',e);
             });
     }
 }

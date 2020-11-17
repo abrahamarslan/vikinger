@@ -11,7 +11,7 @@
                         <!-- USER STATUS AVATAR -->
                         <div class="user-status-avatar">
                             <!-- USER AVATAR -->
-                            <div class="user-avatar small no-outline online">
+                            <div class="user-avatar small no-outline" :class="member.online_status==='Online' ? 'online' : 'offline'">
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
@@ -158,7 +158,7 @@
                     <!-- USER STATUS AVATAR -->
                     <div class="user-status-avatar">
                         <!-- USER AVATAR -->
-                        <div class="user-avatar small no-outline online">
+                        <div class="user-avatar small no-outline" :class="currentUser.online_status==='Online' ? 'online' : 'offline'">
                             <!-- USER AVATAR CONTENT -->
                             <div class="user-avatar-content">
                                 <!-- HEXAGON -->
@@ -293,6 +293,7 @@
 <script>
 import ChatService from "../ChatService";
 import VueChatScroll from 'vue-chat-scroll';
+import _ from 'lodash';
 Vue.use(VueChatScroll);
 export default {
     name: "ChatBar",
@@ -313,6 +314,30 @@ export default {
     methods: {
         clearData() {
             this.chatMessage = '';
+        },
+
+        getOnlineStatus() {
+          let that = this;
+          Echo.join('online-now')
+              .listen('UserIsOnline', (e) => {
+                  let indexOfMember = _.findIndex(that.members, (m) => {return m.id === e.user.id});
+                  if(indexOfMember !== -1) {
+                      that.$set(that.members[indexOfMember], 'online_status', 'Online');
+                  }
+                  if(that.currentUser.id === e.user.id) {
+                      that.currentUser.online_status = 'Online';
+                  }
+              })
+              .listen('UserIsOffline', (e) => {
+                  let indexOfMember = _.findIndex(that.members, (m) => {return m.id === e.user.id});
+                  if(indexOfMember !== -1) {
+                      e.user.online_status = 'Offline';
+                      that.$set(that.members[indexOfMember], 'online_status', 'Offline');
+                  }
+                  if(that.currentUser.id === e.user.id) {
+                      that.currentUser.online_status = 'Offline';
+                  }
+              });
         },
 
         getSyncedUserChats() {
@@ -370,6 +395,7 @@ export default {
         },
         leaveAllSubscriptions() {
           window.Echo.leave(`cto-${this.user.id}`);
+            window.Echo.leave(`online-now`);
         },
         leaveCurrentUser() {
             if(this.isSubscribed) {
@@ -403,7 +429,7 @@ export default {
         this.leaveAllSubscriptions();
         this.selectChat(this.members[0]);
         ChatService.getOnlineUsers();
-        //this.syncIncomingEvents();
+        this.getOnlineStatus();
     }
 }
 </script>

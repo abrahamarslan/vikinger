@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class UserOfflineController extends DefaultController
 {
     public function __invoke(User $user) {
-        $user->online_status = 'Online';
+        $user->online_status = 'Offline';
         $user->save();
         broadcast(new UserIsOffline($user));
     }

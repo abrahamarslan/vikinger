@@ -22028,6 +22028,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ChatService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ChatService */ "./resources/js/ChatService.js");
 /* harmony import */ var vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-chat-scroll */ "./node_modules/vue-chat-scroll/dist/vue-chat-scroll.js");
 /* harmony import */ var vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
 //
 //
 //
@@ -22320,6 +22322,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
@@ -22342,6 +22345,35 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
   methods: {
     clearData: function clearData() {
       this.chatMessage = '';
+    },
+    getOnlineStatus: function getOnlineStatus() {
+      var that = this;
+      Echo.join('online-now').listen('UserIsOnline', function (e) {
+        var indexOfMember = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.findIndex(that.members, function (m) {
+          return m.id === e.user.id;
+        });
+
+        if (indexOfMember !== -1) {
+          that.$set(that.members[indexOfMember], 'online_status', 'Online');
+        }
+
+        if (that.currentUser.id === e.user.id) {
+          that.currentUser.online_status = 'Online';
+        }
+      }).listen('UserIsOffline', function (e) {
+        var indexOfMember = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.findIndex(that.members, function (m) {
+          return m.id === e.user.id;
+        });
+
+        if (indexOfMember !== -1) {
+          e.user.online_status = 'Offline';
+          that.$set(that.members[indexOfMember], 'online_status', 'Offline');
+        }
+
+        if (that.currentUser.id === e.user.id) {
+          that.currentUser.online_status = 'Offline';
+        }
+      });
     },
     getSyncedUserChats: function getSyncedUserChats() {
       var that = this;
@@ -22396,6 +22428,7 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
     },
     leaveAllSubscriptions: function leaveAllSubscriptions() {
       window.Echo.leave("cto-".concat(this.user.id));
+      window.Echo.leave("online-now");
     },
     leaveCurrentUser: function leaveCurrentUser() {
       if (this.isSubscribed) {
@@ -22431,7 +22464,8 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
   mounted: function mounted() {
     this.leaveAllSubscriptions();
     this.selectChat(this.members[0]);
-    _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].getOnlineUsers(); //this.syncIncomingEvents();
+    _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].getOnlineUsers();
+    this.getOnlineStatus();
   }
 });
 
@@ -47696,7 +47730,13 @@ var render = function() {
                   _c("div", { staticClass: "user-status-avatar" }, [
                     _c(
                       "div",
-                      { staticClass: "user-avatar small no-outline online" },
+                      {
+                        staticClass: "user-avatar small no-outline",
+                        class:
+                          member.online_status === "Online"
+                            ? "online"
+                            : "offline"
+                      },
                       [
                         _c("div", { staticClass: "user-avatar-content" }, [
                           _c("div", {
@@ -47805,7 +47845,13 @@ var render = function() {
                 _c("div", { staticClass: "user-status-avatar" }, [
                   _c(
                     "div",
-                    { staticClass: "user-avatar small no-outline online" },
+                    {
+                      staticClass: "user-avatar small no-outline",
+                      class:
+                        _vm.currentUser.online_status === "Online"
+                          ? "online"
+                          : "offline"
+                    },
                     [
                       _c("div", { staticClass: "user-avatar-content" }, [
                         _c("img", {
@@ -65644,14 +65690,15 @@ __webpack_require__.r(__webpack_exports__);
   Get online users
    */
   getOnlineUsers: function getOnlineUsers() {
+    var headers = {
+      'Content-Type': 'application/json'
+    };
     Echo.join('online-now').joining(function (user) {
-      console.log('Joined', user);
+      var url = '/chat/online/' + user.id;
+      _axios__WEBPACK_IMPORTED_MODULE_0__["HTTP"].post(url);
     }).leaving(function (user) {
-      console.log('Leaving', user);
-    }).listen('UserIsOnline', function (e) {
-      console.log('Online', e);
-    }).listen('UserIsOffline', function (e) {
-      console.log('Offline', e);
+      var url = '/chat/offline/' + user.id;
+      _axios__WEBPACK_IMPORTED_MODULE_0__["HTTP"].post(url);
     });
   }
 });
