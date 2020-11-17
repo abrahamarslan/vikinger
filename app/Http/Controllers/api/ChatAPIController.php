@@ -80,6 +80,7 @@ class ChatAPIController extends DefaultController
                 $eventData = ['message' => $message, 'from_id' => $fromID, 'to_id' => $toID];
                 event(new ChatCreated($eventData));
                 broadcast(new ChatCreatedBar($eventData))->toOthers();
+                broadcast(new MessageToUser($eventData))->toOthers();
                 return response()->json($data,200);
             } else {
                 $data = [

@@ -22430,7 +22430,8 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
   },
   mounted: function mounted() {
     this.leaveAllSubscriptions();
-    this.selectChat(this.members[0]); //this.syncIncomingEvents();
+    this.selectChat(this.members[0]);
+    _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].getOnlineUsers(); //this.syncIncomingEvents();
   }
 });
 
@@ -65637,6 +65638,21 @@ __webpack_require__.r(__webpack_exports__);
       console.log(err);
       console.log('Error in getting data');
     });
+  },
+
+  /*
+  Get online users
+   */
+  getOnlineUsers: function getOnlineUsers() {
+    Echo.join('online-now').joining(function (user) {
+      console.log('Joined', user);
+    }).leaving(function (user) {
+      console.log('Leaving', user);
+    }).listen('UserIsOnline', function (e) {
+      console.log('Online', e);
+    }).listen('UserIsOffline', function (e) {
+      console.log('Offline', e);
+    });
   }
 });
 
@@ -65698,6 +65714,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 var HTTP = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
+  //prod
+  //baseURL: `http://172.105.56.201/v1-api/`,
+  //dev
   baseURL: "http://vik.com/v1-api/"
 });
 

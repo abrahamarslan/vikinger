@@ -314,6 +314,7 @@ export default {
         clearData() {
             this.chatMessage = '';
         },
+
         getSyncedUserChats() {
             let that = this;
             var channel = window.Echo.private(`ccr-bar-${this.currentUser.id}-${this.user.id}`)
@@ -401,6 +402,7 @@ export default {
     mounted() {
         this.leaveAllSubscriptions();
         this.selectChat(this.members[0]);
+        ChatService.getOnlineUsers();
         //this.syncIncomingEvents();
     }
 }

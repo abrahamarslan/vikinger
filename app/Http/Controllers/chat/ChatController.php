@@ -4,6 +4,7 @@ namespace App\Http\Controllers\chat;
 
 use App\Events\ChatCreated;
 use App\Events\ChatInitiationRequest;
+use App\Events\UserIsOnline;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DefaultController;
 use App\Message;
@@ -21,9 +22,14 @@ class ChatController extends DefaultController
      */
     public function index() {
         if($user = Sentinel::check()) {
-            $this->data['user'] = $user;
-            $this->data['members'] = User::where('id', '!=', $user->id)->get();
-            return view('front.user.timeline', $this->data);
+            /*
+             * Update user online status
+             */
+            if(\GeneralHelper::markOnlineStatus($user->id, 'Online')) {
+                $this->data['user'] = $user;
+                $this->data['members'] = User::where('id', '!=', $user->id)->get();
+                return view('front.user.timeline', $this->data);
+            }
         }
         else {
             abort(404);

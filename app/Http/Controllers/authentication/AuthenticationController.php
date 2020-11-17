@@ -172,6 +172,9 @@ class AuthenticationController extends DefaultController
 
     public function getLogout() {
         try {
+            if($user = Sentinel::check()) {
+                \GeneralHelper::markOnlineStatus($user->id, 'Offline');
+            }
             // Log the user out
             Sentinel::logout();
             // Redirect to the login page

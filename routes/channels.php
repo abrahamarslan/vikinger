@@ -29,3 +29,9 @@ Broadcast::channel('ccr-{fromID}-{toID}', function () {
 Broadcast::channel('cto-{toID}', function () {
     return (int) \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()->id != null;
 });
+
+Broadcast::channel('online-now', function ($user) {
+    if($userLoggedIn = \Cartalyst\Sentinel\Laravel\Facades\Sentinel::check()) {
+        return $userLoggedIn;
+    }
+});
