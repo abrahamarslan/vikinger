@@ -32,8 +32,9 @@
 
 @include('_partials.xs_nav')
 
+@if($showChatBar)
 <chat-bar :user='@json($user)' :members='@json($members)'></chat-bar>
-
+@endif
 @include('_partials.header')
 
 @include('_partials.floaty_bar')

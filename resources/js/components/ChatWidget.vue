@@ -185,7 +185,7 @@
                         <!-- USER STATUS AVATAR -->
                         <div class="user-status-avatar">
                             <!-- USER AVATAR -->
-                            <div class="user-avatar small no-outline online">
+                            <div class="user-avatar small no-outline" :class="currentUser.online_status==='Online' ? 'online' : 'offline'">
                                 <!-- USER AVATAR CONTENT -->
                                 <div class="user-avatar-content">
                                     <!-- HEXAGON -->
@@ -251,8 +251,9 @@
 
                 <!-- CHAT WIDGET CONVERSATION -->
                 <div class="chat-widget-conversation" data-simplebar v-chat-scroll="{smooth: true}">
+                    <transition-group name="conversation" tag="p">
                     <!-- CHAT WIDGET SPEAKER -->
-                    <div class="chat-widget-speaker" v-for="(message,i) in messages" :key="i" :class="message.from_id === user.id ? 'right' : 'left'">
+                    <div class="chat-widget-speaker" v-for="(message,i) in messages" :key="message.id" :class="message.from_id === user.id ? 'right' : 'left'" v-if="(message.from_id !== user.id) || (message.from_id === user.id && message.deleted_by_me === 'False')">
                         <!-- CHAT WIDGET SPEAKER AVATAR -->
                         <div class="chat-widget-speaker-avatar">
                             <!-- USER AVATAR -->
@@ -270,7 +271,11 @@
                         <!-- /CHAT WIDGET SPEAKER AVATAR -->
 
                         <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                        <p class="chat-widget-speaker-message">{{ message.message }}</p>
+                        <div class="message" :class="message.from_id === user.id ? 'from_me' : ''">
+                            <span class="delete-message fa fa-trash" @click="softDelete(message)"></span>
+                            <p class="chat-widget-speaker-message">{{ message.message }}</p>
+                        </div>
+                        
                         <!-- /CHAT WIDGET SPEAKER MESSAGE -->
 
                         <!-- CHAT WIDGET SPEAKER TIMESTAMP -->
@@ -278,7 +283,7 @@
                         <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
                     </div>
                     <!-- /CHAT WIDGET SPEAKER -->
-
+                    </transition-group>
                 </div>
                 <!-- /CHAT WIDGET CONVERSATION -->
 
@@ -347,6 +352,7 @@
 <script>
 import ChatService from "../ChatService";
 import VueChatScroll from 'vue-chat-scroll';
+import _ from 'lodash';
 Vue.use(VueChatScroll);
 export default {
     name: "ChatWidget",
@@ -367,6 +373,29 @@ export default {
     methods: {
         clearData() {
           this.chatMessage = '';
+        },
+        getOnlineStatus() {
+            let that = this;
+            Echo.join('online-now')
+                .listen('UserIsOnline', (e) => {
+                    let indexOfMember = _.findIndex(that.members, (m) => {return m.id === e.user.id});
+                    if(indexOfMember !== -1) {
+                        that.$set(that.members[indexOfMember], 'online_status', 'Online');
+                    }
+                    if(that.currentUser.id === e.user.id) {
+                        that.currentUser.online_status = 'Online';
+                    }
+                })
+                .listen('UserIsOffline', (e) => {
+                    let indexOfMember = _.findIndex(that.members, (m) => {return m.id === e.user.id});
+                    if(indexOfMember !== -1) {
+                        e.user.online_status = 'Offline';
+                        that.$set(that.members[indexOfMember], 'online_status', 'Offline');
+                    }
+                    if(that.currentUser.id === e.user.id) {
+                        that.currentUser.online_status = 'Offline';
+                    }
+                });
         },
         getSyncedUserChats() {
             let that = this;
@@ -390,12 +419,22 @@ export default {
                if(e.message.from_id === that.currentUser.id) {
                    // Already handled
                }  else {
-                   let currentUnreadChats = parseInt(document.getElementById('unread-'+e.message.from_id).innerText);
-                   console.log(currentUnreadChats);
-                   currentUnreadChats += 1;
-                   document.getElementById('unread-'+e.message.from_id).innerHTML = currentUnreadChats;
+                   ChatService.updateUnreadChats(e.message.from_id);
                }
             });
+        },
+        softDelete(message) {
+            ChatService.softDelete(message.id)
+            .then(response => {
+                        if(response.code === 200) {
+                            this.messages.splice(this.messages.indexOf(message), 1);
+                        } else {
+                            alert('Some error occurred');
+                        }                        
+                    }).catch(error => {
+                    alert('Error in fetching data');
+                    console.log(error);
+                });
         },
         postChat() {
             if(this.chatMessage!=='') {
@@ -416,6 +455,10 @@ export default {
             }
 
         },
+        leaveAllSubscriptions() {
+            window.Echo.leave(`cto-${this.user.id}`);
+            window.Echo.leave(`online-now`);
+        },
         leaveCurrentUser() {
             if(this.isSubscribed) {
                 window.Echo.leaveChannel(`ccr-${this.currentUser.id}-${this.user.id}`);
@@ -432,6 +475,7 @@ export default {
                 ChatService.getUserChats({'from_id': this.currentUser.id, 'to_id': this.user.id})
                     .then(response => {
                         this.messages = response.data.chats;
+                        ChatService.updateUnreadChats(this.currentUser.id, true);
                     }).catch(error => {
                     alert('Error in fetching data');
                     console.log(error);
@@ -446,7 +490,11 @@ export default {
       }
     },
     mounted() {
+        this.leaveAllSubscriptions();
         this.selectChat(this.members[0]);
+        ChatService.getOnlineUsers();
+        this.getOnlineStatus();
+        this.syncIncomingEvents();
     }
 }
 </script>
@@ -457,4 +505,23 @@ export default {
         box-shadow: none;
         cursor: not-allowed;
     }
+    .delete-message {
+        font-size: smaller;
+        color: #808080;
+        margin-right: 10px;
+        display: none;
+    }
+
+    .from_me:hover .delete-message {
+        display: inline-block;
+    }
+    .conversation-leave-active {
+        transition: all 1s;
+    }
+    .conversation-leave-to {
+        opacity:0;
+        transform: translateY(30px);
+    }
+
+    
 </style>

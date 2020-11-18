@@ -14,6 +14,7 @@ class DefaultController extends Controller
     public function __construct()
     {
         $this->data = array();
+        $this->data['showChatBar'] = true;
         $this->messageBag = new MessageBag;
     }
 }

@@ -22322,6 +22322,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -22375,11 +22382,24 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
         }
       });
     },
+    softDelete: function softDelete(message) {
+      var _this = this;
+
+      _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].softDelete(message.id).then(function (response) {
+        if (response.code === 200) {
+          _this.messages.splice(_this.messages.indexOf(message), 1);
+        } else {
+          alert('Some error occurred');
+        }
+      })["catch"](function (error) {
+        alert('Error in fetching data');
+        console.log(error);
+      });
+    },
     getSyncedUserChats: function getSyncedUserChats() {
       var that = this;
       var channel = window.Echo["private"]("ccr-bar-".concat(this.currentUser.id, "-").concat(this.user.id)).listen('ChatCreatedBar', function (e) {
-        that.isSubscribed = true;
-        console.log('Event', e); //If the current window open is the fromID
+        that.isSubscribed = true; //If the current window open is the fromID
 
         if (e.message.from_id === that.currentUser.id) {
           var hasMessage = that.messages.filter(function (m) {
@@ -22399,15 +22419,12 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
       var syncedEvents = window.Echo["private"]("cto-".concat(this.user.id)).listen('MessageToUser', function (e) {
         if (e.message.from_id === that.currentUser.id) {// Already handled
         } else {
-          var currentUnreadChats = parseInt(document.getElementById('unread-' + e.message.from_id).innerText);
-          console.log(currentUnreadChats);
-          currentUnreadChats += 1;
-          document.getElementById('unread-' + e.message.from_id).innerHTML = currentUnreadChats;
+          _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].updateUnreadChats(e.message.from_id);
         }
       });
     },
     postChat: function postChat() {
-      var _this = this;
+      var _this2 = this;
 
       if (this.chatMessage !== '') {
         var data = {
@@ -22417,9 +22434,9 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
         };
         console.log('Sending data', data);
         _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].postChat(data).then(function (response) {
-          _this.messages.push(response.data);
+          _this2.messages.push(response.data);
 
-          _this.clearData();
+          _this2.clearData();
         })["catch"](function (error) {
           alert('Error in fetching data');
           console.log(error);
@@ -22436,7 +22453,7 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
       }
     },
     selectChat: function selectChat(member) {
-      var _this2 = this;
+      var _this3 = this;
 
       if (member) {
         //Leave current chat subscription event
@@ -22448,7 +22465,8 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
           'from_id': this.currentUser.id,
           'to_id': this.user.id
         }).then(function (response) {
-          _this2.messages = response.data.chats;
+          _this3.messages = response.data.chats;
+          _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].updateUnreadChats(_this3.currentUser.id, true);
         })["catch"](function (error) {
           alert('Error in fetching data');
           console.log(error);
@@ -22466,6 +22484,7 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
     this.selectChat(this.members[0]);
     _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].getOnlineUsers();
     this.getOnlineStatus();
+    this.syncIncomingEvents();
   }
 });
 
@@ -22483,6 +22502,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ChatService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ChatService */ "./resources/js/ChatService.js");
 /* harmony import */ var vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-chat-scroll */ "./node_modules/vue-chat-scroll/dist/vue-chat-scroll.js");
 /* harmony import */ var vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
 //
 //
 //
@@ -22829,6 +22850,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+
 
 
 Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
@@ -22852,6 +22879,35 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
     clearData: function clearData() {
       this.chatMessage = '';
     },
+    getOnlineStatus: function getOnlineStatus() {
+      var that = this;
+      Echo.join('online-now').listen('UserIsOnline', function (e) {
+        var indexOfMember = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.findIndex(that.members, function (m) {
+          return m.id === e.user.id;
+        });
+
+        if (indexOfMember !== -1) {
+          that.$set(that.members[indexOfMember], 'online_status', 'Online');
+        }
+
+        if (that.currentUser.id === e.user.id) {
+          that.currentUser.online_status = 'Online';
+        }
+      }).listen('UserIsOffline', function (e) {
+        var indexOfMember = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.findIndex(that.members, function (m) {
+          return m.id === e.user.id;
+        });
+
+        if (indexOfMember !== -1) {
+          e.user.online_status = 'Offline';
+          that.$set(that.members[indexOfMember], 'online_status', 'Offline');
+        }
+
+        if (that.currentUser.id === e.user.id) {
+          that.currentUser.online_status = 'Offline';
+        }
+      });
+    },
     getSyncedUserChats: function getSyncedUserChats() {
       var that = this;
       var channel = window.Echo["private"]("ccr-".concat(this.currentUser.id, "-").concat(this.user.id)).listen('ChatCreated', function (e) {
@@ -22871,15 +22927,26 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
       var syncedEvents = window.Echo["private"]("cto-".concat(this.user.id)).listen('MessageToUser', function (e) {
         if (e.message.from_id === that.currentUser.id) {// Already handled
         } else {
-          var currentUnreadChats = parseInt(document.getElementById('unread-' + e.message.from_id).innerText);
-          console.log(currentUnreadChats);
-          currentUnreadChats += 1;
-          document.getElementById('unread-' + e.message.from_id).innerHTML = currentUnreadChats;
+          _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].updateUnreadChats(e.message.from_id);
         }
       });
     },
-    postChat: function postChat() {
+    softDelete: function softDelete(message) {
       var _this = this;
+
+      _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].softDelete(message.id).then(function (response) {
+        if (response.code === 200) {
+          _this.messages.splice(_this.messages.indexOf(message), 1);
+        } else {
+          alert('Some error occurred');
+        }
+      })["catch"](function (error) {
+        alert('Error in fetching data');
+        console.log(error);
+      });
+    },
+    postChat: function postChat() {
+      var _this2 = this;
 
       if (this.chatMessage !== '') {
         var data = {
@@ -22889,14 +22956,18 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
         };
         console.log('Sending data', data);
         _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].postChat(data).then(function (response) {
-          _this.messages.push(response.data);
+          _this2.messages.push(response.data);
 
-          _this.clearData();
+          _this2.clearData();
         })["catch"](function (error) {
           alert('Error in fetching data');
           console.log(error);
         });
       }
+    },
+    leaveAllSubscriptions: function leaveAllSubscriptions() {
+      window.Echo.leave("cto-".concat(this.user.id));
+      window.Echo.leave("online-now");
     },
     leaveCurrentUser: function leaveCurrentUser() {
       if (this.isSubscribed) {
@@ -22904,7 +22975,7 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
       }
     },
     selectChat: function selectChat(member) {
-      var _this2 = this;
+      var _this3 = this;
 
       if (member) {
         //Leave current chat subscription event
@@ -22917,7 +22988,8 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
           'from_id': this.currentUser.id,
           'to_id': this.user.id
         }).then(function (response) {
-          _this2.messages = response.data.chats;
+          _this3.messages = response.data.chats;
+          _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].updateUnreadChats(_this3.currentUser.id, true);
         })["catch"](function (error) {
           alert('Error in fetching data');
           console.log(error);
@@ -22931,7 +23003,11 @@ Vue.use(vue_chat_scroll__WEBPACK_IMPORTED_MODULE_1___default.a);
     }
   },
   mounted: function mounted() {
+    this.leaveAllSubscriptions();
     this.selectChat(this.members[0]);
+    _ChatService__WEBPACK_IMPORTED_MODULE_0__["default"].getOnlineUsers();
+    this.getOnlineStatus();
+    this.syncIncomingEvents();
   }
 });
 
@@ -23056,7 +23132,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nbutton[data-v-390a7580]:disabled, button[disabled][data-v-390a7580], button[data-v-390a7580]:disabled:hover, button[disabled][data-v-390a7580]:hover {\n    background-color: dimgrey;\n    box-shadow: none;\n    cursor: not-allowed;\n}\n", ""]);
+exports.push([module.i, "\nbutton[data-v-390a7580]:disabled, button[disabled][data-v-390a7580], button[data-v-390a7580]:disabled:hover, button[disabled][data-v-390a7580]:hover {\n    background-color: dimgrey;\n    box-shadow: none;\n    cursor: not-allowed;\n}\n.delete-message[data-v-390a7580] {\n        font-size: smaller;\n        color: #808080;\n        margin-right: 5px;\n        display: none;\n}\n.from_me:hover .delete-message[data-v-390a7580] {\n        display: inline-block;\n}\n.conversation-leave-active[data-v-390a7580] {\n        transition: all 1s;\n}\n.conversation-leave-to[data-v-390a7580] {\n        opacity:0;\n        transform: translateY(30px);\n}\n\n", ""]);
 
 // exports
 
@@ -23075,7 +23151,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nbutton[data-v-dfd73332]:disabled, button[disabled][data-v-dfd73332], button[data-v-dfd73332]:disabled:hover, button[disabled][data-v-dfd73332]:hover {\n    background-color: dimgrey;\n    box-shadow: none;\n    cursor: not-allowed;\n}\n", ""]);
+exports.push([module.i, "\nbutton[data-v-dfd73332]:disabled, button[disabled][data-v-dfd73332], button[data-v-dfd73332]:disabled:hover, button[disabled][data-v-dfd73332]:hover {\n    background-color: dimgrey;\n    box-shadow: none;\n    cursor: not-allowed;\n}\n.delete-message[data-v-dfd73332] {\n    font-size: smaller;\n    color: #808080;\n    margin-right: 10px;\n    display: none;\n}\n.from_me:hover .delete-message[data-v-dfd73332] {\n    display: inline-block;\n}\n.conversation-leave-active[data-v-dfd73332] {\n    transition: all 1s;\n}\n.conversation-leave-to[data-v-dfd73332] {\n    opacity:0;\n    transform: translateY(30px);\n}\n\n\n", ""]);
 
 // exports
 
@@ -47903,58 +47979,108 @@ var render = function() {
                 staticClass: "chat-widget-conversation",
                 attrs: { "data-simplebar": "" }
               },
-              _vm._l(_vm.messages, function(message, i) {
-                return _c(
-                  "div",
-                  {
-                    key: i,
-                    staticClass: "chat-widget-speaker",
-                    class: message.from_id === _vm.user.id ? "right" : "left"
-                  },
-                  [
-                    message.from_id === _vm.currentUser.id
+              [
+                _c(
+                  "transition-group",
+                  { attrs: { name: "conversation", tag: "p" } },
+                  _vm._l(_vm.messages, function(message, i) {
+                    return message.from_id !== _vm.user.id ||
+                      (message.from_id === _vm.user.id &&
+                        message.deleted_by_me === "False")
                       ? _c(
                           "div",
-                          { staticClass: "chat-widget-speaker-avatar" },
+                          {
+                            key: message.id,
+                            staticClass: "chat-widget-speaker",
+                            class:
+                              message.from_id === _vm.user.id ? "right" : "left"
+                          },
                           [
+                            message.from_id === _vm.currentUser.id
+                              ? _c(
+                                  "div",
+                                  { staticClass: "chat-widget-speaker-avatar" },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "user-avatar tiny no-border"
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass: "user-avatar-content"
+                                          },
+                                          [
+                                            _c("div", {
+                                              staticClass:
+                                                "hexagon-image-24-26",
+                                              attrs: {
+                                                "data-src":
+                                                  message.from_id ===
+                                                  _vm.user.id
+                                                    ? _vm.user.thumbnail
+                                                    : _vm.currentUser.thumbnail
+                                              }
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
                             _c(
                               "div",
-                              { staticClass: "user-avatar tiny no-border" },
+                              {
+                                staticClass: "message",
+                                class:
+                                  message.from_id === _vm.user.id
+                                    ? "from_me"
+                                    : ""
+                              },
                               [
+                                _c("span", {
+                                  staticClass: "delete-message fa fa-trash",
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.softDelete(message)
+                                    }
+                                  }
+                                }),
+                                _vm._v(" "),
                                 _c(
-                                  "div",
-                                  { staticClass: "user-avatar-content" },
-                                  [
-                                    _c("div", {
-                                      staticClass: "hexagon-image-24-26",
-                                      attrs: {
-                                        "data-src":
-                                          message.from_id === _vm.user.id
-                                            ? _vm.user.thumbnail
-                                            : _vm.currentUser.thumbnail
-                                      }
-                                    })
-                                  ]
+                                  "p",
+                                  {
+                                    staticClass: "chat-widget-speaker-message"
+                                  },
+                                  [_vm._v(_vm._s(message.message))]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "chat-widget-speaker-timestamp" },
+                              [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm._f("moment")(message.created_at, "from")
+                                  )
                                 )
                               ]
                             )
                           ]
                         )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "chat-widget-speaker-message" }, [
-                      _vm._v(_vm._s(message.message))
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "chat-widget-speaker-timestamp" }, [
-                      _vm._v(
-                        _vm._s(_vm._f("moment")(message.created_at, "from"))
-                      )
-                    ])
-                  ]
+                      : _vm._e()
+                  }),
+                  0
                 )
-              }),
-              0
+              ],
+              1
             ),
             _vm._v(" "),
             _c(
@@ -48279,7 +48405,13 @@ var render = function() {
                 _c("div", { staticClass: "user-status-avatar" }, [
                   _c(
                     "div",
-                    { staticClass: "user-avatar small no-outline online" },
+                    {
+                      staticClass: "user-avatar small no-outline",
+                      class:
+                        _vm.currentUser.online_status === "Online"
+                          ? "online"
+                          : "offline"
+                    },
                     [
                       _c("div", { staticClass: "user-avatar-content" }, [
                         _c("img", {
@@ -48335,44 +48467,99 @@ var render = function() {
                 staticClass: "chat-widget-conversation",
                 attrs: { "data-simplebar": "" }
               },
-              _vm._l(_vm.messages, function(message, i) {
-                return _c(
-                  "div",
-                  {
-                    key: i,
-                    staticClass: "chat-widget-speaker",
-                    class: message.from_id === _vm.user.id ? "right" : "left"
-                  },
-                  [
-                    _c("div", { staticClass: "chat-widget-speaker-avatar" }, [
-                      _c("div", { staticClass: "user-avatar tiny no-border" }, [
-                        _c("div", { staticClass: "user-avatar-content" }, [
-                          _c("div", {
-                            staticClass: "hexagon-image-24-26",
-                            attrs: {
-                              "data-src":
-                                message.from_id === _vm.user.id
-                                  ? _vm.user.thumbnail
-                                  : _vm.currentUser.thumbnail
-                            }
-                          })
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "chat-widget-speaker-message" }, [
-                      _vm._v(_vm._s(message.message))
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "chat-widget-speaker-timestamp" }, [
-                      _vm._v(
-                        _vm._s(_vm._f("moment")(message.created_at, "from"))
-                      )
-                    ])
-                  ]
+              [
+                _c(
+                  "transition-group",
+                  { attrs: { name: "conversation", tag: "p" } },
+                  _vm._l(_vm.messages, function(message, i) {
+                    return message.from_id !== _vm.user.id ||
+                      (message.from_id === _vm.user.id &&
+                        message.deleted_by_me === "False")
+                      ? _c(
+                          "div",
+                          {
+                            key: message.id,
+                            staticClass: "chat-widget-speaker",
+                            class:
+                              message.from_id === _vm.user.id ? "right" : "left"
+                          },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "chat-widget-speaker-avatar" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "user-avatar tiny no-border" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "user-avatar-content" },
+                                      [
+                                        _c("div", {
+                                          staticClass: "hexagon-image-24-26",
+                                          attrs: {
+                                            "data-src":
+                                              message.from_id === _vm.user.id
+                                                ? _vm.user.thumbnail
+                                                : _vm.currentUser.thumbnail
+                                          }
+                                        })
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "message",
+                                class:
+                                  message.from_id === _vm.user.id
+                                    ? "from_me"
+                                    : ""
+                              },
+                              [
+                                _c("span", {
+                                  staticClass: "delete-message fa fa-trash",
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.softDelete(message)
+                                    }
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "p",
+                                  {
+                                    staticClass: "chat-widget-speaker-message"
+                                  },
+                                  [_vm._v(_vm._s(message.message))]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "chat-widget-speaker-timestamp" },
+                              [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm._f("moment")(message.created_at, "from")
+                                  )
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      : _vm._e()
+                  }),
+                  0
                 )
-              }),
-              0
+              ],
+              1
             ),
             _vm._v(" "),
             _c(
@@ -65685,6 +65872,22 @@ __webpack_require__.r(__webpack_exports__);
       console.log('Error in getting data');
     });
   },
+  updateUnreadChats: function updateUnreadChats(userID) {
+    var reset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var currentUnreadChats = parseInt(document.getElementById('unread-' + userID).innerText);
+
+    if (isNaN(currentUnreadChats)) {
+      currentUnreadChats = 0;
+    }
+
+    if (!reset) {
+      currentUnreadChats += 1;
+    } else {
+      currentUnreadChats = 0;
+    }
+
+    document.getElementById('unread-' + userID).innerHTML = currentUnreadChats;
+  },
 
   /*
   Get online users
@@ -65699,6 +65902,24 @@ __webpack_require__.r(__webpack_exports__);
     }).leaving(function (user) {
       var url = '/chat/offline/' + user.id;
       _axios__WEBPACK_IMPORTED_MODULE_0__["HTTP"].post(url);
+    });
+  },
+  softDelete: function softDelete(messageID) {
+    var headers = {
+      'Content-Type': 'application/json'
+    };
+    return new Promise(function (resolve, reject) {
+      var url = '/chat/destroy/' + messageID;
+      _axios__WEBPACK_IMPORTED_MODULE_0__["HTTP"].post(url).then(function (response) {
+        if (response.data.code === 200) {
+          resolve(response.data);
+        } else {
+          reject(response.data.message);
+        }
+      });
+    })["catch"](function (err) {
+      console.log(err);
+      console.log('Error in getting data');
     });
   }
 });

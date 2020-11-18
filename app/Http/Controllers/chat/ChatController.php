@@ -28,6 +28,7 @@ class ChatController extends DefaultController
             if(\GeneralHelper::markOnlineStatus($user->id, 'Online')) {
                 $this->data['user'] = $user;
                 $this->data['members'] = User::where('id', '!=', $user->id)->get();
+                $this->data['showChatBar'] = true;
                 return view('front.user.timeline', $this->data);
             }
         }

@@ -65,6 +65,19 @@ export default {
         })
     },
 
+    updateUnreadChats(userID, reset = false) {
+        let currentUnreadChats = parseInt(document.getElementById('unread-'+userID).innerText);
+        if(isNaN(currentUnreadChats)) {
+            currentUnreadChats = 0;
+        }
+        if(!reset) {
+            currentUnreadChats += 1;
+        } else {
+            currentUnreadChats = 0;
+        }
+        document.getElementById('unread-'+userID).innerHTML = currentUnreadChats;
+    },
+
     /*
     Get online users
      */
@@ -81,5 +94,25 @@ export default {
                 let url = '/chat/offline/' + user.id
                 HTTP.post(url);
             });
+    },
+
+    softDelete(messageID) {
+        const headers = {
+            'Content-Type': 'application/json'
+        };
+        return new Promise((resolve, reject) => {
+            let url = '/chat/destroy/'+messageID;
+            HTTP.post(url)
+                .then((response) => {
+                    if(response.data.code===200) {
+                        resolve(response.data);
+                    } else {
+                        reject(response.data.message);
+                    }
+                })
+        }).catch(err => {
+            console.log(err);
+            console.log('Error in getting data');
+        })
     }
 }

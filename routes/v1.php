@@ -16,6 +16,9 @@ Route::group(array('prefix' => 'v1-api', 'middleware' => ['authentication','perm
 
         Route::post('online/{user}', array('uses'=>'api\UserOnlineController', 'as'=>'chat.online'));
         Route::post('offline/{user}', array('uses'=>'api\UserOfflineController', 'as'=>'chat.online'));
+
+        Route::post('destroy/{message}', array('uses'=>'api\ChatAPIController@destroy', 'as'=>'chat.destroy'));
+
     });
 
 });

@@ -225,8 +225,10 @@
 
             <!-- CHAT WIDGET CONVERSATION -->
             <div class="chat-widget-conversation" data-simplebar v-chat-scroll="{smooth: true}">
+                <transition-group name="conversation" tag="p">
+
                 <!-- CHAT WIDGET SPEAKER -->
-                <div class="chat-widget-speaker" v-for="(message,i) in messages" :key="i" :class="message.from_id === user.id ? 'right' : 'left'">
+                <div class="chat-widget-speaker" v-for="(message,i) in messages" :key="message.id" :class="message.from_id === user.id ? 'right' : 'left'" v-if="(message.from_id !== user.id) || (message.from_id === user.id && message.deleted_by_me === 'False')">
                     <!-- CHAT WIDGET SPEAKER AVATAR -->
                     <div class="chat-widget-speaker-avatar" v-if="message.from_id === currentUser.id">
                         <!-- USER AVATAR -->
@@ -244,7 +246,10 @@
                     <!-- /CHAT WIDGET SPEAKER AVATAR -->
 
                     <!-- CHAT WIDGET SPEAKER MESSAGE -->
-                    <p class="chat-widget-speaker-message">{{ message.message }}</p>
+                    <div class="message" :class="message.from_id === user.id ? 'from_me' : ''">
+                            <span class="delete-message fa fa-trash" @click="softDelete(message)"></span>
+                            <p class="chat-widget-speaker-message">{{ message.message }}</p>
+                    </div>
                     <!-- /CHAT WIDGET SPEAKER MESSAGE -->
 
                     <!-- CHAT WIDGET SPEAKER TIMESTAMP -->
@@ -252,6 +257,8 @@
                     <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
                 </div>
                 <!-- /CHAT WIDGET SPEAKER -->
+                </transition-group>
+
             </div>
             <!-- /CHAT WIDGET CONVERSATION -->
 
@@ -339,13 +346,24 @@ export default {
                   }
               });
         },
-
+        softDelete(message) {
+            ChatService.softDelete(message.id)
+            .then(response => {
+                        if(response.code === 200) {
+                            this.messages.splice(this.messages.indexOf(message), 1);
+                        } else {
+                            alert('Some error occurred');
+                        }                        
+                    }).catch(error => {
+                    alert('Error in fetching data');
+                    console.log(error);
+                });
+        },
         getSyncedUserChats() {
             let that = this;
             var channel = window.Echo.private(`ccr-bar-${this.currentUser.id}-${this.user.id}`)
                 .listen('ChatCreatedBar', (e) => {
                     that.isSubscribed = true;
-                    console.log('Event', e);
                     //If the current window open is the fromID
                     if(e.message.from_id === that.currentUser.id) {
                         let hasMessage = that.messages.filter(m => {
@@ -367,10 +385,7 @@ export default {
                     if(e.message.from_id === that.currentUser.id) {
                         // Already handled
                     }  else {
-                        let currentUnreadChats = parseInt(document.getElementById('unread-'+e.message.from_id).innerText);
-                        console.log(currentUnreadChats);
-                        currentUnreadChats += 1;
-                        document.getElementById('unread-'+e.message.from_id).innerHTML = currentUnreadChats;
+                        ChatService.updateUnreadChats(e.message.from_id);
                     }
                 });
         },
@@ -412,6 +427,7 @@ export default {
                 ChatService.getUserChats({'from_id': this.currentUser.id, 'to_id': this.user.id})
                     .then(response => {
                         this.messages = response.data.chats;
+                        ChatService.updateUnreadChats(this.currentUser.id, true);
                     }).catch(error => {
                     alert('Error in fetching data');
                     console.log(error);
@@ -430,6 +446,7 @@ export default {
         this.selectChat(this.members[0]);
         ChatService.getOnlineUsers();
         this.getOnlineStatus();
+        this.syncIncomingEvents();
     }
 }
 </script>
@@ -440,4 +457,22 @@ button:disabled, button[disabled], button:disabled:hover, button[disabled]:hover
     box-shadow: none;
     cursor: not-allowed;
 }
+ .delete-message {
+        font-size: smaller;
+        color: #808080;
+        margin-right: 5px;
+        display: none;
+    }
+
+    .from_me:hover .delete-message {
+        display: inline-block;
+    }
+    .conversation-leave-active {
+        transition: all 1s;
+    }
+    .conversation-leave-to {
+        opacity:0;
+        transform: translateY(30px);
+    }
+
 </style>

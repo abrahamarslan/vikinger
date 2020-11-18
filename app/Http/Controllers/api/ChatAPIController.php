@@ -101,4 +101,25 @@ class ChatAPIController extends DefaultController
             return response()->json($data,500);
         }
     }
+
+    public function destroy(Message $message) {
+        try {
+                $message->deleted_by_me = 'True';
+                $message->save();
+                $data = [
+                    'type' => 'success',
+                    'message' => 'records',
+                    'data' => [],
+                    'code' => 200
+                ];
+                return response()->json($data,200);        
+        } catch (\Exception $e) {
+            $data = [
+                'type' => 'error',
+                'message' => $e->getMessage(),
+                'data' => null,
+                'code' => 500
+            ];
+            return response()->json($data,500);        }
+    }
 }

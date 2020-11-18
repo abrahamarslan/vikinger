@@ -1,0 +1,20 @@
+[2020-11-18 14:38:47.575] [renderer1] [warning] UNRESPONSIVE extension host, 'octref.vetur' took 100% of 5298.231ms, saved PROFILE here: '/tmp/exthost-ca28b9.cpuprofile' [{"id":"octref.vetur","total":5292594,"percentage":100}]
+[2020-11-18 14:38:54.426] [renderer1] [error] Server returned 422: Error: Server returned 422
+    at Object.t.asText (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1915:111)
+    at b (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3330:620)
+    at async y._processCpuProfile (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4581:641)
+[2020-11-18 14:39:39.859] [renderer1] [warning] UNRESPONSIVE extension host, 'felixfbecker.php-intellisense' took 100% of 5523.803ms, saved PROFILE here: '/tmp/exthost-050f00.cpuprofile' [{"id":"felixfbecker.php-intellisense","total":5523638,"percentage":100}]
+[2020-11-18 14:40:31.920] [renderer1] [error] XHR failed: downloading: XHR failed
+    at file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:594:471
+[2020-11-18 14:44:08.271] [renderer1] [error] XHR failed: Error: XHR failed
+    at XMLHttpRequest.r.onerror (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:465:45)
+[2020-11-18 14:44:23.207] [renderer1] [warning] UNRESPONSIVE extension host, 'Angular.ng-template' took 99% of 492.83ms, saved PROFILE here: '/tmp/exthost-9e6332.cpuprofile' [{"id":"Angular.ng-template","total":487390,"percentage":99},{"id":"octref.vetur","total":1785,"percentage":0},{"id":"self","total":3065,"percentage":1}]
+[2020-11-18 20:24:55.205] [renderer1] [error] name must not be falsy: Error: name must not be falsy
+    at Function.validate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:510:799)
+    at new S (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:510:748)
+    at new S (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:497:187)
+    at asSymbolInformation (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:347:22)
+    at /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:336:42
+    at Array.map (<anonymous>)
+    at Object.asSymbolInformations (/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/protocolConverter.js:336:23)
+    at /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/node_modules/vscode-languageclient/lib/client.js:1002:62

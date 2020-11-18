@@ -19,6 +19,7 @@ class CreateMessagesTable extends Migration
             $table->string('event_type',255)->nullable();
             $table->enum('is_for_me',['0','1'])->nullable()->comment('0 - For me, 1 - Sent by me');
             $table->string('status',255)->nullable()->default('False');
+            $table->string('deleted_by_me',255)->nullable()->default('False');
             $table->bigInteger('chat_session')->nullable()->default(0)->comment('Chat Session ID');
             $table->bigInteger('last_session')->nullable()->default(0)->comment('Last Chat Session ID');
             $table->bigInteger('media_id')->nullable()->default(0)->comment('Media Table ID');
