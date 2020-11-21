@@ -1,0 +1,16 @@
+.blog-category {
+
+}
+
+.blog-category:before {
+    content: "";
+    display: none !important;
+}
+
+.image-spaced {
+    margin-top: 15px;
+}
+
+.hidden-row {
+    display: none !important;
+}

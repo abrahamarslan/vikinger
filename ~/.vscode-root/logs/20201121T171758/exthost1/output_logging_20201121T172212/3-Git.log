@@ -754,3 +754,157 @@ Open repository: /var/www/vik
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /var/www/vik/routes/blog.php
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git show --textconv :routes/blog.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git ls-files --stage -- /var/www/vik/routes/blog.php
+> git config --get commit.template
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git show --textconv :routes/blog.php
+> git ls-files --stage -- /var/www/vik/routes/blog.php
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git show --textconv :routes/blog.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/category/create.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/category/create.blade.php
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :routes/blog.php
+> git ls-files --stage -- /var/www/vik/routes/blog.php
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git show --textconv :routes/category.php
+> git ls-files --stage -- /var/www/vik/routes/category.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :routes/web.php
+> git ls-files --stage -- /var/www/vik/routes/web.php
+> git cat-file -s aea4290f01df4be0069987df3fbc7bef96a773d7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/category/create.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/category/create.blade.php
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :resources/views/_layouts/layout.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_layouts/layout.blade.php
+> git cat-file -s 98f083b1f6d5b119890d69d224c7a474242f4de1
+> git show --textconv :resources/views/front/category/create.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/category/create.blade.php
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :app/Http/Controllers/category/CategoryController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/category/CategoryController.php
+> git cat-file -s 89438167c0d5226aa4ebafba7b9656f8ccb47a3a
+> git check-ignore -v -z --stdin
+> git show --textconv :app/Http/Controllers/chat/ChatController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/chat/ChatController.php
+> git cat-file -s 5acb3e321a565004edeb9ce8fa13ab6b285a7808
+> git show --textconv :app/Http/Controllers/category/CategoryController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/category/CategoryController.php
+> git cat-file -s 89438167c0d5226aa4ebafba7b9656f8ccb47a3a
+> git show --textconv :app/Http/Controllers/chat/ChatController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/chat/ChatController.php
+> git cat-file -s 5acb3e321a565004edeb9ce8fa13ab6b285a7808
+> git show --textconv :app/Http/Controllers/category/CategoryController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/category/CategoryController.php
+> git cat-file -s 89438167c0d5226aa4ebafba7b9656f8ccb47a3a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

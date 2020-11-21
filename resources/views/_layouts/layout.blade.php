@@ -82,5 +82,7 @@
 <script src="{!! asset('theme/js/widget/twitter.js') !!}"></script>
 <!-- SVG icons -->
 <script src="{!! asset('theme/js/utils/svg-loader.js') !!}"></script>
+@section('after_scripts')
+@show
 </body>
 </html>
