@@ -1,0 +1,7 @@
+[2020-11-21 17:18:23.620] [sharedprocess] [info] main {"machineId":"65ec9cf43ae62cd43d6c785935021dfaad06fc54a1e64210bb1987a46c1da34b","windowId":2}
+[2020-11-21 17:19:03.631] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-11-21 17:19:15.746] [sharedprocess] [info] Deleted from disk esbenp.prettier-vscode /root/.vscode/extensions/esbenp.prettier-vscode-5.7.1
+[2020-11-21 17:19:59.575] [sharedprocess] [info] Deleted from disk angular.ng-template /root/.vscode/extensions/angular.ng-template-0.1001.1
+[2020-11-21 17:19:59.575] [sharedprocess] [info] Deleted from disk ms-azuretools.vscode-docker /root/.vscode/extensions/ms-azuretools.vscode-docker-1.7.0
+[2020-11-21 17:19:59.662] [sharedprocess] [info] Deleted from disk octref.vetur /root/.vscode/extensions/octref.vetur-0.29.1
+[2020-11-21 17:19:59.664] [sharedprocess] [info] Deleted from disk wscats.eno /root/.vscode/extensions/wscats.eno-2.3.20

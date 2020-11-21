@@ -817,3 +817,25 @@ Open repository: /var/www/vik
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git ls-files --stage -- /var/www/vik/resources/js/components/ChatBar.vue
+> git rev-parse --symbolic-full-name master@{u}
+> git cat-file -s 368ced2b986d1ee25df74162d2cbc483c11bf50f
+> git rev-list --left-right master...refs/remotes/origin/master
+> git show --textconv :resources/js/components/ChatBar.vue
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git ls-files --stage -- /var/www/vik/resources/js/components/ChatBar.vue
+> git config --get commit.template
+> git cat-file -s 368ced2b986d1ee25df74162d2cbc483c11bf50f
+> git show --textconv :resources/js/components/ChatBar.vue
