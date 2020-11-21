@@ -4,3 +4,5 @@
     at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6395)
     at SimpleURLLoaderWrapper.emit (events.js:223:5)
 [2020-11-21 17:18:53.614] [main] [info] update#setState idle
+[2020-11-21 18:50:02.923] [main] [info] update#setState checking for updates
+[2020-11-21 18:50:03.919] [main] [info] update#setState available for download
