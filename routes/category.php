@@ -5,8 +5,9 @@ use Illuminate\Support\Facades\Route;
  */
 Route::group(array('prefix' => 'category'), function () {
     Route::get('/', array('uses'=>'category\CategoryController@index', 'as'=>'category.index'));
+    Route::get('/{category}/{url?}', array('uses'=>'blog\BlogController@getBlog', 'as'=>'blog.getBlog'));
     Route::get('create', array('uses'=>'category\CategoryController@create', 'as'=>'category.create'));
-    Route::post('create', array('uses'=>'category\CategoryController@store', 'as'=>'category.store'));    
+    Route::post('create', array('uses'=>'category\CategoryController@store', 'as'=>'category.store'));
     Route::post('delete/{blog}', array('uses'=>'category\CategoryController@destroy', 'as'=>'category.destroy'));
 });
 

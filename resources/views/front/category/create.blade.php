@@ -1,7 +1,8 @@
 @extends('_layouts.layout')
-@section('title', 'Timeline')
+@section('title', 'Create Category')
 
 @section('content')
+<div class="content-grid">
 
     <!-- SECTION BANNER -->
     <div class="section-banner">
@@ -48,7 +49,7 @@
                 <!-- WIDGET BOX CONTENT -->
                 <div class="widget-box-content">
                     <!-- FORM -->
-                    {!! Form::open(['route' => 'category.store', 'method' => 'POST', 'class' => 'form', 'novalidate' => 'novalidate']) !!}
+                    {!! Form::open(['route' => 'category.store', 'method' => 'POST', 'class' => 'form', 'novalidate' => 'novalidate', 'enctype' => 'multipart/form-data' ]) !!}
                     {!! Form::token() !!}
                         <div class="form-row split hidden-row">
                             <div class="form-item">
@@ -220,7 +221,7 @@
                             <!-- FORM SELECT -->
                             <div class="form-select">
                                 <label for="category-status">Status</label>
-                                {!! Form::select('status', ['Enabled' => 'Enabled', 'Disabled' => 'Disabled'], null, ['class' => '', 'required' => 'true', 'placeholder' => 'Select status' ]) !!}
+                                {!! Form::select('status', ['True' => 'Enabled', 'False' => 'Disabled'], null, ['class' => '', 'required' => 'true', 'placeholder' => 'Select status' ]) !!}
                                 <!-- FORM SELECT ICON -->
                                 <svg class="form-select-icon icon-small-arrow">
                                     <use xlink:href="#svg-small-arrow"></use>
@@ -348,7 +349,7 @@
         <!-- /GRID COLUMN -->
     </div>
     <!-- /GRID -->
-
+</div>
 @stop
 @section('after_content')
     <!-- POPUP VIDEO -->

@@ -14,12 +14,12 @@ trait ImageUploadTrait
      * @param FormRequest $request
      * @return string|null
      */
-    public function uploadOne(FormRequest $request, $originalStorePath, $thumbnailStorePath, $imageX, $imageY) {
+    public function uploadOne(FormRequest $request, $originalStorePath, $thumbnailStorePath, $imageX, $imageY, $imageName='image') {
         $image = null;
         $imageType = null;
-        if ($request->hasFile('image') && $request->file('image')->isValid()) {
-            $file = $request->file('image');
-            $imageType = $request->file('image')->getMimeType();
+        if ($request->hasFile($imageName) && $request->file($imageName)->isValid()) {
+            $file = $request->file($imageName);
+            $imageType = $request->file($imageName)->getMimeType();
             $image = \ImageHelper::uploadImage($file,'',$originalStorePath,$thumbnailStorePath,$imageX,$imageY);
             return $image;
         }

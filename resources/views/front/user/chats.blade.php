@@ -2,7 +2,7 @@
 @section('title', 'Messages')
 
 @section('content')
-
+<div class="content-grid">
     <!-- SECTION BANNER -->
     <div class="section-banner">
         <!-- SECTION BANNER ICON -->
@@ -98,7 +98,7 @@
        <chat-widget :user='@json($user)' :members='@json($members)'></chat-widget>
     </div>
     <!-- /GRID -->
-
+</div>
 @stop
 @section('after_content')
 @stop

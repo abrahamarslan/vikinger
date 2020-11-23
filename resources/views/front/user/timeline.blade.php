@@ -2,9 +2,8 @@
 @section('title', 'Timeline')
 
 @section('content')
-
+<div class="content-grid">
     @include('_partials.profile_header')
-
     <!-- GRID -->
     <div class="grid grid-3-6-3 mobile-prefer-content">
         <!-- GRID COLUMN -->
@@ -3571,7 +3570,7 @@
         <!-- /GRID COLUMN -->
     </div>
     <!-- /GRID -->
-
+</div>
 @stop
 @section('after_content')
     <!-- POPUP VIDEO -->
