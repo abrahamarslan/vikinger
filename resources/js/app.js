@@ -8,6 +8,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 Vue.use(require('vue-moment'));
+Vue.mixin(require('./assets'));
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -23,6 +24,8 @@ Vue.component('Notification', require('./components/Notification.vue').default);
 Vue.component('Chat', require('./components/Chat.vue').default);
 Vue.component('ChatWidget', require('./components/ChatWidget.vue').default);
 Vue.component('ChatBar', require('./components/ChatBar.vue').default);
+Vue.component('Comments', require('./components/Comments.vue').default);
+Vue.component('Reply', require('./components/Reply.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

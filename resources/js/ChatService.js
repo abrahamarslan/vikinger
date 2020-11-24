@@ -114,5 +114,52 @@ export default {
             console.log(err);
             console.log('Error in getting data');
         })
-    }
+    },
+
+    /*
+   Get conversation with a user
+    */
+    getBlogComments(data) {
+        const headers = {
+            'Content-Type': 'application/json'
+        };
+        return new Promise((resolve, reject) => {
+            let url = '/comments/get-comments';
+            HTTP.post(url, data, {headers})
+                .then((response) => {
+                    if(response.data.code===200) {
+                        resolve(response.data);
+                    } else {
+                        reject(response.data.data.message);
+                    }
+                })
+        }).catch(err => {
+            console.log(err);
+            console.log('Error in getting data');
+        })
+    },
+
+    /*
+    Post a new comment
+     */
+
+    postComment(data) {
+        const headers = {
+            'Content-Type': 'application/json'
+        };
+        return new Promise((resolve, reject) => {
+            let url = '/comments/post-comment';
+            HTTP.post(url, data, {headers})
+                .then((response) => {
+                    if(response.data.code===200) {
+                        resolve(response.data);
+                    } else {
+                        reject(response.data.data.message);
+                    }
+                })
+        }).catch(err => {
+            console.log(err);
+            console.log('Error in getting data');
+        })
+    },
 }

@@ -21,6 +21,9 @@
     <title>@yield('title') | {!! env('APP_NAME') !!}</title>
     <meta name="description" content="Login to {!! env('APP_NAME') !!}" />
     <meta name="csrf-token" content="{{csrf_token()}}" />
+    <script type="text/javascript">
+        window._asset = '{!! asset("theme/") !!}';
+    </script>
 </head>
 <body>
 <div id="vik">

@@ -845,4 +845,33 @@ class GeneralHelper
         }
     }
 
+    /**
+     * Get related posts
+     */
+    public static function getRelatedPosts(\App\Blog $blog) {
+        try {
+            $blogs = \App\Blog::where('category_id', $blog->category_id)->take(2)->get();
+            $blogs = null;
+            if($blogs == null) {
+                $blogs = \App\Blog::where("title", "LIKE", "%" . $blog->title . "%")
+                    ->orWhere("tags", "LIKE", "%" . $blog->tags . "%")
+                    ->take(3)->get();
+            }
+            return $blogs;
+        } catch (Exception $e) {
+            return null;
+        }
+    }
+
+    /*
+     * Get reaction data
+     */
+    public static function getReactionData(\App\Blog $blog) {
+        try {
+
+        } catch (Exception $e) {
+
+        }
+    }
+
 }

@@ -21,6 +21,14 @@ Route::group(array('prefix' => 'v1-api', 'middleware' => ['authentication','perm
 
     });
 
+    /**
+     * Comments API
+     */
+    Route::group(array('prefix' => 'comments'), function () {
+        Route::post('get-comments', array('uses'=>'blog\BlogAPIController@getComments', 'as'=>'blog.getComments'));
+        Route::post('post-comment', array('uses'=>'blog\BlogAPIController@postComment', 'as'=>'blog.postComment'));
+    });
+
 });
 
 

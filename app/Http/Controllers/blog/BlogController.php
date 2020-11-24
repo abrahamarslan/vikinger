@@ -65,7 +65,10 @@ class BlogController extends DefaultController
             if($user = Sentinel::check()) {
                 $this->data['user'] = $user;
                 $this->data['members'] = User::where('id', '!=', $user->id)->get();
-                $this->data['blog'] = Blog::where('slug',$url)->first();
+                $blog = Blog::where('slug',$url)->first();
+                $relatedPosts = \GeneralHelper::getRelatedPosts($blog);
+                $this->data['relatedPosts'] = $relatedPosts;
+                $this->data['blog'] = $blog;
                 $this->data['showChatBar'] = true;
                 return view('front.blog.single', $this->data);
             }
