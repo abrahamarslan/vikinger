@@ -42,142 +42,6 @@
                     <div class="content-action">
                         <!-- META LINE -->
                         <div class="meta-line">
-                            <!-- META LINE LIST -->
-                            <div class="meta-line-list reaction-item-list small">
-                                <!-- REACTION ITEM -->
-                                <div class="reaction-item">
-                                    <!-- REACTION IMAGE -->
-                                    <img class="reaction-image reaction-item-dropdown-trigger" :src="assets('/img/reaction/happy.png')" alt="reaction-happy">
-                                    <!-- /REACTION IMAGE -->
-
-                                    <!-- SIMPLE DROPDOWN -->
-                                    <div class="simple-dropdown padded reaction-item-dropdown">
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text"><img class="reaction" :src="assets('/img/reaction/happy.png')" alt="reaction-happy"> <span class="bold">Happy</span></p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text">Marcus Jhonson</p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-                                    </div>
-                                    <!-- /SIMPLE DROPDOWN -->
-                                </div>
-                                <!-- /REACTION ITEM -->
-
-                                <!-- REACTION ITEM -->
-                                <div class="reaction-item">
-                                    <!-- REACTION IMAGE -->
-                                    <img class="reaction-image reaction-item-dropdown-trigger" :src="assets('/img/reaction/like.png')" alt="reaction-like">
-                                    <!-- /REACTION IMAGE -->
-
-                                    <!-- SIMPLE DROPDOWN -->
-                                    <div class="simple-dropdown padded reaction-item-dropdown">
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text"><img class="reaction" :src="assets('/img/reaction/like.png')" alt="reaction-like"> <span class="bold">Like</span></p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text">Neko Bebop</p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text">Nick Grissom</p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text">Sarah Diamond</p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-                                    </div>
-                                    <!-- /SIMPLE DROPDOWN -->
-                                </div>
-                                <!-- /REACTION ITEM -->
-                            </div>
-                            <!-- /META LINE LIST -->
-
-                            <!-- META LINE TEXT -->
-                            <p class="meta-line-text">4</p>
-                            <!-- /META LINE TEXT -->
-                        </div>
-                        <!-- /META LINE -->
-
-                        <!-- META LINE -->
-                        <div class="meta-line">
-                            <!-- META LINE LINK -->
-                            <p class="meta-line-link light reaction-options-small-dropdown-trigger">React!</p>
-                            <!-- /META LINE LINK -->
-
-                            <!-- REACTION OPTIONS -->
-                            <div class="reaction-options small reaction-options-small-dropdown">
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Like">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/like.png')" alt="reaction-like">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Love">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/love.png')" alt="reaction-love">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Dislike">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/dislike.png')" alt="reaction-dislike">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Happy">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/happy.png')" alt="reaction-happy">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Funny">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/funny.png')" alt="reaction-funny">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Wow">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/wow.png')" alt="reaction-wow">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Angry">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/angry.png')" alt="reaction-angry">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Sad">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/sad.png')" alt="reaction-sad">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-                            </div>
-                            <!-- /REACTION OPTIONS -->
-                        </div>
-                        <!-- /META LINE -->
-
-                        <!-- META LINE -->
-                        <div class="meta-line">
                             <!-- META LINE LINK -->
                             <p class="meta-line-link light" @click="selectParent(comment)">Reply</p>
                             <!-- /META LINE LINK -->
@@ -192,31 +56,6 @@
                         </div>
                         <!-- /META LINE -->
 
-                        <!-- META LINE -->
-                        <div class="meta-line settings">
-                            <!-- POST SETTINGS WRAP -->
-                            <div class="post-settings-wrap">
-                                <!-- POST SETTINGS -->
-                                <div class="post-settings post-settings-dropdown-trigger">
-                                    <!-- POST SETTINGS ICON -->
-                                    <svg class="post-settings-icon icon-more-dots">
-                                        <use xlink:href="#svg-more-dots"></use>
-                                    </svg>
-                                    <!-- /POST SETTINGS ICON -->
-                                </div>
-                                <!-- /POST SETTINGS -->
-
-                                <!-- SIMPLE DROPDOWN -->
-                                <div class="simple-dropdown post-settings-dropdown">
-                                    <!-- SIMPLE DROPDOWN LINK -->
-                                    <p class="simple-dropdown-link">Report Post</p>
-                                    <!-- /SIMPLE DROPDOWN LINK -->
-                                </div>
-                                <!-- /SIMPLE DROPDOWN -->
-                            </div>
-                            <!-- /POST SETTINGS WRAP -->
-                        </div>
-                        <!-- /META LINE -->
                     </div>
                     <!-- /CONTENT ACTION -->
                 </div>
@@ -234,7 +73,7 @@
                     <!-- USER AVATAR CONTENT -->
                     <div class="user-avatar-content">
                         <!-- HEXAGON -->
-                        <div class="hexagon-image-30-32" :data-src="reply.user.thumbnail"></div>
+                        <img class="hexagon-image-30-32" :src="reply.user.thumbnail" />
                         <!-- /HEXAGON -->
                     </div>
                     <!-- /USER AVATAR CONTENT -->
@@ -268,143 +107,9 @@
                     <div class="content-action">
                         <!-- META LINE -->
                         <div class="meta-line">
-                            <!-- META LINE LIST -->
-                            <div class="meta-line-list reaction-item-list small">
-                                <!-- REACTION ITEM -->
-                                <div class="reaction-item">
-                                    <!-- REACTION IMAGE -->
-                                    <img class="reaction-image reaction-item-dropdown-trigger" :src="assets('/img/reaction/like.png')" alt="reaction-like">
-                                    <!-- /REACTION IMAGE -->
-
-                                    <!-- SIMPLE DROPDOWN -->
-                                    <div class="simple-dropdown padded reaction-item-dropdown">
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text"><img class="reaction" :src="assets('/img/reaction/like.png')" alt="reaction-like"> <span class="bold">Like</span></p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-
-                                        <!-- SIMPLE DROPDOWN TEXT -->
-                                        <p class="simple-dropdown-text">Neko Bebop</p>
-                                        <!-- /SIMPLE DROPDOWN TEXT -->
-                                    </div>
-                                    <!-- /SIMPLE DROPDOWN -->
-                                </div>
-                                <!-- /REACTION ITEM -->
-                            </div>
-                            <!-- /META LINE LIST -->
-
-                            <!-- META LINE TEXT -->
-                            <p class="meta-line-text">1</p>
-                            <!-- /META LINE TEXT -->
-                        </div>
-                        <!-- /META LINE -->
-
-                        <!-- META LINE -->
-                        <div class="meta-line">
-                            <!-- META LINE LINK -->
-                            <p class="meta-line-link light reaction-options-small-dropdown-trigger">React!</p>
-                            <!-- /META LINE LINK -->
-
-                            <!-- REACTION OPTIONS -->
-                            <div class="reaction-options small reaction-options-small-dropdown">
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Like">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/like.png')" alt="reaction-like">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Love">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/love.png')" alt="reaction-love">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Dislike">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/dislike.png')" alt="reaction-dislike">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Happy">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/happy.png')" alt="reaction-happy">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Funny">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/funny.png')" alt="reaction-funny">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Wow">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/wow.png')" alt="reaction-wow">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Angry">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/angry.png')" alt="reaction-angry">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-
-                                <!-- REACTION OPTION -->
-                                <div class="reaction-option text-tooltip-tft" data-title="Sad">
-                                    <!-- REACTION OPTION IMAGE -->
-                                    <img class="reaction-option-image" :src="assets('/img/reaction/sad.png')" alt="reaction-sad">
-                                    <!-- /REACTION OPTION IMAGE -->
-                                </div>
-                                <!-- /REACTION OPTION -->
-                            </div>
-                            <!-- /REACTION OPTIONS -->
-                        </div>
-                        <!-- /META LINE -->
-
-                        <!-- META LINE -->
-                        <div class="meta-line">
                             <!-- META LINE TIMESTAMP -->
                             <p class="meta-line-timestamp">{{ reply.created_at | moment("from") }}</p>
                             <!-- /META LINE TIMESTAMP -->
-                        </div>
-                        <!-- /META LINE -->
-
-                        <!-- META LINE -->
-                        <div class="meta-line settings">
-                            <!-- POST SETTINGS WRAP -->
-                            <div class="post-settings-wrap">
-                                <!-- POST SETTINGS -->
-                                <div class="post-settings post-settings-dropdown-trigger">
-                                    <!-- POST SETTINGS ICON -->
-                                    <svg class="post-settings-icon icon-more-dots">
-                                        <use xlink:href="#svg-more-dots"></use>
-                                    </svg>
-                                    <!-- /POST SETTINGS ICON -->
-                                </div>
-                                <!-- /POST SETTINGS -->
-
-                                <!-- SIMPLE DROPDOWN -->
-                                <div class="simple-dropdown post-settings-dropdown">
-                                    <!-- SIMPLE DROPDOWN LINK -->
-                                    <p class="simple-dropdown-link">Report Post</p>
-                                    <!-- /SIMPLE DROPDOWN LINK -->
-                                </div>
-                                <!-- /SIMPLE DROPDOWN -->
-                            </div>
-                            <!-- /POST SETTINGS WRAP -->
                         </div>
                         <!-- /META LINE -->
                     </div>
@@ -506,11 +211,9 @@ export default {
                     'parent_comment_id': this.parentCommentID,
                     'user_id': this.user.id
                 };
-                console.log('Sending data', data);
                 ChatService.postComment(data)
                     .then(response => {
-                        console.info('Posted data');
-                        console.log(response);
+                        this.getComments();
                         this.resetData();
                     }).catch(error => {
                     alert('Error in fetching data');
@@ -521,8 +224,6 @@ export default {
         getComments() {
             ChatService.getBlogComments({'blog_id': this.blog.id})
                 .then(response => {
-                    console.info('Got data');
-                    console.log(response);
                     this.comments = response.data;
                 }).catch(error => {
                 alert('Error in fetching data');

@@ -37,10 +37,10 @@ const app = {
           });
         }
       };
-  
+
       xhttp.open(config.method, config.url, config.async);
       xhttp.setRequestHeader(config.header.type, config.header.value);
-  
+
       if (config.method === 'GET') {
         xhttp.send();
       } else if (config.method === 'POST') {
@@ -56,12 +56,13 @@ const app = {
     }
   },
   liquidify: function (el) {
-    const image = el.querySelector('img'),
-          imageSrc = image.getAttribute('src');
-  
-    image.style.display = 'none';
-    el.style.background = `url("${imageSrc}") no-repeat center`;
-    el.style.backgroundSize = 'cover';
+    const image = el.querySelector('img');
+    if(image) {
+        imageSrc = image.getAttribute('src');
+        image.style.display = 'none';
+        el.style.background = `url("${imageSrc}") no-repeat center`;
+        el.style.backgroundSize = 'cover';
+    }
   },
   liquidifyStatic: function (figure, image) {
     image.style.display = 'none';
