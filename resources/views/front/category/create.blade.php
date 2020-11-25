@@ -291,58 +291,6 @@
                     <!-- /IMAGE PREVIEW INFO -->
                 </div>
                 <!-- /IMAGE PREVIEW -->
-
-                <!-- SIDEBAR BOX TITLE -->
-                <p class="sidebar-box-title">Payment Method</p>
-                <!-- /SIDEBAR BOX TITLE -->
-
-                <!-- SIDEBAR BOX ITEMS -->
-                <div class="sidebar-box-items">
-                    <!-- FORM -->
-                    <form class="form">
-                        <!-- CHECKBOX WRAP -->
-                        <div class="checkbox-wrap">
-                            <input type="radio" id="payment-paypal" name="payment_type" value="payment-paypal" checked>
-                            <!-- CHECKBOX BOX -->
-                            <div class="checkbox-box round"></div>
-                            <!-- /CHECKBOX BOX -->
-                            <label class="accordion-trigger-linked" for="payment-paypal">Paypal</label>
-
-                            <!-- CHECKBOX INFO -->
-                            <div class="checkbox-info accordion-content-linked accordion-open">
-                                <!-- CHECKBOX INFO TEXT -->
-                                <p class="checkbox-info-text">Pay with your Paypal balance or connected bank account! It's quick and really secure.</p>
-                                <!-- /CHECKBOX INFO TEXT -->
-                            </div>
-                            <!-- /CHECKBOX INFO -->
-                        </div>
-                        <!-- /CHECKBOX WRAP -->
-
-                        <!-- CHECKBOX WRAP -->
-                        <div class="checkbox-wrap">
-                            <input type="radio" id="payment-debit-credit" name="payment_type" value="payment-debit-credit">
-                            <!-- CHECKBOX BOX -->
-                            <div class="checkbox-box round"></div>
-                            <!-- /CHECKBOX BOX -->
-                            <label class="accordion-trigger-linked" for="payment-debit-credit">Credit or Debit Card</label>
-
-                            <!-- CHECKBOX INFO -->
-                            <div class="checkbox-info accordion-content-linked">
-                                <!-- CHECKBOX INFO TEXT -->
-                                <p class="checkbox-info-text">Pay with your credit or debit card!.</p>
-                                <!-- /CHECKBOX INFO TEXT -->
-                            </div>
-                            <!-- /CHECKBOX INFO -->
-                        </div>
-                        <!-- /CHECKBOX WRAP -->
-                    </form>
-                    <!-- /FORM -->
-
-                    <!-- BUTTON -->
-                    <p class="button primary">Complete Order!</p>
-                    <!-- /BUTTON -->
-                </div>
-                <!-- /SIDEBAR BOX ITEMS -->
             </div>
             <!-- /SIDEBAR BOX -->
         </div>

@@ -19,6 +19,7 @@
 </style>
 @section('content')
 
+    <div class="content-grid">
 
     <!-- SECTION BANNER -->
     <div class="section-banner">
@@ -72,6 +73,7 @@
         @endforeach
     </div>
     <!-- /GRID -->
+    </div>
 
 @stop
 @section('after_content')
