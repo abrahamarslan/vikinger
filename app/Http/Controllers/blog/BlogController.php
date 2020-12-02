@@ -40,7 +40,7 @@ class BlogController extends DefaultController
             $this->data['members'] = User::where('id', '!=', $user->id)->get();
             $this->data['categories'] = Category::where('status','True')->pluck('title','id');
             $this->data['showChatBar'] = true;
-            return view('front.blog.create', $this->data);
+            return view('front.blog.createTwo', $this->data);
         }
         else {
             return redirect()->route('authentication.getLogin');

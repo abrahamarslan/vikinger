@@ -1,7 +1,7 @@
 @extends('_layouts.layout')
 @section('title', 'Create Blog Post')
-<!-- Include stylesheet -->
-<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+
 @section('content')
 <div class="content-grid">
 
@@ -115,7 +115,9 @@
                             <!-- FORM INPUT -->
                             <div class="form-input small medium-textarea" id="editor">
                             </div>
-                            <textarea name="body" id="postBody" class="hidden-row"></textarea>
+                            <div id="postBody">
+
+                            </div>
                             <!-- /FORM INPUT -->
                         </div>
                         <!-- /FORM ITEM -->
@@ -1377,7 +1379,6 @@
 @stop
 @section('after_scripts')
     <!-- Include the Quill library -->
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script type="text/javascript">
         var uploadBlogButton = document.getElementById('uploadBlogImage');
         var uploadSEOButton = document.getElementById('uploadBlogSEOImage');
@@ -1456,34 +1457,38 @@
 
     </script>
     <script type="text/javascript">
-        var toolbarOptions = [
-            ['bold', 'italic', 'underline'],        // toggled buttons
-            ['blockquote'],
-            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-            [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-            [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-            [ 'link', 'image', 'video' ],          // add's image support
-            [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-            ['clean']                                         // remove formatting button
-        ];
-
-        var options = {
-            debug: 'info',
-            placeholder: 'Compose an epic...',
-            readOnly: false,
-            theme: 'snow',
-            modules: {
-                toolbar: toolbarOptions
-            }
-        };
-        var quill = new Quill('#editor', options);
-
-        var form = document.getElementById("postForm"); // get form by ID
-        form.onsubmit = function(e) { // onsubmit do this first
-            var name = document.getElementById('postBody'); // set name input var
-            name.value = JSON.stringify(quill.root.innerHTML); // populate name input with quill data
-            return true; // submit form
-        }
+        const editor = new EditorJS({
+            /**
+             * Id of Element that should contain Editor instance
+             */
+            holder: 'postBody',
+            tools: {
+                header: {
+                    class: Header,
+                    inlineToolbar: ['link']
+                },
+                paragraph: {
+                    class: Paragraph,
+                    inlineToolbar: true
+                },
+                list: {
+                    class: List,
+                    inlineToolbar: true
+                },
+                underline: Underline,
+                embed: {
+                    class: Embed,
+                    inlineToolbar: true
+                },
+                image: {
+                    class: SimpleImage,
+                    inlineToolbar: true,
+                    config: {
+                        placeholder: 'Paste image URL'
+                    }
+                },
+                delimiter: Delimiter,
+            },
+        });
     </script>
 @stop
