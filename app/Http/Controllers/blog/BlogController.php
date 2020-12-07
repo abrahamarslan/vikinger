@@ -9,6 +9,7 @@ use App\Http\Controllers\DefaultController;
 use App\Http\Requests\blog\BlogStoreRequest;
 use App\Traits\BlogStoreTrait;
 use App\User;
+use Cartalyst\Alerts\Laravel\Facades\Alert;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
 
@@ -146,6 +147,26 @@ class BlogController extends DefaultController
             else {
                 return redirect()->route('authentication.getLogin');
             }
+        } catch (\Exception $e) {
+            $this->messageBag->add('error', $e->getMessage());
+            return redirect()->back()->withInput()->withErrors($this->messageBag);
+        }
+    }
+
+    public function destroy(Blog $blog) {
+        try {
+            if($user = Sentinel::check()) {
+                if($user->id == $blog->user_id) {
+                    $blog->delete();
+                    session()->flash('success_message','Record deleted');
+                    return redirect()->back();
+                } else {
+                    abort(404);
+                }
+            } else {
+                abort(404);
+            }
+
         } catch (\Exception $e) {
             $this->messageBag->add('error', $e->getMessage());
             return redirect()->back()->withInput()->withErrors($this->messageBag);

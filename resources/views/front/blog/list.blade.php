@@ -117,11 +117,16 @@
                         <!-- POST PREVIEW INFO TOP -->
                         <div class="post-preview-info-top">
                             <!-- POST PREVIEW TIMESTAMP -->
-                            <p class="post-preview-timestamp">{!! date('d M, Y', strtotime($blog->created_at)) !!}</p>
+                            <p class="post-preview-timestamp">{!! date('d M, Y', strtotime($blog->created_at)) !!}
+                                @if($user->id == $blog->user_id)
+                                    <a href="{!! route('blog.destroy', ['blog' => $blog->id]) !!}"><span class="float-right text-danger fa fa-2x fa-trash"></span></a>
+                                @endif
+                            </p>
                             <!-- /POST PREVIEW TIMESTAMP -->
 
                             <!-- POST PREVIEW TITLE -->
-                            <p class="post-preview-title">{!! GeneralHelper::string_truncate_old($blog->title, 50) !!}</p>
+                            <p class="post-preview-title">{!! GeneralHelper::string_truncate_old($blog->title, 50) !!}
+                            </p>
                             <!-- /POST PREVIEW TITLE -->
                         </div>
                         <!-- /POST PREVIEW INFO TOP -->

@@ -8,7 +8,7 @@ Route::group(array('prefix' => 'blog'), function () {
     Route::get('create', array('uses'=>'blog\BlogController@create', 'as'=>'blog.create'));
     Route::post('filter', array('uses'=>'blog\BlogController@getFiltered', 'as'=>'blog.filtered'));
     Route::post('create', array('uses'=>'blog\BlogController@store', 'as'=>'blog.store'));
-    Route::post('delete/{blog}', array('uses'=>'blog\BlogController@destroy', 'as'=>'blog.destroy'));
+    Route::get('delete/{blog}', array('uses'=>'blog\BlogController@destroy', 'as'=>'blog.destroy'));
 });
 
 
