@@ -1,6 +1,14 @@
 @extends('_layouts.layout')
 @section('title', 'Create Blog Post')
-
+<!-- Include stylesheet -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/paragraph@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/underline@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/embed@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest"></script>
 
 @section('content')
 <div class="content-grid">

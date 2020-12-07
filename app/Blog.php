@@ -8,6 +8,10 @@ class Blog extends Model
 {
     protected $guarded = [];
 
+    protected $casts = [
+        'body' => 'json',
+        'blocks' => 'json'
+    ];
     /**
      * A blog belongs to a user
      *

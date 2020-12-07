@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\blog;
 
+use App\Blog;
 use App\Comment;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DefaultController;
 use App\Message;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BlogAPIController extends DefaultController
 {
@@ -71,6 +73,59 @@ class BlogAPIController extends DefaultController
                 $data = [
                     'type' => 'error',
                     'message' => 'Some error occurred',
+                    'data' => null,
+                    'code' => 500
+                ];
+                return response()->json($data,500);
+            }
+        } catch (\Exception $e) {
+            $data = [
+                'type' => 'error',
+                'message' => $e->getMessage(),
+                'data' => null,
+                'code' => 500
+            ];
+            return response()->json($data,500);
+        }
+    }
+
+    public function isUnique($slug) {
+        try {
+            if(Blog::where('slug', $slug)->first()) {
+                return false;
+            }
+            return true;
+        } catch (\Exception $e) {
+            return false;
+        }
+    }
+
+    public function storeBlog(Request $request) {
+        $data = array();
+        try {
+            $blocks = $request->get('body');
+            $title = $request->get('title');
+            $userID = $request->get('user_id');
+            $slug = Str::slug($title);
+            //return $request->all();
+            if($blocks != null && $blocks != '' && $userID != null && $userID!='' && $title!= null && self::isUnique($slug)) {
+                $blog = new Blog;
+                $blog->body = $blocks;
+                $blog->user_id = $userID;
+                $blog->slug = $slug;
+                $blog->title = $title;
+                $blog->save();
+                $data = [
+                    'type' => 'success',
+                    'message' => 'records',
+                    'data' => $blog,
+                    'code' => 200
+                ];
+                return response()->json($data,200);
+            } else {
+                $data = [
+                    'type' => 'error',
+                    'message' => 'Some error occurred in creating the record.',
                     'data' => null,
                     'code' => 500
                 ];

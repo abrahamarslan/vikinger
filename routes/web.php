@@ -16,7 +16,9 @@ include 'authentication.php';
 include 'chat.php';
 include 'blog.php';
 include 'category.php';
-@include('v1.php');
+include('v1.php');
 Route::get('/', function () {
     return redirect()->route('authentication.getLogin');
 });
+Route::get('/@{username}/{slug}', array('uses'=>'blog\BlogController@getBlog', 'as'=>'blog.getBlog'));
+Route::get('/@{username}', array('uses'=>'blog\BlogController@getBlogs', 'as'=>'blog.getBlogs'));

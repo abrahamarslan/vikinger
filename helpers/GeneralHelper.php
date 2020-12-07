@@ -855,7 +855,7 @@ class GeneralHelper
             if($blogs == null) {
                 $blogs = \App\Blog::where("title", "LIKE", "%" . $blog->title . "%")
                     ->orWhere("tags", "LIKE", "%" . $blog->tags . "%")
-                    ->take(3)->get();
+                    ->take(2)->get();
             }
             return $blogs;
         } catch (Exception $e) {
@@ -871,6 +871,36 @@ class GeneralHelper
 
         } catch (Exception $e) {
 
+        }
+    }
+
+    public static function getSEODescription(\App\Blog $blog) {
+        try {
+            $posts = $blog->body;
+            foreach ($posts as $key => $value) {
+                if($value['type'] == 'paragraph') {
+                    return $value['data']['text'];
+                } else {
+                    continue;
+                }
+            }
+        } catch (Exception $e) {
+            return null;
+        }
+    }
+
+    public static function getSEOImage(\App\Blog $blog) {
+        try {
+            $posts = $blog->body;
+            foreach ($posts as $key => $value) {
+                if($value['type'] == 'image') {
+                    return $value['data']['url'];
+                } else {
+                    continue;
+                }
+            }
+        } catch (Exception $e) {
+            return null;
         }
     }
 

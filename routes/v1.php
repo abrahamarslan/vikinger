@@ -29,6 +29,13 @@ Route::group(array('prefix' => 'v1-api', 'middleware' => ['authentication','perm
         Route::post('post-comment', array('uses'=>'blog\BlogAPIController@postComment', 'as'=>'blog.postComment'));
     });
 
+    /**
+     * Blog API
+     */
+    Route::group(array('prefix' => 'blog'), function () {
+        Route::post('post-blog', array('uses'=>'blog\BlogAPIController@storeBlog', 'as'=>'api.blog.store'));
+    });
+
 });
 
 

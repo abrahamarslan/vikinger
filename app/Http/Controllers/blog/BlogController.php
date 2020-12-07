@@ -40,12 +40,14 @@ class BlogController extends DefaultController
             $this->data['members'] = User::where('id', '!=', $user->id)->get();
             $this->data['categories'] = Category::where('status','True')->pluck('title','id');
             $this->data['showChatBar'] = true;
-            return view('front.blog.createTwo', $this->data);
+            return view('front.blog.form', $this->data);
         }
         else {
             return redirect()->route('authentication.getLogin');
         }
     }
+
+
 
     public function store(BlogStoreRequest $request) {
         try {
@@ -60,17 +62,25 @@ class BlogController extends DefaultController
         }
     }
 
-    public function getBlog(Request $request, $category = null, $url = null) {
+    public function getBlog(Request $request, $username, $slug) {
         try {
             if($user = Sentinel::check()) {
                 $this->data['user'] = $user;
+                $blogUser = User::where('username', $username)->first();
+                $blog = Blog::where('slug',$slug)->first();
                 $this->data['members'] = User::where('id', '!=', $user->id)->get();
-                $blog = Blog::where('slug',$url)->first();
-                $relatedPosts = \GeneralHelper::getRelatedPosts($blog);
-                $this->data['relatedPosts'] = $relatedPosts;
-                $this->data['blog'] = $blog;
-                $this->data['showChatBar'] = true;
-                return view('front.blog.single', $this->data);
+                if($blog && $blog->user_id == $blogUser->id) {
+                    $relatedPosts = \GeneralHelper::getRelatedPosts($blog);
+                    $leadImage = \GeneralHelper::getSEOImage($blog);
+                    $this->data['image'] = ($leadImage == null ? 'default.png' : $leadImage);
+                    $this->data['relatedPosts'] = $relatedPosts;
+                    $this->data['blog'] = $blog;
+                    $this->data['showChatBar'] = true;
+                    return view('front.blog.single', $this->data);
+                }else {
+                    $this->messageBag->add('error', 'Not found');
+                    return redirect()->back()->withInput()->withErrors($this->messageBag);
+                }
             }
             else {
                 return redirect()->route('authentication.getLogin');
@@ -108,6 +118,30 @@ class BlogController extends DefaultController
                 //$this->data['blog'] = $blog;
                 $this->data['showChatBar'] = true;
                 return view('front.blog.list', $this->data);
+            }
+            else {
+                return redirect()->route('authentication.getLogin');
+            }
+        } catch (\Exception $e) {
+            $this->messageBag->add('error', $e->getMessage());
+            return redirect()->back()->withInput()->withErrors($this->messageBag);
+        }
+    }
+
+    public function getBlogs(Request $request, $username) {
+        try {
+            if($user = Sentinel::check()) {
+                $this->data['user'] = $user;
+                $this->data['members'] = User::where('id', '!=', $user->id)->get();
+                $this->data['showChatBar'] = true;
+                $blogUser = User::where('username', $username)->first();
+                if($blogUser) {
+                    $this->data['blogs'] = Blog::where('user_id', $blogUser->id)->get();
+                    return view('front.blog.list', $this->data);
+                } else {
+                    $this->messageBag->add('error', 'Not found');
+                    return redirect()->back()->withInput()->withErrors($this->messageBag);
+                }
             }
             else {
                 return redirect()->route('authentication.getLogin');

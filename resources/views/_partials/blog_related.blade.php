@@ -48,7 +48,7 @@
                         <!-- /POST PREVIEW TEXT -->
 
                         <!-- POST PREVIEW LINK -->
-                        <a class="post-preview-link" href="{!! route('blog.getBlog', ['category' => $post->category()->first()->title, 'url' => $post->slug]) !!}">Read more...</a>
+                        <a class="post-preview-link" href="{!! route('blog.getBlog', ['username' => $post->user()->first()->username, 'slug' => $post->slug]) !!}">Read more...</a>
                         <!-- /POST PREVIEW LINK -->
                     </div>
                     <!-- /POST PREVIEW INFO BOTTOM -->

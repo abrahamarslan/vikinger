@@ -24,6 +24,8 @@
     <script type="text/javascript">
         window._asset = '{!! asset("theme/") !!}';
     </script>
+    @section('after_styles')
+    @show
 </head>
 <body>
 <div id="vik">

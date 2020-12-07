@@ -108,7 +108,7 @@
                 <!-- POST PREVIEW -->
                 <div class="post-preview">
                     <!-- POST PREVIEW IMAGE -->
-                    <figure class="post-preview-image liquid" style="background: url('{!! asset(\Config::get('global.blog.upload_folder_path_original') . $blog->image) !!}') center center / cover no-repeat">
+                    <figure class="post-preview-image liquid" style="background: url('{!! (\GeneralHelper::getSEOImage($blog) == null ? asset(\Config::get('global.blog.upload_folder_path_original') . 'default.png') : \GeneralHelper::getSEOImage($blog)) !!}') center center / cover no-repeat">
                     </figure>
                     <!-- /POST PREVIEW IMAGE -->
 
@@ -129,11 +129,11 @@
                         <!-- POST PREVIEW INFO BOTTOM -->
                         <div class="post-preview-info-bottom">
                             <!-- POST PREVIEW TEXT -->
-                            <p class="post-preview-text">{!! GeneralHelper::string_truncate_old($blog->seo_description, 150) !!}</p>
+                            <p class="post-preview-text">{!! GeneralHelper::string_truncate_old(GeneralHelper::getSEODescription($blog), 150) !!}</p>
                             <!-- /POST PREVIEW TEXT -->
 
                             <!-- POST PREVIEW LINK -->
-                            <a class="post-preview-link" href="{!! route('blog.getBlog', ['category' => $blog->category()->first()->title, 'url' => $blog->slug]) !!}">Read more...</a>
+                            <a class="post-preview-link" href="{!!route('blog.getBlog', ['username' => $blog->user()->first()->username, 'slug' => $blog->slug]) !!}">Read more...</a>
                             <!-- /POST PREVIEW LINK -->
                         </div>
                         <!-- /POST PREVIEW INFO BOTTOM -->

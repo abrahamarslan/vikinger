@@ -13,22 +13,6 @@
                         <!-- /HEXAGON -->
                     </div>
                     <!-- /USER AVATAR CONTENT -->
-
-                    <!-- USER AVATAR PROGRESS -->
-                    <div class="user-avatar-progress">
-                        <!-- HEXAGON -->
-                        <div class="hexagon-progress-40-44"></div>
-                        <!-- /HEXAGON -->
-                    </div>
-                    <!-- /USER AVATAR PROGRESS -->
-
-                    <!-- USER AVATAR PROGRESS BORDER -->
-                    <div class="user-avatar-progress-border">
-                        <!-- HEXAGON -->
-                        <div class="hexagon-border-40-44"></div>
-                        <!-- /HEXAGON -->
-                    </div>
-                    <!-- /USER AVATAR PROGRESS BORDER -->
                 </a>
                 <!-- /USER AVATAR -->
 
@@ -78,22 +62,6 @@
                     </div>
                     <!-- /USER AVATAR CONTENT -->
 
-                    <!-- USER AVATAR PROGRESS -->
-                    <div class="user-avatar-progress">
-                        <!-- HEXAGON -->
-                        <div class="hexagon-progress-40-44"></div>
-                        <!-- /HEXAGON -->
-                    </div>
-                    <!-- /USER AVATAR PROGRESS -->
-
-                    <!-- USER AVATAR PROGRESS BORDER -->
-                    <div class="user-avatar-progress-border">
-                        <!-- HEXAGON -->
-                        <div class="hexagon-border-40-44"></div>
-                        <!-- /HEXAGON -->
-                    </div>
-                    <!-- /USER AVATAR PROGRESS BORDER -->
-
                 </a>
                 <!-- /USER AVATAR -->
 
@@ -131,22 +99,6 @@
                     <!-- /HEXAGON -->
                 </div>
                 <!-- /USER AVATAR CONTENT -->
-
-                <!-- USER AVATAR PROGRESS -->
-                <div class="user-avatar-progress">
-                    <!-- HEXAGON -->
-                    <div class="hexagon-progress-40-44"></div>
-                    <!-- /HEXAGON -->
-                </div>
-                <!-- /USER AVATAR PROGRESS -->
-
-                <!-- USER AVATAR PROGRESS BORDER -->
-                <div class="user-avatar-progress-border">
-                    <!-- HEXAGON -->
-                    <div class="hexagon-border-40-44"></div>
-                    <!-- /HEXAGON -->
-                </div>
-                <!-- /USER AVATAR PROGRESS BORDER -->
             </div>
             <!-- /USER AVATAR -->
 
@@ -245,5 +197,14 @@ export default {
 <style scoped>
 .hexagon-image-30-32 {
     max-width: 100% !important;
+}
+.post-comment .user-avatar {
+    top: 15px !important;
+}
+.post-comment-form .user-avatar {
+    top: 15px !important;
+}
+.user-avatar.no-outline.small .user-avatar-content {
+    top: 0 !important;
 }
 </style>

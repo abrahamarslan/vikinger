@@ -26,6 +26,7 @@ Vue.component('ChatWidget', require('./components/ChatWidget.vue').default);
 Vue.component('ChatBar', require('./components/ChatBar.vue').default);
 Vue.component('Comments', require('./components/Comments.vue').default);
 Vue.component('Reply', require('./components/Reply.vue').default);
+Vue.component('Editor', require('./components/Editor.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

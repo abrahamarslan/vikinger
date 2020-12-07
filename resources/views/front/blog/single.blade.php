@@ -1,14 +1,17 @@
 @extends('_layouts.layout')
 @section('title', 'Blog Posts')
-<!-- Include stylesheet -->
-@section('content')
+@section('after_styles')
+    <!-- Include stylesheet -->
+    <link rel="stylesheet" href="{!! asset('css/blog.css') !!}">
+@endsection
 
+@section('content')
     <!-- CONTENT GRID -->
     <div class="content-grid full">
         <!-- POST OPEN -->
         <article class="post-open">
             <!-- POST OPEN COVER -->
-            <figure class="post-open-cover liquid" style="background: url('{!! asset(\Config::get('global.blog.upload_folder_path_original') . $blog->image) !!}') center center / cover no-repeat">
+            <figure class="post-open-cover liquid" style="background: url('{!! $image !!}') center center / cover no-repeat">
 
             </figure>
             <!-- /POST OPEN COVER -->
@@ -20,7 +23,6 @@
                     <!-- POST OPEN TIMESTAMP -->
                     <p class="post-open-timestamp"><span class="highlighted">{!! date('d M, Y', strtotime($blog->created_at)) !!}</span></p>
                     <!-- /POST OPEN TIMESTAMP -->
-
                     <!-- POST OPEN TITLE -->
                     <h2 class="post-open-title">{!! $blog->title !!}</h2>
                     <!-- /POST OPEN TITLE -->
@@ -67,7 +69,7 @@
                         <!-- SOCIAL LINKS -->
                         <div class="social-links vertical">
                             <!-- SOCIAL LINK -->
-                            <a target="_blank" class="social-link void facebook" href="https://www.facebook.com/sharer/sharer.php?u={!! route('blog.getBlog', ['category' => $blog->category()->first()->title, 'url' => $blog->slug]) !!}">
+                            <a target="_blank" class="social-link void facebook" href="https://www.facebook.com/sharer/sharer.php?u={!! route('blog.getBlog', ['username' => $blog->user()->first()->username, 'slug' => $blog->slug]) !!}">
                                 <!-- ICON FACEBOOK -->
                                 <svg class="icon-facebook">
                                     <use xlink:href="#svg-facebook"></use>
@@ -77,7 +79,7 @@
                             <!-- /SOCIAL LINK -->
 
                             <!-- SOCIAL LINK -->
-                            <a class="social-link void twitter" href="https://twitter.com/intent/tweet?url={!! route('blog.getBlog', ['category' => $blog->category()->first()->title, 'url' => $blog->slug]) !!}">
+                            <a target="_blank" class="social-link void twitter" href="https://twitter.com/intent/tweet?url={!! route('blog.getBlog', ['username' => $blog->user()->first()->username, 'slug' => $blog->slug])!!}">
                                 <!-- ICON TWITTER -->
                                 <svg class="icon-twitter">
                                     <use xlink:href="#svg-twitter"></use>
@@ -92,19 +94,19 @@
 
                     <!-- POST OPEN CONTENT BODY -->
                     <div class="post-open-content-body">
-                        <!-- POST OPEN PARAGRAPH -->
-                        <p class="post-open-paragraph">
-                            {!! $blog->body !!}
-                        </p>
-                        <!-- /POST OPEN PARAGRAPH -->
-                        <!-- TAG LIST -->
-                        <div class="tag-list">
-                            @foreach(explode(',', $blog->tags) as $tag)
-                            <!-- TAG ITEM -->
-                            <a class="tag-item secondary" href="#">{!! $tag !!}</a>
-                            <!-- /TAG ITEM -->
-                            @endforeach
+                        <div id="post-content">
+
                         </div>
+                        <!-- TAG LIST -->
+                        @if($blog->tags !== null)
+                            <div class="tag-list">
+                                @foreach(explode(',', $blog->tags) as $tag)
+                                <!-- TAG ITEM -->
+                                <a class="tag-item secondary" href="#">{!! $tag !!}</a>
+                                <!-- /TAG ITEM -->
+                                @endforeach
+                            </div>
+                        @endif
                         <!-- /TAG LIST -->
                     </div>
                     <!-- /POST OPEN CONTENT BODY -->
@@ -127,5 +129,44 @@
     @endif
 @stop
 @section('after_scripts')
-
+<script type="text/javascript">
+    (function () {
+        var json = {!! json_encode($blog->body) !!};
+        var html = '';
+        json.forEach(function (block) {
+           switch (block.type) {
+               case 'header':
+                   html += `<h${block.data.level}>${block.data.text}</h${block.data.level}>`;
+                   break;
+               case 'paragraph':
+                   html += `<p class="pad">${block.data.text}</p>`;
+                   break;
+               case 'delimiter':
+                   html += '<hr />';
+                   break;
+               case 'image':
+                   html += `<div class="text-center"><img loading="lazy" class="img-fluid pad" src="${block.data.url}" title="${block.data.caption}" /><br /><em>${block.data.caption}</em></div>`;
+                   break;
+               case 'search':
+                   html += `<div class="text-center"><img loading="lazy" class="img-fluid pad" src="${block.data.url}" title="${block.data.caption}" /><br /><em>${block.data.caption}</em></div>`;
+                   break;
+               case 'list':
+                   html += '<ul>';
+                   html += `<a target="_blank" href="${block.data.link}"> <li class="link">${block.data.link}</li></a>`;
+                   /*
+                   block.data.items.forEach(function(li) {
+                       html += `<li>${li}</li>`;
+                   });
+                   */
+                   html += '</ul>';
+                   break;
+               default:
+                   console.log('Unknown block type', block.type);
+                   console.log(block);
+                   break;
+           }
+        });
+        document.getElementById('post-content').innerHTML = html;
+    })();
+</script>
 @stop

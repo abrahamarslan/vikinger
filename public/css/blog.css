@@ -1,0 +1,28 @@
+h1 {
+    margin: 20px 0 !important;
+}
+
+h2 {
+    margin: 15px 0 !important;
+}
+
+.link {
+    color: blue;
+    font-size: larger;
+    padding: 10px !important;
+    margin: 15px 0 !important;
+    border: 1px solid lightgoldenrodyellow;
+}
+
+.pad {
+    margin: 10px 0 !important;
+}
+
+img {
+    margin: 20px 0 !important;
+}
+
+em {
+    width: 100%;
+    text-align: center !important;
+}
