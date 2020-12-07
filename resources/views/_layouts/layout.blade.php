@@ -23,6 +23,7 @@
     <meta name="csrf-token" content="{{csrf_token()}}" />
     <script type="text/javascript">
         window._asset = '{!! asset("theme/") !!}';
+        window._route = '{!! url('/') !!}'
     </script>
     @section('after_styles')
     @show

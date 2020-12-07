@@ -34,6 +34,8 @@ Route::group(array('prefix' => 'v1-api', 'middleware' => ['authentication','perm
      */
     Route::group(array('prefix' => 'blog'), function () {
         Route::post('post-blog', array('uses'=>'blog\BlogAPIController@storeBlog', 'as'=>'api.blog.store'));
+        Route::post('post-image-file', array('uses'=>'blog\BlogAPIController@storeFile', 'as'=>'api.blog.storefile'));
+        Route::post('post-image-url', array('uses'=>'blog\BlogAPIController@storeURL', 'as'=>'api.blog.storeURL'));
     });
 
 });

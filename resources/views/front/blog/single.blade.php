@@ -145,7 +145,12 @@
                    html += '<hr />';
                    break;
                case 'image':
-                   html += `<div class="text-center"><img loading="lazy" class="img-fluid pad" src="${block.data.url}" title="${block.data.caption}" /><br /><em>${block.data.caption}</em></div>`;
+                   if(block.data.url) {
+                       html += `<div class="text-center"><img loading="lazy" class="img-fluid pad" src="${block.data.url}" title="${block.data.caption}" /><br /><em>${block.data.caption}</em></div>`;
+                   } else {
+                       html += `<div class="text-center"><img loading="lazy" class="img-fluid pad" src="${block.data.file.url}" title="${block.data.caption}" /><br /><em>${block.data.caption}</em></div>`;
+                   }
+
                    break;
                case 'search':
                    html += `<div class="text-center"><img loading="lazy" class="img-fluid pad" src="${block.data.url}" title="${block.data.caption}" /><br /><em>${block.data.caption}</em></div>`;

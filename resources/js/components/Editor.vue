@@ -83,8 +83,14 @@ export default {
                  * Or pass class directly without any configuration
                  */
                 image :{
-                    class: SimpleImage,
-                    inlineToolbar: true
+                    class: ImageTool,
+                    inlineToolbar: true,
+                    config: {
+                        endpoints: {
+                            byFile: window._route + '/v1-api/blog/post-image-file',
+                            byUrl: window._route + '/v1-api/blog/post-image-url',
+                        }
+                    }
                 },
 
                 list: {
@@ -159,6 +165,7 @@ export default {
                     ChatService.postBlog(data)
                         .then(response => {
                             alert('Posted');
+                            location.reload();
                         }).catch(error => {
                         alert('Error in fetching data');
                         console.log(error);

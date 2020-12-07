@@ -893,8 +893,8 @@ class GeneralHelper
         try {
             $posts = $blog->body;
             foreach ($posts as $key => $value) {
-                if($value['type'] == 'image') {
-                    return $value['data']['url'];
+                if($value['type'] == 'image' || $value['type'] == 'search') {
+                    return (isset($value['data']['url']) ? $value['data']['url'] : $value['data']['file']['url']);
                 } else {
                     continue;
                 }

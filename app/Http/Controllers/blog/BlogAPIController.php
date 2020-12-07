@@ -6,13 +6,17 @@ use App\Blog;
 use App\Comment;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DefaultController;
+use App\Http\Requests\ImageStoreRequest;
 use App\Message;
+use App\Traits\ImageUploadTrait;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Foundation\Http\FormRequest;
 
 class BlogAPIController extends DefaultController
 {
+    use ImageUploadTrait;
     public function getComments(Request $request) {
         $data = array();
         try {
@@ -131,6 +135,50 @@ class BlogAPIController extends DefaultController
                 ];
                 return response()->json($data,500);
             }
+        } catch (\Exception $e) {
+            $data = [
+                'type' => 'error',
+                'message' => $e->getMessage(),
+                'data' => null,
+                'code' => 500
+            ];
+            return response()->json($data,500);
+        }
+    }
+
+    public function storeFile(ImageStoreRequest $request) {
+        try {
+            if($request->hasFile('image')) {
+                $image                              =   $this->uploadOne(
+                    $request,
+                    public_path() .  \Config::get('global.blog.upload_folder_path_original'),
+                    public_path() . \Config::get('global.blog.upload_folder_path_resized'),
+                    \Config::get('global.image_resize.category_imageX'),
+                    \Config::get('global.image_resize.category_imageY'),
+                    'image'
+                );
+                $data = [
+                  'success' => '1',
+                    'file' => [
+                        'url' => asset(\Config::get('global.blog.upload_folder_path_original') . '/' . $image)
+                    ]
+                ];
+                return response()->json($data,200);
+            }
+        } catch (\Exception $e) {
+            $data = [
+                'type' => 'error',
+                'message' => $e->getMessage(),
+                'data' => null,
+                'code' => 500
+            ];
+            return response()->json($data,500);
+        }
+    }
+
+    public function storeURL(Request $request) {
+        try {
+            return $request->all();
         } catch (\Exception $e) {
             $data = [
                 'type' => 'error',

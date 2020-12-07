@@ -23498,8 +23498,14 @@ __webpack_require__.r(__webpack_exports__);
          * Or pass class directly without any configuration
          */
         image: {
-          "class": simple_image_editorjs__WEBPACK_IMPORTED_MODULE_7___default.a,
-          inlineToolbar: true
+          "class": _editorjs_image__WEBPACK_IMPORTED_MODULE_5___default.a,
+          inlineToolbar: true,
+          config: {
+            endpoints: {
+              byFile: window._route + '/v1-api/blog/post-image-file',
+              byUrl: window._route + '/v1-api/blog/post-image-url'
+            }
+          }
         },
         list: {
           "class": _editorjs_link__WEBPACK_IMPORTED_MODULE_4___default.a,
@@ -23561,6 +23567,7 @@ __webpack_require__.r(__webpack_exports__);
         };
         _ChatService__WEBPACK_IMPORTED_MODULE_12__["default"].postBlog(data).then(function (response) {
           alert('Posted');
+          location.reload();
         })["catch"](function (error) {
           alert('Error in fetching data');
           console.log(error);
@@ -67654,9 +67661,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var HTTP = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
   //prod
-  //baseURL: `http://172.105.56.201/v1-api/`,
-  //dev
-  baseURL: "http://vik.com/v1-api/"
+  baseURL: "http://172.105.56.201/v1-api/" //dev
+  //baseURL: `http://vik.com/v1-api/`,
+
 });
 
 /***/ }),
