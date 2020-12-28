@@ -186,4 +186,76 @@ export default {
             console.log('Error in getting data');
         })
     },
+
+      /*
+   Post a new discussion
+    */
+
+    postForum(data) {
+        const headers = {
+            'Content-Type': 'application/json'
+        };
+        return new Promise((resolve, reject) => {
+            let url = '/forum/post-discussion';
+            HTTP.post(url, data, {headers})
+                .then((response) => {
+                    if(response.data.code===200) {
+                        resolve(response.data);
+                    } else {
+                        reject(response.data.data.message);
+                    }
+                })
+        }).catch(err => {
+            console.log(err);
+            console.log('Error in getting data');
+        })
+    },
+
+       /*
+   Post a new reply
+    */
+
+   postForumReply(data) {
+    const headers = {
+        'Content-Type': 'application/json'
+    };
+    return new Promise((resolve, reject) => {
+        let url = '/forum/post-reply';
+        HTTP.post(url, data, {headers})
+            .then((response) => {
+                if(response.data.code===200) {
+                    resolve(response.data);
+                } else {
+                    reject(response.data.data.message);
+                }
+            })
+    }).catch(err => {
+        console.log(err);
+        console.log('Error in getting data');
+    })
+    },
+
+       /*
+   Post a new report of post
+    */
+
+   postForumReport(data) {
+    const headers = {
+        'Content-Type': 'application/json'
+    };
+    return new Promise((resolve, reject) => {
+        let url = '/forum/post-report';
+        HTTP.post(url, data, {headers})
+            .then((response) => {
+                if(response.data.code===200) {
+                    resolve(response.data);
+                } else {
+                    reject(response.data.data.message);
+                }
+            })
+    }).catch(err => {
+        console.log(err);
+        console.log('Error in getting data');
+    })
+    },
 }

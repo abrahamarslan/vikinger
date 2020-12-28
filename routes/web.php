@@ -16,6 +16,7 @@ include 'authentication.php';
 include 'chat.php';
 include 'blog.php';
 include 'category.php';
+include 'forum.php';
 include('v1.php');
 Route::get('/', function () {
     return redirect()->route('authentication.getLogin');

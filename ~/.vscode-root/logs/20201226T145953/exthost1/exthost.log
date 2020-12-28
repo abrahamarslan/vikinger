@@ -1,0 +1,143 @@
+[2020-12-26 15:00:34.284] [exthost] [info] extension host started
+[2020-12-26 15:00:34.301] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2020-12-26 15:00:34.301] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2020-12-26 15:00:35.336] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2020-12-26 15:00:35.336] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2020-12-26 15:00:35.969] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-12-26 15:00:35.969] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-12-26 15:00:36.482] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-12-26 15:00:36.482] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2020-12-26 15:00:37.039] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-26 15:00:37.039] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-12-26 15:00:37.617] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-12-26 15:00:37.617] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2020-12-26 15:00:38.145] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-12-26 15:00:38.145] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-12-26 15:00:38.386] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"extensionId":{"value":"christian-kohler.path-intellisense","_lower":"christian-kohler.path-intellisense"},"activationEvent":"*"}
+[2020-12-26 15:00:38.386] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/christian-kohler.path-intellisense-2.3.0/out/extension.js
+[2020-12-26 15:00:43.846] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"extensionId":{"value":"CoenraadS.bracket-pair-colorizer","_lower":"coenraads.bracket-pair-colorizer"},"activationEvent":"*"}
+[2020-12-26 15:00:43.846] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/coenraads.bracket-pair-colorizer-1.0.61/out/src/extension
+[2020-12-26 15:00:46.941] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"extensionId":{"value":"dbaeumer.vscode-eslint","_lower":"dbaeumer.vscode-eslint"},"activationEvent":"*"}
+[2020-12-26 15:00:46.941] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/dbaeumer.vscode-eslint-2.1.8/client/out/extension
+[2020-12-26 15:00:47.277] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2020-12-26 15:00:47.277] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/eamodio.gitlens-10.2.3/dist/extension
+[2020-12-26 15:00:47.741] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"extensionId":{"value":"formulahendry.auto-close-tag","_lower":"formulahendry.auto-close-tag"},"activationEvent":"*"}
+[2020-12-26 15:00:47.741] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/formulahendry.auto-close-tag-0.5.9/out/src/extension
+[2020-12-26 15:00:47.923] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"extensionId":{"value":"formulahendry.auto-rename-tag","_lower":"formulahendry.auto-rename-tag"},"activationEvent":"*"}
+[2020-12-26 15:00:47.923] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/formulahendry.auto-rename-tag-0.1.5/packages/extension/dist/extensionMain.js
+[2020-12-26 15:00:48.575] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2020-12-26 15:00:48.575] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2020-12-26 15:01:58.378] [exthost] [info] ExtensionService#_doActivateExtension Wscats.eno {"startup":true,"extensionId":{"value":"Wscats.eno","_lower":"wscats.eno"},"activationEvent":"*"}
+[2020-12-26 15:01:58.378] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/wscats.eno-2.3.41/out/extension.js
+[2020-12-26 15:04:35.930] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"workspaceContains:package.json"}
+[2020-12-26 15:04:35.931] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/npm/dist/npmMain
+[2020-12-26 15:04:38.101] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-12-26 15:04:38.101] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github/dist/extension.js
+[2020-12-26 15:04:40.076] [exthost] [info] ExtensionService#_doActivateExtension felixfbecker.php-intellisense {"startup":true,"extensionId":{"value":"felixfbecker.php-intellisense","_lower":"felixfbecker.php-intellisense"},"activationEvent":"workspaceContains:**/*.php"}
+[2020-12-26 15:04:40.077] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/out/extension
+[2020-12-26 15:04:48.597] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":false,"extensionId":{"value":"esbenp.prettier-vscode","_lower":"esbenp.prettier-vscode"},"activationEvent":"onStartupFinished"}
+[2020-12-26 15:04:48.597] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/esbenp.prettier-vscode-5.8.0/dist/extension
+[2020-12-26 15:04:53.858] [exthost] [info] eager extensions activated
+[2020-12-26 15:11:26.421] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"extensionId":{"value":"vscode.php-language-features","_lower":"vscode.php-language-features"},"activationEvent":"onLanguage:php"}
+[2020-12-26 15:11:26.421] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/php-language-features/dist/phpMain
+[2020-12-26 15:11:26.840] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css {"startup":false,"extensionId":{"value":"ecmel.vscode-html-css","_lower":"ecmel.vscode-html-css"},"activationEvent":"onLanguage:php"}
+[2020-12-26 15:11:26.840] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ecmel.vscode-html-css-0.2.3/dist/extension
+[2020-12-27 18:49:47.299] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-27 18:49:47.299] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-27 22:43:58.828] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"extensionId":{"value":"vscode.css-language-features","_lower":"vscode.css-language-features"},"activationEvent":"onLanguage:scss"}
+[2020-12-27 22:43:58.977] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/css-language-features/client/dist/node/cssClientMain
+[2020-12-28 00:54:01.000] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:01.000] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:01.000] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:25.709] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:25.709] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:25.709] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:25.819] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:25.819] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:25.819] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:32.409] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:32.409] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:32.409] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 00:54:32.642] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:44.466] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:44.466] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:44.466] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:44.601] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:44.601] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:44.601] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:45.217] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:10:45.627] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:24.254] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:24.255] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:24.255] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:24.772] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:24.772] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:24.772] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:52.557] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:53.455] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:54.126] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:54.127] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:54.127] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:12:54.127] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:26.085] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:26.087] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:26.087] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:26.087] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:26.100] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:26.100] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:26.100] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:28.347] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:28.347] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:28.347] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:28.349] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:28.349] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:28.349] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:28.349] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:29.190] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:29.190] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:17:29.190] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:22:24.558] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:22:24.558] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:22:24.558] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:22:26.315] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:22:26.315] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:22:26.315] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 01:22:26.337] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 06:55:41.018] [exthost] [info] ExtensionService#_doActivateExtension octref.vetur {"startup":false,"extensionId":{"value":"octref.vetur","_lower":"octref.vetur"},"activationEvent":"onLanguage:vue"}
+[2020-12-28 06:55:41.084] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/octref.vetur-0.31.3/dist/vueMain.js
+[2020-12-28 06:56:42.350] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:typescript"}
+[2020-12-28 06:56:42.350] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/extension-editing/dist/extensionEditingMain
+[2020-12-28 06:56:42.600] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:typescript"}
+[2020-12-28 06:56:42.600] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2020-12-28 06:56:42.822] [exthost] [info] ExtensionService#_doActivateExtension Angular.ng-template {"startup":false,"extensionId":{"value":"Angular.ng-template","_lower":"angular.ng-template"},"activationEvent":"onLanguage:typescript"}
+[2020-12-28 06:56:42.822] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/angular.ng-template-0.1100.2/client
+[2020-12-28 06:56:44.496] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.npm-intellisense {"startup":false,"extensionId":{"value":"christian-kohler.npm-intellisense","_lower":"christian-kohler.npm-intellisense"},"activationEvent":"onLanguage:typescript"}
+[2020-12-28 06:56:44.496] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/christian-kohler.npm-intellisense-1.3.1/out/src/extension
+[2020-12-28 06:56:45.154] [exthost] [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode {"startup":false,"extensionId":{"value":"VisualStudioExptTeam.vscodeintellicode","_lower":"visualstudioexptteam.vscodeintellicode"},"activationEvent":"onLanguage:typescript"}
+[2020-12-28 06:56:45.154] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.10/dist/intellicode
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 07:12:26.118] [exthost] [warning] octref.vetur - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2020-12-28 15:54:20.054] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 15:54:20.054] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 15:54:20.054] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 15:54:20.442] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 15:54:20.443] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 15:54:20.443] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 19:36:55.921] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 19:36:55.923] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 19:36:55.923] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 19:36:56.361] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 19:36:56.361] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 19:36:56.361] [exthost] [warning] TextEditor is closed/disposed
+[2020-12-28 20:16:24.455] [exthost] [warning] TextEditor is closed/disposed

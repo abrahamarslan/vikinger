@@ -1,0 +1,44 @@
+[2020-12-16 18:31:05.202] [sharedprocess] [info] main {"machineId":"65ec9cf43ae62cd43d6c785935021dfaad06fc54a1e64210bb1987a46c1da34b","windowId":2}
+[2020-12-16 18:31:38.102] [sharedprocess] [info] Installing extension: angular.ng-template
+[2020-12-16 18:31:38.103] [sharedprocess] [info] Installing extension: esbenp.prettier-vscode
+[2020-12-16 18:31:38.103] [sharedprocess] [info] Installing extension: johnpapa.angular2
+[2020-12-16 18:31:38.104] [sharedprocess] [info] Installing extension: ms-azuretools.vscode-docker
+[2020-12-16 18:31:38.104] [sharedprocess] [info] Installing extension: octref.vetur
+[2020-12-16 18:31:38.104] [sharedprocess] [info] Installing extension: redhat.vscode-yaml
+[2020-12-16 18:31:38.104] [sharedprocess] [info] Installing extension: wscats.eno
+[2020-12-16 18:31:45.214] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-12-16 18:32:46.718] [sharedprocess] [info] Downloaded extension: johnpapa.angular2 /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/johnpapa.angular2-11.0.0
+[2020-12-16 18:32:47.459] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.johnpapa.angular2-11.0.0: johnpapa.angular2
+[2020-12-16 18:32:47.460] [sharedprocess] [info] Renamed to /root/.vscode/extensions/johnpapa.angular2-11.0.0
+[2020-12-16 18:32:47.460] [sharedprocess] [info] Installation completed. johnpapa.angular2
+[2020-12-16 18:32:47.664] [sharedprocess] [info] Extensions installed successfully: johnpapa.angular2
+[2020-12-16 18:33:49.504] [sharedprocess] [info] Downloaded extension: ms-azuretools.vscode-docker /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/ms-azuretools.vscode-docker-1.9.0
+[2020-12-16 18:33:50.158] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-azuretools.vscode-docker-1.9.0: ms-azuretools.vscode-docker
+[2020-12-16 18:33:50.159] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-azuretools.vscode-docker-1.9.0
+[2020-12-16 18:33:50.162] [sharedprocess] [info] Installation completed. ms-azuretools.vscode-docker
+[2020-12-16 18:33:50.244] [sharedprocess] [info] Extensions installed successfully: ms-azuretools.vscode-docker
+[2020-12-16 18:34:33.591] [sharedprocess] [info] Downloaded extension: esbenp.prettier-vscode /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/esbenp.prettier-vscode-5.8.0
+[2020-12-16 18:34:33.995] [sharedprocess] [info] Downloaded extension: redhat.vscode-yaml /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/redhat.vscode-yaml-0.13.0
+[2020-12-16 18:34:34.084] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.esbenp.prettier-vscode-5.8.0: esbenp.prettier-vscode
+[2020-12-16 18:34:34.084] [sharedprocess] [info] Renamed to /root/.vscode/extensions/esbenp.prettier-vscode-5.8.0
+[2020-12-16 18:34:34.086] [sharedprocess] [info] Installation completed. esbenp.prettier-vscode
+[2020-12-16 18:34:34.096] [sharedprocess] [info] Extensions installed successfully: esbenp.prettier-vscode
+[2020-12-16 18:34:35.314] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.redhat.vscode-yaml-0.13.0: redhat.vscode-yaml
+[2020-12-16 18:34:35.315] [sharedprocess] [info] Renamed to /root/.vscode/extensions/redhat.vscode-yaml-0.13.0
+[2020-12-16 18:34:35.315] [sharedprocess] [info] Installation completed. redhat.vscode-yaml
+[2020-12-16 18:34:35.319] [sharedprocess] [info] Extensions installed successfully: redhat.vscode-yaml
+[2020-12-16 18:37:08.424] [sharedprocess] [info] Downloaded extension: angular.ng-template /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/angular.ng-template-0.1100.2
+[2020-12-16 18:37:09.830] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.angular.ng-template-0.1100.2: angular.ng-template
+[2020-12-16 18:37:09.830] [sharedprocess] [info] Renamed to /root/.vscode/extensions/angular.ng-template-0.1100.2
+[2020-12-16 18:37:09.831] [sharedprocess] [info] Installation completed. angular.ng-template
+[2020-12-16 18:37:09.836] [sharedprocess] [info] Extensions installed successfully: angular.ng-template
+[2020-12-16 18:37:23.572] [sharedprocess] [info] Downloaded extension: octref.vetur /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/octref.vetur-0.31.3
+[2020-12-16 18:37:30.362] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.octref.vetur-0.31.3: octref.vetur
+[2020-12-16 18:37:30.362] [sharedprocess] [info] Renamed to /root/.vscode/extensions/octref.vetur-0.31.3
+[2020-12-16 18:37:30.364] [sharedprocess] [info] Installation completed. octref.vetur
+[2020-12-16 18:37:31.923] [sharedprocess] [info] Extensions installed successfully: octref.vetur
+[2020-12-16 18:37:40.984] [sharedprocess] [info] Downloaded extension: wscats.eno /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/wscats.eno-2.3.41
+[2020-12-16 18:37:52.810] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.wscats.eno-2.3.41: wscats.eno
+[2020-12-16 18:37:52.811] [sharedprocess] [info] Renamed to /root/.vscode/extensions/wscats.eno-2.3.41
+[2020-12-16 18:37:52.813] [sharedprocess] [info] Installation completed. wscats.eno
+[2020-12-16 18:37:52.873] [sharedprocess] [info] Extensions installed successfully: wscats.eno

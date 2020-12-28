@@ -27,6 +27,8 @@ Vue.component('ChatBar', require('./components/ChatBar.vue').default);
 Vue.component('Comments', require('./components/Comments.vue').default);
 Vue.component('Reply', require('./components/Reply.vue').default);
 Vue.component('Editor', require('./components/Editor.vue').default);
+Vue.component('Discussion', require('./components/Discussion.vue').default);
+Vue.component('Thread', require('./components/Thread.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

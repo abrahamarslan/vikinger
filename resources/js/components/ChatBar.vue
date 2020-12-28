@@ -224,11 +224,9 @@
             <!-- /CHAT WIDGET HEADER -->
 
             <!-- CHAT WIDGET CONVERSATION -->
-            <div class="chat-widget-conversation" data-simplebar v-chat-scroll="{smooth: true}">
-                <transition-group name="conversation" tag="p">
-
+            <div class="chat chat-widget-conversation" data-simplebar v-chat-scroll="{smooth: true, always: true}" id="chats" ref="list">
                 <!-- CHAT WIDGET SPEAKER -->
-                <div class="chat-widget-speaker" v-for="(message,i) in messages" :key="message.id" :class="message.from_id === user.id ? 'right' : 'left'" v-if="(message.from_id !== user.id) || (message.from_id === user.id && message.deleted_by_me === 'False')">
+                <div class="chat-widget-speaker" v-for="(message, i) in allMessages" :key="message.id" :class="message.from_id === user.id ? 'right' : 'left'" v-if="(message.from_id !== user.id) || (message.from_id === user.id && message.deleted_by_me === 'False')">
                     <!-- CHAT WIDGET SPEAKER AVATAR -->
                     <div class="chat-widget-speaker-avatar" v-if="message.from_id === currentUser.id">
                         <!-- USER AVATAR -->
@@ -257,8 +255,6 @@
                     <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
                 </div>
                 <!-- /CHAT WIDGET SPEAKER -->
-                </transition-group>
-
             </div>
             <!-- /CHAT WIDGET CONVERSATION -->
 
@@ -318,11 +314,23 @@ export default {
             isSubscribed: false
         };
     },
+    updated() {
+        console.log('here');
+        // whenever data changes and the component re-renders, this is called.
+        this.$nextTick(() => this.scrollToEnd());
+    },
     methods: {
         clearData() {
             this.chatMessage = '';
         },
+        scrollToEnd: function () {
+            // scroll to the start of the last message
+            let container = this.$el.querySelector('#chats');
+            container.scrollTop = container.scrollHeight;
 
+            //this.$el.scrollTop = this.$refs.list.lastElementChild.offsetTop;
+
+        },
         getOnlineStatus() {
           let that = this;
           Echo.join('online-now')
@@ -396,11 +404,13 @@ export default {
                     'from_id': this.user.id,
                     'to_id': this.currentUserId
                 };
-                console.log('Sending data', data);
+                //console.log('Sending data', data);
                 ChatService.postChat(data)
                     .then(response => {
+                        //console.log(response.data);
                         this.messages.push(response.data);
                         this.clearData();
+                        //console.log(this.messages);
                     }).catch(error => {
                     alert('Error in fetching data');
                     console.log(error);
@@ -439,6 +449,9 @@ export default {
     computed: {
         canSend() {
             return (this.chatMessage.length>0 && this.chatMessage!== '');
+        },
+        allMessages() {
+            return this.messages;
         }
     },
     mounted() {
@@ -467,12 +480,4 @@ button:disabled, button[disabled], button:disabled:hover, button[disabled]:hover
     .from_me:hover .delete-message {
         display: inline-block;
     }
-    .conversation-leave-active {
-        transition: all 1s;
-    }
-    .conversation-leave-to {
-        opacity:0;
-        transform: translateY(30px);
-    }
-
 </style>

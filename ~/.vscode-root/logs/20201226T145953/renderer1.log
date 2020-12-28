@@ -1,0 +1,6 @@
+[2020-12-26 15:02:06.929] [renderer1] [warning] UNRESPONSIVE extension host, 'Wscats.eno' took 100% of 5474.681ms, saved PROFILE here: '/tmp/exthost-733a0d.cpuprofile' [{"id":"gc","total":2802,"percentage":0},{"id":"Wscats.eno","total":5471587,"percentage":100}]
+[2020-12-26 15:02:16.947] [renderer1] [error] XHR failed: Error: XHR failed
+    at XMLHttpRequest.r.onerror (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:465:45)
+[2020-12-28 07:11:15.529] [renderer1] [warning] {}
+[2020-12-28 19:39:55.411] [renderer1] [warning] UNRESPONSIVE extension host, 'esbenp.prettier-vscode' took 100% of 414.436ms, saved PROFILE here: '/tmp/exthost-7e01df.cpuprofile' [{"id":"esbenp.prettier-vscode","total":414120,"percentage":100}]
+[2020-12-28 19:56:52.492] [renderer1] [warning] UNRESPONSIVE extension host, 'vscode.git' took 89% of 1474.759ms, saved PROFILE here: '/tmp/exthost-fa7317.cpuprofile' [{"id":"vscode.git","total":1313543,"percentage":89},{"id":"vscode.microsoft-authentication","total":161134,"percentage":11}]

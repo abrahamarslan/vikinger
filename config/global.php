@@ -37,6 +37,27 @@ return array(
         'upload_folder_path_resized'            => '/images/forum/resized/',
     ),
 
+    'fcategory' => array(
+        'default_avatar'                        => '/images/fcategory/original/default.png',
+        'upload_folder_path'                    => '/images/fcategory/',
+        'upload_folder_path_original'           => '/images/fcategory/original/',
+        'upload_folder_path_resized'            => '/images/fcategory/resized/',
+    ),
+
+    'ftopic' => array(
+        'default_avatar'                        => '/images/ftopic/original/default.png',
+        'upload_folder_path'                    => '/images/ftopic/',
+        'upload_folder_path_original'           => '/images/ftopic/original/',
+        'upload_folder_path_resized'            => '/images/ftopic/resized/',
+    ),
+
+    'fpost' => array(
+        'default_avatar'                        => '/images/fpost/original/default.png',
+        'upload_folder_path'                    => '/images/fpost/',
+        'upload_folder_path_original'           => '/images/fpost/original/',
+        'upload_folder_path_resized'            => '/images/fpost/resized/',
+    ),
+
     'user' => array(
         'default_avatar'                        => '/images/user/original/default.png',
         'upload_folder_path'                    => '/images/user/',

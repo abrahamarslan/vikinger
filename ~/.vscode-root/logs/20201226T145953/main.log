@@ -1,0 +1,8 @@
+[2020-12-26 14:59:59.586] [main] [info] update#setState idle
+[2020-12-26 15:00:29.587] [main] [info] update#setState checking for updates
+[2020-12-26 15:00:39.606] [main] [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6395)
+    at SimpleURLLoaderWrapper.emit (events.js:223:5)
+[2020-12-26 15:00:39.606] [main] [info] update#setState idle
+[2020-12-26 16:00:39.458] [main] [info] update#setState checking for updates
+[2020-12-26 16:00:55.658] [main] [info] update#setState available for download

@@ -1,0 +1,6 @@
+[Info  - 6:33:47 PM] Angular language server process ID: 5788
+[Info  - 6:33:47 PM] Using typescript/lib/tsserverlibrary v4.0.5 from /root/.vscode/extensions/angular.ng-template-0.1100.0/node_modules/typescript/lib/tsserverlibrary.js
+[Info  - 6:33:47 PM] Using @angular/language-service v11.0.0 from /root/.vscode/extensions/angular.ng-template-0.1100.0/server/node_modules/@angular/language-service/bundles/language-service.js
+[Info  - 6:33:47 PM] Log file: /var/www/vik/~/.vscode-root/logs/20201216T183050/exthost1/Angular.ng-template/nglangsvc.log
+[Error - 12:32:18 AM] Failed to find project for /var/www/vik/node_modules/vue/types/vue.d.ts
+[Error - 3:02:41 AM] Failed to find project for /root/.vscode/extensions/octref.vetur-0.30.2/server/dist/lib.dom.d.ts

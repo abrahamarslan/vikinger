@@ -94,9 +94,22 @@ class BlogController extends DefaultController
 
     public function getFiltered(Request $request) {
         try {
+            $filterTerm = $request->get('post_filter_category');
+            $blogUser = User::where('id', $request->get('user_id'))->first();
             if($user = Sentinel::check()) {
                 $this->data['user'] = $user;
+                $this->data['blogUser'] = $blogUser;
                 $this->data['members'] = User::where('id', '!=', $user->id)->get();
+                if($blogUser) {
+                    $this->data['blogs'] = Blog::where('user_id', $blogUser->id)
+                    ->where("title", "LIKE", "%" . $filterTerm . "%")
+                    ->orWhere("tags", "LIKE", "%" . $filterTerm . "%")
+                    ->get();
+                    return view('front.blog.list', $this->data);
+                } else {
+                    $this->messageBag->add('error', 'Not found');
+                    return redirect()->back()->withInput()->withErrors($this->messageBag);
+                }
                 //$this->data['blog'] = $blog;
                 $this->data['showChatBar'] = true;
                 return view('front.blog.list', $this->data);
@@ -133,9 +146,11 @@ class BlogController extends DefaultController
         try {
             if($user = Sentinel::check()) {
                 $this->data['user'] = $user;
+                
                 $this->data['members'] = User::where('id', '!=', $user->id)->get();
                 $this->data['showChatBar'] = true;
                 $blogUser = User::where('username', $username)->first();
+                $this->data['blogUser'] = $blogUser;
                 if($blogUser) {
                     $this->data['blogs'] = Blog::where('user_id', $blogUser->id)->get();
                     return view('front.blog.list', $this->data);

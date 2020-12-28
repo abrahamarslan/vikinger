@@ -47,50 +47,12 @@
                 <!-- FORM ITEM -->
                 <div class="form-item split medium">
                     <!-- FORM SELECT -->
-                    <div class="form-select">
-                        <label for="post-filter-category">Filter By</label>
-                        <select id="post-filter-category" name="post_filter_category">
-                            <option value="0">Reactions Received</option>
-                            <option value="1">Comment Count</option>
-                            <option value="2">Share Count</option>
-                        </select>
-                        <!-- FORM SELECT ICON -->
-                        <svg class="form-select-icon icon-small-arrow">
-                            <use xlink:href="#svg-small-arrow"></use>
-                        </svg>
-                        <!-- /FORM SELECT ICON -->
+                    <div class="form-select full-width-item">
+                        <label for="post-filter-category">Filter Term</label>
+                        <input type="text" id="post-filter-category" name="post_filter_category" />
                     </div>
-                    <!-- /FORM SELECT -->
-
-                    <!-- FORM SELECT -->
-                    <div class="form-select">
-                        <label for="post-filter-order">Order By</label>
-                        <select id="post-filter-order" name="post_filter_order">
-                            <option value="0">Highest to Lowest</option>
-                            <option value="1">Lowest to Highest</option>
-                        </select>
-                        <!-- FORM SELECT ICON -->
-                        <svg class="form-select-icon icon-small-arrow">
-                            <use xlink:href="#svg-small-arrow"></use>
-                        </svg>
-                        <!-- /FORM SELECT ICON -->
-                    </div>
-                    <!-- /FORM SELECT -->
-
-                    <!-- FORM SELECT -->
-                    <div class="form-select">
-                        <label for="post-filter-show">Show</label>
-                        <select id="post-filter-show" name="post_filter_show">
-                            <option value="0">12 Posts per Page</option>
-                            <option value="1">24 Posts per Page</option>
-                        </select>
-                        <!-- FORM SELECT ICON -->
-                        <svg class="form-select-icon icon-small-arrow">
-                            <use xlink:href="#svg-small-arrow"></use>
-                        </svg>
-                        <!-- /FORM SELECT ICON -->
-                    </div>
-                    <!-- /FORM SELECT -->
+                    <input type="hidden" value="{!! $blogUser->id !!}" name="user_id" />
+                    <!-- /FORM SELECT -->               
 
                     <!-- BUTTON -->
                     <button class="button primary">Filter Posts</button>
@@ -104,6 +66,7 @@
 
         <!-- GRID -->
         <div class="grid grid-4-4-4 centered">
+            @if(count($blogs) > 0)
             @foreach($blogs as $blog)
                 <!-- POST PREVIEW -->
                 <div class="post-preview">
@@ -149,6 +112,11 @@
                 </div>
                 <!-- /POST PREVIEW -->
             @endforeach
+            @else
+                <div class="text-center">
+                    <h2>Sorry, no posts found!</h2>
+                </div>
+            @endif
         </div>
         <!-- /GRID -->
     </section>

@@ -71,13 +71,14 @@ class ChatAPIController extends DefaultController
                 $message->to_id = $toID;
                 $message->message = $chat;
                 $message->save();
+                $messageNew = Message::findOrFail($message->id);
                 $data = [
                     'type' => 'success',
                     'message' => 'records',
-                    'data' => $message,
+                    'data' => $messageNew,
                     'code' => 200
                 ];
-                $eventData = ['message' => $message, 'from_id' => $fromID, 'to_id' => $toID];
+                $eventData = ['message' => $messageNew, 'from_id' => $fromID, 'to_id' => $toID];
                 event(new ChatCreated($eventData));
                 broadcast(new ChatCreatedBar($eventData))->toOthers();
                 broadcast(new MessageToUser($eventData))->toOthers();

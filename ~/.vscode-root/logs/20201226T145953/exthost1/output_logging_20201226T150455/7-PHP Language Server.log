@@ -1,0 +1,560 @@
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     The xdebug extension is loaded (2.9.6)
+
+DEBUG     Process restarting (PHPLS_ALLOW_XDEBUG=internal|2.9.6|1|*|*)
+DEBUG     Running '/usr/bin/php7.4' '-n' '-c' '/tmp/c2MClD' '/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/bin/php-language-server.php' '--tcp=127.0.0.1:43801' '--memory-limit=4095M'
+
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     Restarted (156 ms). The xdebug extension is not loaded
+
+[Info  - 3:06:45 PM] 7208 files total
+[Info  - 3:06:45 PM] Indexing project for definitions and static references
+Parsing file:///var/www/vik/bootstrap/app.php
+Parsing file:///var/www/vik/bootstrap/cache/packages.php
+Parsing file:///var/www/vik/bootstrap/cache/services.php
+Parsing file:///var/www/vik/server.php
+Parsing file:///var/www/vik/tests/Feature/ExampleTest.php
+Parsing file:///var/www/vik/tests/Unit/ExampleTest.php
+Parsing file:///var/www/vik/tests/CreatesApplication.php
+Parsing file:///var/www/vik/tests/TestCase.php
+Parsing file:///var/www/vik/routes/v1.php
+Parsing file:///var/www/vik/routes/authentication.php
+Parsing file:///var/www/vik/routes/blog.php
+Parsing file:///var/www/vik/routes/channels.php
+Parsing file:///var/www/vik/routes/chat.php
+Parsing file:///var/www/vik/routes/console.php
+Parsing file:///var/www/vik/routes/api.php
+Parsing file:///var/www/vik/routes/category.php
+Parsing file:///var/www/vik/routes/web.php
+Parsing file:///var/www/vik/database/seeds/DatabaseSeeder.php
+Parsing file:///var/www/vik/database/factories/UserFactory.php
+Parsing file:///var/www/vik/database/migrations/2020_11_21_120502_create_categories_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_15_150218_create_jobs_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_21_132923_create_comments_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_09_214814_add_columns_to_users.php
+Parsing file:///var/www/vik/database/migrations/2020_11_21_122408_create_blogs_table.php
+Parsing file:///var/www/vik/database/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php
+Parsing file:///var/www/vik/database/migrations/2014_10_12_100000_create_password_resets_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_08_223731_create_activity_log_table.php
+Parsing file:///var/www/vik/database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_14_032504_create_messages_table.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/messages.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/form.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/validation.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/log.php
+Parsing file:///var/www/vik/resources/lang/en/validation.php
+Parsing file:///var/www/vik/resources/lang/en/pagination.php
+Parsing file:///var/www/vik/resources/lang/en/passwords.php
+Parsing file:///var/www/vik/resources/lang/en/auth.php
+Parsing file:///var/www/vik/resources/views/authentication/_partials/notification.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/reset.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/authentication.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/emails/registration.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/emails/activation.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/forgot.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/_layouts/layout.blade.php
+Parsing file:///var/www/vik/resources/views/front/chat.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/createTwo.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/form.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/list.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/create.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/single.blade.php
+Parsing file:///var/www/vik/resources/views/front/user/timeline.blade.php
+[Info  - 3:06:50 PM] Ignoring file file:///var/www/vik/resources/views/front/user/timeline.blade.php because it exceeds size limit of 150000 bytes (251914)
+Parsing file:///var/www/vik/resources/views/front/user/chats.blade.php
+Parsing file:///var/www/vik/resources/views/front/category/list.blade.php
+Parsing file:///var/www/vik/resources/views/front/category/create.blade.php
+Parsing file:///var/www/vik/resources/views/front/category/single.blade.php
+Parsing file:///var/www/vik/resources/views/welcome.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/loader.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/chat.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/xs_nav.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/reaction.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/blog_comments.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/post_comments.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/floaty_bar.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/lnav.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/profile_header.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/reaction_post.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/lnav_expanded.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/blog_reactions.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/chat_users.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/nav.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/blog_related.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/post_actions.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/content_actions.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/header.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/section_navigation.php
+Parsing file:///var/www/vik/resources/views/emails/registration.blade.php
+Parsing file:///var/www/vik/resources/views/emails/forgot.blade.php
+Parsing file:///var/www/vik/resources/views/_layouts/layout.blade.php
+Parsing file:///var/www/vik/storage/framework/views/7e66a6e7d32e78e25e51c3e0079a85955025535e.php
+Parsing file:///var/www/vik/storage/framework/views/6fc38d7c431ff4e85853035e5f6f4c8f4af26df5.php
+Parsing file:///var/www/vik/storage/framework/views/7e98e4303788d8653d7b9db9fce64204a60b338a.php
+Parsing file:///var/www/vik/storage/framework/views/8545c22a055d4969d9a46ce02cc4b80de74176a3.php
+Parsing file:///var/www/vik/storage/framework/views/90614262aff39fae182223dc838b649f27635f04.php
+Parsing file:///var/www/vik/storage/framework/views/f1398ee466f0e7c8b967604989a1c1704b1af174.php
+Parsing file:///var/www/vik/storage/framework/views/d99d5a9e1ab88a2e323995e800c6ad003a3bc2ea.php
+Parsing file:///var/www/vik/storage/framework/views/4e94b1d85b4c3f2716a192174dbea4307b0a67ba.php
+Parsing file:///var/www/vik/storage/framework/views/d45cd4c963f7cdc44ed4f9fb540ad56a48f7e00f.php
+Parsing file:///var/www/vik/storage/framework/views/0fa2736f6fee5fab23a7d0af449f797b49810e10.php
+Parsing file:///var/www/vik/storage/framework/views/ced72a5dffe2d5d72f61f947583a9583c8c42ebc.php
+Parsing file:///var/www/vik/storage/framework/views/c7dbfdb68600b8a545d5ebf31eca35df40eb5715.php
+Parsing file:///var/www/vik/storage/framework/views/05ecfaa4d8977a4b676abcaf7cdad242b3603cc5.php
+Parsing file:///var/www/vik/storage/framework/views/cf1c9f9640a148ccddfa0f03b2c242cf3714233c.php
+Parsing file:///var/www/vik/storage/framework/views/8fe5f141cfe7747ebfce47fe37f1ccbfef8f9d80.php
+Parsing file:///var/www/vik/storage/framework/views/ae606961f87b5a2eaf3e07d4cc4a2c5da4932b40.php
+Parsing file:///var/www/vik/storage/framework/views/3ad64b60e5aae2518d94c7e7cccbcab8128b83ba.php
+Parsing file:///var/www/vik/storage/framework/views/61b60f827d6d58b58ecd52c22a0ef3aa3647ecaa.php
+Parsing file:///var/www/vik/storage/framework/views/f52676c0b67246171e61dec8826791d684457faf.php
+Parsing file:///var/www/vik/storage/framework/views/e683396f36e6fd43c5adab3c937c3b29f7df4290.php
+Parsing file:///var/www/vik/storage/framework/views/64d0057f7396c689dd08f63967c5b3cc27007555.php
+Parsing file:///var/www/vik/storage/framework/views/3925d4d858882d3bff2dc0f11849da758fe245b7.php
+Parsing file:///var/www/vik/storage/framework/views/ba793b46f54e17cf35b0cd3fbd59fc46600c049e.php
+Parsing file:///var/www/vik/storage/framework/views/efa1534223949bf392cfcd7695a43eaacdaec932.php
+[Info  - 3:06:56 PM] Ignoring file file:///var/www/vik/storage/framework/views/efa1534223949bf392cfcd7695a43eaacdaec932.php because it exceeds size limit of 150000 bytes (253964)
+Parsing file:///var/www/vik/storage/framework/views/03a047179d8a8a8fccaca3cbf321b6978f5485ba.php
+Parsing file:///var/www/vik/storage/framework/views/93e28c17ccb6a3955470cd029d3d021e53c2c107.php
+Parsing file:///var/www/vik/storage/framework/views/0021b3078e0b9565ee62567660a3f6a3c0e47d4b.php
+Parsing file:///var/www/vik/storage/framework/views/e28092e5c5b1116f3d566d603eca96fca75eb16e.php
+Parsing file:///var/www/vik/storage/framework/views/171531b551803da4a28055eec8f753f5e88868ed.php
+Parsing file:///var/www/vik/storage/framework/views/bb72665e747d112e887c78557d7112b03b4f415e.php
+Parsing file:///var/www/vik/storage/framework/views/b5cfcef52a345effb95b2eb09b972c639172a3f1.php
+Parsing file:///var/www/vik/storage/framework/views/906d988e188e01203dd9ddf1c1e7a766b67dbde0.php
+Parsing file:///var/www/vik/storage/framework/views/7b03b34004231dcc7c67d3e8c20ac23bc0beb9f9.php
+Parsing file:///var/www/vik/storage/framework/views/5a59d1a7b95c0b3fe5733fa16b586e137d648d11.php
+Parsing file:///var/www/vik/storage/framework/views/a689f23bff91afb9f959607538e44418aaeb4f8a.php
+Parsing file:///var/www/vik/storage/framework/views/3c462669577c9e4d93d2e2633e3987cb3ef507b3.php
+Parsing file:///var/www/vik/storage/framework/views/4a574b3be8cb2ac2378e45805f3004620ec76915.php
+Parsing file:///var/www/vik/storage/framework/views/127f7e7cf4fdfc316d53cf52ca431341868a71c5.php
+Parsing file:///var/www/vik/vendor/composer/ClassLoader.php
+Parsing file:///var/www/vik/vendor/composer/autoload_static.php
+[Info  - 3:06:57 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_static.php because it exceeds size limit of 150000 bytes (747115)
+Parsing file:///var/www/vik/vendor/composer/autoload_psr4.php
+Parsing file:///var/www/vik/vendor/composer/autoload_files.php
+Parsing file:///var/www/vik/vendor/composer/autoload_real.php
+Parsing file:///var/www/vik/vendor/composer/autoload_namespaces.php
+Parsing file:///var/www/vik/vendor/composer/autoload_classmap.php
+[Info  - 3:06:58 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_classmap.php because it exceeds size limit of 150000 bytes (678259)
+Parsing file:///var/www/vik/vendor/autoload.php
+Parsing file:///var/www/vik/app/Blog.php
+Parsing file:///var/www/vik/app/Exceptions/Handler.php
+Parsing file:///var/www/vik/app/Category.php
+Parsing file:///var/www/vik/app/User.php
+Parsing file:///var/www/vik/app/Role.php
+Parsing file:///var/www/vik/app/Http/Kernel.php
+Parsing file:///var/www/vik/app/Http/Controllers/authentication/ActivationController.php
+Parsing file:///var/www/vik/app/Http/Controllers/authentication/AuthenticationController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/CommentController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/BlogController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/CommentAPIController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/BlogAPIController.php
+Parsing file:///var/www/vik/app/Http/Controllers/share/ShareController.php
+Parsing file:///var/www/vik/app/Http/Controllers/reaction/ReactionController.php
+Parsing file:///var/www/vik/app/Http/Controllers/comment/CommentController.php
+Parsing file:///var/www/vik/app/Http/Controllers/category/CategoryController.php
+Parsing file:///var/www/vik/app/Http/Controllers/Controller.php
+Parsing file:///var/www/vik/app/Http/Controllers/chat/ChatController.php
+Parsing file:///var/www/vik/app/Http/Controllers/DefaultController.php
+Parsing file:///var/www/vik/app/Http/Controllers/api/ChatAPIController.php
+Parsing file:///var/www/vik/app/Http/Controllers/api/UserOnlineController.php
+Parsing file:///var/www/vik/app/Http/Controllers/api/UserOfflineController.php
+Parsing file:///var/www/vik/app/Http/Requests/authentication/UserStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/blog/BlogStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/user/UserStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/category/CategoryStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/ImageStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Middleware/Permission.php
+Parsing file:///var/www/vik/app/Http/Middleware/Authentication.php
+Parsing file:///var/www/vik/app/Http/Middleware/VerifyCsrfToken.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustProxies.php
+Parsing file:///var/www/vik/app/Http/Middleware/EncryptCookies.php
+Parsing file:///var/www/vik/app/Http/Middleware/CheckRole.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustHosts.php
+Parsing file:///var/www/vik/app/Http/Middleware/RedirectIfAuthenticated.php
+Parsing file:///var/www/vik/app/Http/Middleware/Authenticate.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrimStrings.php
+Parsing file:///var/www/vik/app/Http/Middleware/CheckForMaintenanceMode.php
+Parsing file:///var/www/vik/app/Providers/RouteServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/BroadcastServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/EventServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AuthServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AppServiceProvider.php
+Parsing file:///var/www/vik/app/CommentCollection.php
+Parsing file:///var/www/vik/app/Mail/Registration.php
+Parsing file:///var/www/vik/app/Mail/Forgot.php
+Parsing file:///var/www/vik/app/Message.php
+Parsing file:///var/www/vik/app/Traits/CategoryStoreTrait.php
+Parsing file:///var/www/vik/app/Traits/UserStoreTrait.php
+Parsing file:///var/www/vik/app/Traits/BlogStoreTrait.php
+Parsing file:///var/www/vik/app/Traits/ImageUploadTrait.php
+Parsing file:///var/www/vik/app/Console/Kernel.php
+Parsing file:///var/www/vik/app/Comment.php
+Parsing file:///var/www/vik/app/Events/ChatInitiationRequest.php
+Parsing file:///var/www/vik/app/Events/MessageToUser.php
+Parsing file:///var/www/vik/app/Events/ChatCreatedBar.php
+Parsing file:///var/www/vik/app/Events/UserIsOffline.php
+Parsing file:///var/www/vik/app/Events/UserIsOnline.php
+Parsing file:///var/www/vik/app/Events/ChatSent.php
+Parsing file:///var/www/vik/app/Events/ChatCreated.php
+Parsing file:///var/www/vik/public/index.php
+Parsing file:///var/www/vik/config/app.php
+Parsing file:///var/www/vik/config/hashing.php
+Parsing file:///var/www/vik/config/database.php
+Parsing file:///var/www/vik/config/translatable.php
+Parsing file:///var/www/vik/config/mail.php
+Parsing file:///var/www/vik/config/view.php
+Parsing file:///var/www/vik/config/logging.php
+Parsing file:///var/www/vik/config/global.php
+Parsing file:///var/www/vik/config/cartalyst.sentinel.php
+Parsing file:///var/www/vik/config/queue.php
+Parsing file:///var/www/vik/config/session.php
+Parsing file:///var/www/vik/config/broadcasting.php
+Parsing file:///var/www/vik/config/activitylog.php
+Parsing file:///var/www/vik/config/services.php
+Parsing file:///var/www/vik/config/filesystems.php
+Parsing file:///var/www/vik/config/image.php
+Parsing file:///var/www/vik/config/cartalyst.alerts.php
+Parsing file:///var/www/vik/config/cors.php
+Parsing file:///var/www/vik/config/auth.php
+Parsing file:///var/www/vik/config/cache.php
+Parsing file:///var/www/vik/helpers/EmailHelper.php
+Parsing file:///var/www/vik/helpers/ActivationHelper.php
+Parsing file:///var/www/vik/helpers/RedisHelper.php
+Parsing file:///var/www/vik/helpers/ImageHelper.php
+Parsing file:///var/www/vik/helpers/GeneralHelper.php
+[Info  - 3:07:03 PM] Indexing project for dynamic references
+Parsing file:///var/www/vik/bootstrap/app.php
+Parsing file:///var/www/vik/bootstrap/cache/packages.php
+Parsing file:///var/www/vik/bootstrap/cache/services.php
+Parsing file:///var/www/vik/server.php
+Parsing file:///var/www/vik/tests/Feature/ExampleTest.php
+Parsing file:///var/www/vik/tests/Unit/ExampleTest.php
+Parsing file:///var/www/vik/tests/CreatesApplication.php
+Parsing file:///var/www/vik/tests/TestCase.php
+Parsing file:///var/www/vik/routes/v1.php
+Parsing file:///var/www/vik/routes/authentication.php
+Parsing file:///var/www/vik/routes/blog.php
+Parsing file:///var/www/vik/routes/channels.php
+Parsing file:///var/www/vik/routes/chat.php
+Parsing file:///var/www/vik/routes/console.php
+Parsing file:///var/www/vik/routes/api.php
+Parsing file:///var/www/vik/routes/category.php
+Parsing file:///var/www/vik/routes/web.php
+Parsing file:///var/www/vik/database/seeds/DatabaseSeeder.php
+Parsing file:///var/www/vik/database/factories/UserFactory.php
+Parsing file:///var/www/vik/database/migrations/2020_11_21_120502_create_categories_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_15_150218_create_jobs_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_21_132923_create_comments_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_09_214814_add_columns_to_users.php
+Parsing file:///var/www/vik/database/migrations/2020_11_21_122408_create_blogs_table.php
+Parsing file:///var/www/vik/database/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php
+Parsing file:///var/www/vik/database/migrations/2014_10_12_100000_create_password_resets_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_08_223731_create_activity_log_table.php
+Parsing file:///var/www/vik/database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+Parsing file:///var/www/vik/database/migrations/2020_11_14_032504_create_messages_table.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/messages.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/form.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/validation.php
+Parsing file:///var/www/vik/resources/lang/en/authentication/log.php
+Parsing file:///var/www/vik/resources/lang/en/validation.php
+Parsing file:///var/www/vik/resources/lang/en/pagination.php
+Parsing file:///var/www/vik/resources/lang/en/passwords.php
+Parsing file:///var/www/vik/resources/lang/en/auth.php
+Parsing file:///var/www/vik/resources/views/authentication/_partials/notification.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/reset.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/authentication.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/emails/registration.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/emails/activation.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/forgot.blade.php
+Parsing file:///var/www/vik/resources/views/authentication/_layouts/layout.blade.php
+Parsing file:///var/www/vik/resources/views/front/chat.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/createTwo.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/form.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/list.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/create.blade.php
+Parsing file:///var/www/vik/resources/views/front/blog/single.blade.php
+Parsing file:///var/www/vik/resources/views/front/user/timeline.blade.php
+[Info  - 3:07:03 PM] Ignoring file file:///var/www/vik/resources/views/front/user/timeline.blade.php because it exceeds size limit of 150000 bytes (251914)
+Parsing file:///var/www/vik/resources/views/front/user/chats.blade.php
+Parsing file:///var/www/vik/resources/views/front/category/list.blade.php
+Parsing file:///var/www/vik/resources/views/front/category/create.blade.php
+Parsing file:///var/www/vik/resources/views/front/category/single.blade.php
+Parsing file:///var/www/vik/resources/views/welcome.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/loader.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/chat.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/xs_nav.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/reaction.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/blog_comments.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/post_comments.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/floaty_bar.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/lnav.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/profile_header.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/reaction_post.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/lnav_expanded.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/blog_reactions.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/chat_users.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/nav.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/blog_related.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/post_actions.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/content_actions.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/header.blade.php
+Parsing file:///var/www/vik/resources/views/_partials/section_navigation.php
+Parsing file:///var/www/vik/resources/views/emails/registration.blade.php
+Parsing file:///var/www/vik/resources/views/emails/forgot.blade.php
+Parsing file:///var/www/vik/resources/views/_layouts/layout.blade.php
+Parsing file:///var/www/vik/storage/framework/views/7e66a6e7d32e78e25e51c3e0079a85955025535e.php
+Parsing file:///var/www/vik/storage/framework/views/6fc38d7c431ff4e85853035e5f6f4c8f4af26df5.php
+Parsing file:///var/www/vik/storage/framework/views/7e98e4303788d8653d7b9db9fce64204a60b338a.php
+Parsing file:///var/www/vik/storage/framework/views/8545c22a055d4969d9a46ce02cc4b80de74176a3.php
+Parsing file:///var/www/vik/storage/framework/views/90614262aff39fae182223dc838b649f27635f04.php
+Parsing file:///var/www/vik/storage/framework/views/f1398ee466f0e7c8b967604989a1c1704b1af174.php
+Parsing file:///var/www/vik/storage/framework/views/d99d5a9e1ab88a2e323995e800c6ad003a3bc2ea.php
+Parsing file:///var/www/vik/storage/framework/views/4e94b1d85b4c3f2716a192174dbea4307b0a67ba.php
+Parsing file:///var/www/vik/storage/framework/views/d45cd4c963f7cdc44ed4f9fb540ad56a48f7e00f.php
+Parsing file:///var/www/vik/storage/framework/views/0fa2736f6fee5fab23a7d0af449f797b49810e10.php
+Parsing file:///var/www/vik/storage/framework/views/ced72a5dffe2d5d72f61f947583a9583c8c42ebc.php
+Parsing file:///var/www/vik/storage/framework/views/c7dbfdb68600b8a545d5ebf31eca35df40eb5715.php
+Parsing file:///var/www/vik/storage/framework/views/05ecfaa4d8977a4b676abcaf7cdad242b3603cc5.php
+Parsing file:///var/www/vik/storage/framework/views/cf1c9f9640a148ccddfa0f03b2c242cf3714233c.php
+Parsing file:///var/www/vik/storage/framework/views/8fe5f141cfe7747ebfce47fe37f1ccbfef8f9d80.php
+Parsing file:///var/www/vik/storage/framework/views/ae606961f87b5a2eaf3e07d4cc4a2c5da4932b40.php
+Parsing file:///var/www/vik/storage/framework/views/3ad64b60e5aae2518d94c7e7cccbcab8128b83ba.php
+Parsing file:///var/www/vik/storage/framework/views/61b60f827d6d58b58ecd52c22a0ef3aa3647ecaa.php
+Parsing file:///var/www/vik/storage/framework/views/f52676c0b67246171e61dec8826791d684457faf.php
+Parsing file:///var/www/vik/storage/framework/views/e683396f36e6fd43c5adab3c937c3b29f7df4290.php
+Parsing file:///var/www/vik/storage/framework/views/64d0057f7396c689dd08f63967c5b3cc27007555.php
+Parsing file:///var/www/vik/storage/framework/views/3925d4d858882d3bff2dc0f11849da758fe245b7.php
+Parsing file:///var/www/vik/storage/framework/views/ba793b46f54e17cf35b0cd3fbd59fc46600c049e.php
+Parsing file:///var/www/vik/storage/framework/views/efa1534223949bf392cfcd7695a43eaacdaec932.php
+[Info  - 3:07:03 PM] Ignoring file file:///var/www/vik/storage/framework/views/efa1534223949bf392cfcd7695a43eaacdaec932.php because it exceeds size limit of 150000 bytes (253964)
+Parsing file:///var/www/vik/storage/framework/views/03a047179d8a8a8fccaca3cbf321b6978f5485ba.php
+Parsing file:///var/www/vik/storage/framework/views/93e28c17ccb6a3955470cd029d3d021e53c2c107.php
+Parsing file:///var/www/vik/storage/framework/views/0021b3078e0b9565ee62567660a3f6a3c0e47d4b.php
+Parsing file:///var/www/vik/storage/framework/views/e28092e5c5b1116f3d566d603eca96fca75eb16e.php
+Parsing file:///var/www/vik/storage/framework/views/171531b551803da4a28055eec8f753f5e88868ed.php
+Parsing file:///var/www/vik/storage/framework/views/bb72665e747d112e887c78557d7112b03b4f415e.php
+Parsing file:///var/www/vik/storage/framework/views/b5cfcef52a345effb95b2eb09b972c639172a3f1.php
+Parsing file:///var/www/vik/storage/framework/views/906d988e188e01203dd9ddf1c1e7a766b67dbde0.php
+Parsing file:///var/www/vik/storage/framework/views/7b03b34004231dcc7c67d3e8c20ac23bc0beb9f9.php
+Parsing file:///var/www/vik/storage/framework/views/5a59d1a7b95c0b3fe5733fa16b586e137d648d11.php
+Parsing file:///var/www/vik/storage/framework/views/a689f23bff91afb9f959607538e44418aaeb4f8a.php
+Parsing file:///var/www/vik/storage/framework/views/3c462669577c9e4d93d2e2633e3987cb3ef507b3.php
+Parsing file:///var/www/vik/storage/framework/views/4a574b3be8cb2ac2378e45805f3004620ec76915.php
+Parsing file:///var/www/vik/storage/framework/views/127f7e7cf4fdfc316d53cf52ca431341868a71c5.php
+Parsing file:///var/www/vik/vendor/composer/ClassLoader.php
+Parsing file:///var/www/vik/vendor/composer/autoload_static.php
+[Info  - 3:07:03 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_static.php because it exceeds size limit of 150000 bytes (747115)
+Parsing file:///var/www/vik/vendor/composer/autoload_psr4.php
+Parsing file:///var/www/vik/vendor/composer/autoload_files.php
+Parsing file:///var/www/vik/vendor/composer/autoload_real.php
+Parsing file:///var/www/vik/vendor/composer/autoload_namespaces.php
+Parsing file:///var/www/vik/vendor/composer/autoload_classmap.php
+[Info  - 3:07:03 PM] Ignoring file file:///var/www/vik/vendor/composer/autoload_classmap.php because it exceeds size limit of 150000 bytes (678259)
+Parsing file:///var/www/vik/vendor/autoload.php
+Parsing file:///var/www/vik/app/Blog.php
+Parsing file:///var/www/vik/app/Exceptions/Handler.php
+Parsing file:///var/www/vik/app/Category.php
+Parsing file:///var/www/vik/app/User.php
+Parsing file:///var/www/vik/app/Role.php
+Parsing file:///var/www/vik/app/Http/Kernel.php
+Parsing file:///var/www/vik/app/Http/Controllers/authentication/ActivationController.php
+Parsing file:///var/www/vik/app/Http/Controllers/authentication/AuthenticationController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/CommentController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/BlogController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/CommentAPIController.php
+Parsing file:///var/www/vik/app/Http/Controllers/blog/BlogAPIController.php
+Parsing file:///var/www/vik/app/Http/Controllers/share/ShareController.php
+Parsing file:///var/www/vik/app/Http/Controllers/reaction/ReactionController.php
+Parsing file:///var/www/vik/app/Http/Controllers/comment/CommentController.php
+Parsing file:///var/www/vik/app/Http/Controllers/category/CategoryController.php
+Parsing file:///var/www/vik/app/Http/Controllers/Controller.php
+Parsing file:///var/www/vik/app/Http/Controllers/chat/ChatController.php
+Parsing file:///var/www/vik/app/Http/Controllers/DefaultController.php
+Parsing file:///var/www/vik/app/Http/Controllers/api/ChatAPIController.php
+Parsing file:///var/www/vik/app/Http/Controllers/api/UserOnlineController.php
+Parsing file:///var/www/vik/app/Http/Controllers/api/UserOfflineController.php
+Parsing file:///var/www/vik/app/Http/Requests/authentication/UserStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/blog/BlogStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/user/UserStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/category/CategoryStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Requests/ImageStoreRequest.php
+Parsing file:///var/www/vik/app/Http/Middleware/Permission.php
+Parsing file:///var/www/vik/app/Http/Middleware/Authentication.php
+Parsing file:///var/www/vik/app/Http/Middleware/VerifyCsrfToken.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustProxies.php
+Parsing file:///var/www/vik/app/Http/Middleware/EncryptCookies.php
+Parsing file:///var/www/vik/app/Http/Middleware/CheckRole.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrustHosts.php
+Parsing file:///var/www/vik/app/Http/Middleware/RedirectIfAuthenticated.php
+Parsing file:///var/www/vik/app/Http/Middleware/Authenticate.php
+Parsing file:///var/www/vik/app/Http/Middleware/TrimStrings.php
+Parsing file:///var/www/vik/app/Http/Middleware/CheckForMaintenanceMode.php
+Parsing file:///var/www/vik/app/Providers/RouteServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/BroadcastServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/EventServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AuthServiceProvider.php
+Parsing file:///var/www/vik/app/Providers/AppServiceProvider.php
+Parsing file:///var/www/vik/app/CommentCollection.php
+Parsing file:///var/www/vik/app/Mail/Registration.php
+Parsing file:///var/www/vik/app/Mail/Forgot.php
+Parsing file:///var/www/vik/app/Message.php
+Parsing file:///var/www/vik/app/Traits/CategoryStoreTrait.php
+Parsing file:///var/www/vik/app/Traits/UserStoreTrait.php
+Parsing file:///var/www/vik/app/Traits/BlogStoreTrait.php
+Parsing file:///var/www/vik/app/Traits/ImageUploadTrait.php
+Parsing file:///var/www/vik/app/Console/Kernel.php
+Parsing file:///var/www/vik/app/Comment.php
+Parsing file:///var/www/vik/app/Events/ChatInitiationRequest.php
+Parsing file:///var/www/vik/app/Events/MessageToUser.php
+Parsing file:///var/www/vik/app/Events/ChatCreatedBar.php
+Parsing file:///var/www/vik/app/Events/UserIsOffline.php
+Parsing file:///var/www/vik/app/Events/UserIsOnline.php
+Parsing file:///var/www/vik/app/Events/ChatSent.php
+Parsing file:///var/www/vik/app/Events/ChatCreated.php
+Parsing file:///var/www/vik/public/index.php
+Parsing file:///var/www/vik/config/app.php
+Parsing file:///var/www/vik/config/hashing.php
+Parsing file:///var/www/vik/config/database.php
+Parsing file:///var/www/vik/config/translatable.php
+Parsing file:///var/www/vik/config/mail.php
+Parsing file:///var/www/vik/config/view.php
+Parsing file:///var/www/vik/config/logging.php
+Parsing file:///var/www/vik/config/global.php
+Parsing file:///var/www/vik/config/cartalyst.sentinel.php
+Parsing file:///var/www/vik/config/queue.php
+Parsing file:///var/www/vik/config/session.php
+Parsing file:///var/www/vik/config/broadcasting.php
+Parsing file:///var/www/vik/config/activitylog.php
+Parsing file:///var/www/vik/config/services.php
+Parsing file:///var/www/vik/config/filesystems.php
+Parsing file:///var/www/vik/config/image.php
+Parsing file:///var/www/vik/config/cartalyst.alerts.php
+Parsing file:///var/www/vik/config/cors.php
+Parsing file:///var/www/vik/config/auth.php
+Parsing file:///var/www/vik/config/cache.php
+Parsing file:///var/www/vik/helpers/EmailHelper.php
+Parsing file:///var/www/vik/helpers/ActivationHelper.php
+Parsing file:///var/www/vik/helpers/RedisHelper.php
+Parsing file:///var/www/vik/helpers/ImageHelper.php
+Parsing file:///var/www/vik/helpers/GeneralHelper.php
+[Info  - 3:07:03 PM] 118 Packages
+[Info  - 3:07:03 PM] Restored egulias/email-validator:2.1.23 from cache
+[Info  - 3:07:04 PM] Restored psr/event-dispatcher:1.0.0 from cache
+[Info  - 3:07:04 PM] Restored psr/http-message:1.0.1 from cache
+[Info  - 3:07:04 PM] Restored psr/container:1.0.0 from cache
+[Info  - 3:07:04 PM] Restored psr/log:1.1.3 from cache
+[Info  - 3:07:04 PM] Restored psr/http-client:1.0.1 from cache
+[Info  - 3:07:04 PM] Restored psr/simple-cache:1.0.1 from cache
+[Info  - 3:07:04 PM] Restored tijsverkoyen/css-to-inline-styles:2.2.3 from cache
+[Info  - 3:07:05 PM] Restored hamcrest/hamcrest-php:2.0.1 from cache
+[Info  - 3:07:05 PM] Restored pusher/pusher-php-server:4.1.4 from cache
+[Info  - 3:07:05 PM] Restored monolog/monolog:2.1.1 from cache
+[Info  - 3:07:06 PM] Restored league/mime-type-detection:1.5.1 from cache
+[Info  - 3:07:06 PM] Restored league/commonmark:1.5.7 from cache
+[Info  - 3:07:06 PM] Restored league/flysystem:1.1.3 from cache
+[Info  - 3:07:06 PM] Restored brick/math:0.9.1 from cache
+[Info  - 3:07:07 PM] Restored webmozart/assert:1.9.1 from cache
+[Info  - 3:07:07 PM] Restored ramsey/uuid:4.1.1 from cache
+[Info  - 3:07:07 PM] Restored ramsey/collection:1.1.1 from cache
+[Info  - 3:07:07 PM] Restored dragonmantank/cron-expression:2.3.1 from cache
+[Info  - 3:07:07 PM] Restored sebastian/global-state:5.0.2 from cache
+[Info  - 3:07:07 PM] Restored sebastian/comparator:4.0.6 from cache
+[Info  - 3:07:07 PM] Restored sebastian/lines-of-code:1.0.2 from cache
+[Info  - 3:07:07 PM] Restored sebastian/exporter:4.0.3 from cache
+[Info  - 3:07:07 PM] Restored sebastian/code-unit-reverse-lookup:2.0.3 from cache
+[Info  - 3:07:08 PM] Restored sebastian/resource-operations:3.0.3 from cache
+[Info  - 3:07:08 PM] Restored sebastian/type:2.3.1 from cache
+[Info  - 3:07:08 PM] Restored sebastian/object-enumerator:4.0.4 from cache
+[Info  - 3:07:08 PM] Restored sebastian/recursion-context:4.0.4 from cache
+[Info  - 3:07:08 PM] Restored sebastian/code-unit:1.0.8 from cache
+[Info  - 3:07:08 PM] Restored sebastian/environment:5.1.3 from cache
+[Info  - 3:07:08 PM] Restored sebastian/diff:4.0.4 from cache
+[Info  - 3:07:08 PM] Restored sebastian/cli-parser:1.0.1 from cache
+[Info  - 3:07:08 PM] Restored sebastian/complexity:2.0.2 from cache
+[Info  - 3:07:08 PM] Restored sebastian/object-reflector:2.0.4 from cache
+[Info  - 3:07:08 PM] Restored sebastian/version:3.0.2 from cache
+[Info  - 3:07:08 PM] Restored laravel/tinker:2.5.0 from cache
+[Info  - 3:07:13 PM] Restored laravel/ui:2.5.0 from cache
+[Info  - 3:07:14 PM] Restored laravel/framework:7.29.3 from cache
+[Info  - 3:07:14 PM] Restored predis/predis:1.1.6 from cache
+[Info  - 3:07:14 PM] Restored phpspec/prophecy:1.12.1 from cache
+[Info  - 3:07:14 PM] Restored dnoegel/php-xdg-base-dir:0.1.1 from cache
+[Info  - 3:07:14 PM] Restored phpoption/phpoption:1.7.5 from cache
+[Info  - 3:07:15 PM] Restored cartalyst/support:4.0.0 from cache
+[Info  - 3:07:15 PM] Restored cartalyst/sentinel:4.0.0 from cache
+[Info  - 3:07:15 PM] Restored cartalyst/alerts:4.0.0 from cache
+[Info  - 3:07:16 PM] Restored phpdocumentor/reflection-docblock:5.2.2 from cache
+[Info  - 3:07:16 PM] Restored phpdocumentor/type-resolver:1.4.0 from cache
+[Info  - 3:07:16 PM] Restored phpdocumentor/reflection-common:2.2.0 from cache
+[Info  - 3:07:16 PM] Restored asm89/stack-cors:2.0.2 from cache
+[Info  - 3:07:16 PM] Restored voku/portable-ascii:1.5.4 from cache
+[Info  - 3:07:16 PM] Restored guzzlehttp/psr7:1.7.0 from cache
+[Info  - 3:07:16 PM] Restored guzzlehttp/promises:1.4.0 from cache
+[Info  - 3:07:16 PM] Restored guzzlehttp/guzzle:7.2.0 from cache
+[Info  - 3:07:16 PM] Restored ralouphie/getallheaders:3.0.3 from cache
+[Info  - 3:07:17 PM] Restored vlucas/phpdotenv:4.1.8 from cache
+[Info  - 3:07:18 PM] Restored swiftmailer/swiftmailer:6.2.3 from cache
+[Info  - 3:07:18 PM] Restored spatie/laravel-activitylog:3.16.1 from cache
+[Info  - 3:07:18 PM] Restored spatie/laravel-translatable:4.5.2 from cache
+[Info  - 3:07:18 PM] Restored opis/closure:3.6.1 from cache
+[Info  - 3:07:18 PM] Restored symfony/polyfill-intl-grapheme:1.20.0 from cache
+[Info  - 3:07:19 PM] Restored symfony/polyfill-mbstring:1.20.0 from cache
+[Info  - 3:07:19 PM] Restored symfony/http-kernel:5.1.8 from cache
+[Info  - 3:07:19 PM] Restored symfony/process:5.1.8 from cache
+[Info  - 3:07:19 PM] Restored symfony/event-dispatcher:5.1.8 from cache
+[Info  - 3:07:19 PM] Restored symfony/polyfill-intl-normalizer:1.20.0 from cache
+[Info  - 3:07:20 PM] Restored symfony/mime:5.1.8 from cache
+[Info  - 3:07:20 PM] Restored symfony/translation:5.1.8 from cache
+[Info  - 3:07:20 PM] Restored symfony/polyfill-php73:1.20.0 from cache
+[Info  - 3:07:20 PM] Restored symfony/service-contracts:2.2.0 from cache
+[Info  - 3:07:20 PM] Restored symfony/var-dumper:5.1.8 from cache
+[Info  - 3:07:20 PM] Restored symfony/polyfill-php72:1.20.0 from cache
+[Info  - 3:07:20 PM] Restored symfony/http-client-contracts:2.3.1 from cache
+[Info  - 3:07:21 PM] Restored symfony/event-dispatcher-contracts:2.2.0 from cache
+[Info  - 3:07:23 PM] Restored symfony/css-selector:5.1.8 from cache
+[Info  - 3:07:23 PM] Restored symfony/finder:5.1.8 from cache
+[Info  - 3:07:23 PM] Restored symfony/http-foundation:5.1.8 from cache
+[Info  - 3:07:24 PM] Restored symfony/polyfill-intl-idn:1.20.0 from cache
+[Info  - 3:07:24 PM] Restored symfony/error-handler:5.1.8 from cache
+[Info  - 3:07:24 PM] Restored symfony/console:5.1.8 from cache
+[Info  - 3:07:24 PM] Restored symfony/string:5.1.8 from cache
+[Info  - 3:07:25 PM] Restored symfony/polyfill-ctype:1.20.0 from cache
+[Info  - 3:07:25 PM] Restored symfony/routing:5.1.8 from cache
+[Info  - 3:07:25 PM] Restored symfony/polyfill-php80:1.20.0 from cache
+[Info  - 3:07:25 PM] Restored symfony/translation-contracts:2.3.0 from cache
+[Info  - 3:07:25 PM] Restored symfony/deprecation-contracts:2.2.0 from cache
+[Info  - 3:07:25 PM] Restored symfony/polyfill-iconv:1.20.0 from cache
+[Info  - 3:07:25 PM] Restored paragonie/random_compat:9.99.100 from cache
+[Info  - 3:07:26 PM] Restored paragonie/sodium_compat:1.13.0 from cache
+[Info  - 3:07:26 PM] Restored filp/whoops:2.9.1 from cache
+[Info  - 3:07:26 PM] Restored facade/ignition-contracts:1.0.2 from cache
+[Info  - 3:07:26 PM] Restored facade/flare-client-php:1.3.7 from cache
+[Info  - 3:07:27 PM] Restored facade/ignition:2.5.0 from cache
+[Info  - 3:07:27 PM] Restored mockery/mockery:1.4.2 from cache
+[Info  - 3:07:27 PM] Restored phar-io/manifest:2.0.1 from cache
+[Info  - 3:07:29 PM] Restored phar-io/version:3.0.2 from cache
+[Info  - 3:07:29 PM] Restored doctrine/dbal:2.12.0 from cache
+[Info  - 3:07:29 PM] Restored doctrine/cache:1.10.2 from cache
+[Info  - 3:07:29 PM] Restored doctrine/event-manager:1.1.1 from cache
+[Info  - 3:07:29 PM] Restored doctrine/instantiator:1.3.1 from cache
+[Info  - 3:07:29 PM] Restored doctrine/lexer:1.2.1 from cache
+[Info  - 3:07:29 PM] Restored doctrine/inflector:2.0.3 from cache
+[Info  - 3:07:30 PM] Restored fruitcake/laravel-cors:2.0.3 from cache
+[Info  - 3:07:30 PM] Restored intervention/image:2.5.1 from cache
+[Info  - 3:07:30 PM] Restored nunomaduro/collision:4.3.0 from cache
+[Info  - 3:07:31 PM] Restored psy/psysh:0.10.4 from cache
+[Info  - 3:07:31 PM] Restored fideloper/proxy:4.4.1 from cache
+[Info  - 3:07:31 PM] Restored laravelcollective/html:6.2.0 from cache
+[Info  - 3:07:31 PM] Restored myclabs/deep-copy:1.10.1 from cache
+[Info  - 3:07:32 PM] Restored nesbot/carbon:2.41.5 from cache
+[Info  - 3:07:33 PM] Restored nikic/php-parser:4.10.2 from cache
+[Info  - 3:07:33 PM] Restored fakerphp/faker:1.10.1 from cache
+[Info  - 3:07:33 PM] Restored theseer/tokenizer:1.2.0 from cache
+[Info  - 3:07:33 PM] Restored phpunit/php-invoker:3.1.1 from cache
+[Info  - 3:07:33 PM] Restored phpunit/php-file-iterator:3.0.5 from cache
+[Info  - 3:07:33 PM] Restored phpunit/php-timer:5.0.3 from cache
+[Info  - 3:07:34 PM] Restored phpunit/php-text-template:2.0.4 from cache
+[Info  - 3:07:35 PM] Restored phpunit/php-code-coverage:9.2.3 from cache
+[Info  - 3:07:35 PM] Restored phpunit/phpunit:9.4.2 from cache
+[Info  - 3:07:35 PM] All 7208 PHP files parsed in 49 seconds. 499 MiB allocated.
