@@ -1,0 +1,9 @@
+Info 0    [20:44:31.845] Format host information updated
+Info 1    [20:44:31.845] reload projects.
+Info 2    [20:44:31.845] Before ensureProjectForOpenFiles:
+Info 3    [20:44:31.845] After ensureProjectForOpenFiles:
+Info 4    [20:44:31.845] Host file extension mappings updated
+Info 5    [20:44:31.846] Angular language server process ID: 31822
+Info 6    [20:44:31.846] Using typescript/lib/tsserverlibrary v4.0.5 from /root/.vscode/extensions/angular.ng-template-0.1100.2/node_modules/typescript/lib/tsserverlibrary.js
+Info 7    [20:44:31.847] Using @angular/language-service v11.0.3 from /root/.vscode/extensions/angular.ng-template-0.1100.2/server/node_modules/@angular/language-service/bundles/language-service.js
+Info 8    [20:44:31.847] Log file: /var/www/vik/~/.vscode-root/logs/20201229T205859/exthost1/Angular.ng-template/nglangsvc.log

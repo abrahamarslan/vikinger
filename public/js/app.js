@@ -68296,9 +68296,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var HTTP = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
   //prod
-  baseURL: "http://172.105.56.201/v1-api/" //dev
-  //baseURL: `http://vik.com/v1-api/`,
-
+  //baseURL: `http://172.105.56.201/v1-api/`,
+  //server
+  //baseURL: `http://159.69.125.130/v1-api/`,
+  //dev
+  baseURL: "http://vik.com/v1-api/"
 });
 
 /***/ }),

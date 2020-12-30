@@ -9,11 +9,12 @@ export default {
     name: "Thread",
     props: {
         user: Object,
-        post: Object,
-        freplies: Object
+        postID: -1        
     },
     data() {
         return {
+            post: null,
+            freplies: Array,
             replingTo: null,
             parentCommentID: -1,
             comments: Array,
@@ -54,6 +55,14 @@ export default {
                 });
             }
         },
+         getPost() {
+
+         },
+
+        getPostReplies() {
+
+        },
+
          postReport(post, type) {
             if(this.commentMessage!=='') {
                 let data = {

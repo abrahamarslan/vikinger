@@ -1,0 +1,20 @@
+[2020-12-29 20:59:21.413] [sharedprocess] [info] main {"machineId":"65ec9cf43ae62cd43d6c785935021dfaad06fc54a1e64210bb1987a46c1da34b","windowId":2}
+[2020-12-29 20:59:47.617] [sharedprocess] [info] Installing extension: dsznajder.es7-react-js-snippets
+[2020-12-29 20:59:47.618] [sharedprocess] [info] Installing extension: felixfbecker.php-debug
+[2020-12-29 20:59:47.618] [sharedprocess] [info] Installing extension: wscats.eno
+[2020-12-29 20:59:52.540] [sharedprocess] [info] Downloaded extension: dsznajder.es7-react-js-snippets /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/dsznajder.es7-react-js-snippets-3.1.0
+[2020-12-29 20:59:52.601] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.dsznajder.es7-react-js-snippets-3.1.0: dsznajder.es7-react-js-snippets
+[2020-12-29 20:59:52.601] [sharedprocess] [info] Renamed to /root/.vscode/extensions/dsznajder.es7-react-js-snippets-3.1.0
+[2020-12-29 20:59:52.602] [sharedprocess] [info] Installation completed. dsznajder.es7-react-js-snippets
+[2020-12-29 20:59:52.651] [sharedprocess] [info] Extensions installed successfully: dsznajder.es7-react-js-snippets
+[2020-12-29 20:59:53.374] [sharedprocess] [info] Downloaded extension: felixfbecker.php-debug /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/felixfbecker.php-debug-1.14.0
+[2020-12-29 20:59:54.139] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.felixfbecker.php-debug-1.14.0: felixfbecker.php-debug
+[2020-12-29 20:59:54.140] [sharedprocess] [info] Renamed to /root/.vscode/extensions/felixfbecker.php-debug-1.14.0
+[2020-12-29 20:59:54.141] [sharedprocess] [info] Installation completed. felixfbecker.php-debug
+[2020-12-29 20:59:54.178] [sharedprocess] [info] Extensions installed successfully: felixfbecker.php-debug
+[2020-12-29 21:00:01.427] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-12-29 21:02:51.175] [sharedprocess] [info] Downloaded extension: wscats.eno /var/www/vik/~/.vscode-root/CachedExtensionVSIXs/wscats.eno-2.3.53
+[2020-12-29 21:03:04.621] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.wscats.eno-2.3.53: wscats.eno
+[2020-12-29 21:03:04.621] [sharedprocess] [info] Renamed to /root/.vscode/extensions/wscats.eno-2.3.53
+[2020-12-29 21:03:04.623] [sharedprocess] [info] Installation completed. wscats.eno
+[2020-12-29 21:03:05.046] [sharedprocess] [info] Extensions installed successfully: wscats.eno
