@@ -84,7 +84,7 @@ class ForumReplyAPIController extends DefaultController
                 $data = [
                     'type' => 'success',
                     'message' => 'records',
-                    'data' => $blog,
+                    'data' => $post,
                     'code' => 200
                 ];
                 return response()->json($data,200);

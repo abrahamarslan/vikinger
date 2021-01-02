@@ -23973,11 +23973,12 @@ Vue.component('paginate', vuejs_paginate__WEBPACK_IMPORTED_MODULE_1___default.a)
   name: "Thread",
   props: {
     user: Object,
-    post: Object,
-    freplies: Object
+    postID: -1
   },
   data: function data() {
     return {
+      post: null,
+      freplies: Array,
       replingTo: null,
       parentCommentID: -1,
       comments: Array,
@@ -24021,6 +24022,8 @@ Vue.component('paginate', vuejs_paginate__WEBPACK_IMPORTED_MODULE_1___default.a)
         });
       }
     },
+    getPost: function getPost() {},
+    getPostReplies: function getPostReplies() {},
     postReport: function postReport(post, type) {
       var _this2 = this;
 

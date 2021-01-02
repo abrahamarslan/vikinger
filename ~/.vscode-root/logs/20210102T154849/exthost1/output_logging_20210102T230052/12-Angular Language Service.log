@@ -1,0 +1,4 @@
+[Info  - 11:00:52 PM] Angular language server process ID: 32379
+[Info  - 11:00:52 PM] Using typescript/lib/tsserverlibrary v4.0.5 from /root/.vscode/extensions/angular.ng-template-0.1100.2/node_modules/typescript/lib/tsserverlibrary.js
+[Info  - 11:00:52 PM] Using @angular/language-service v11.0.3 from /root/.vscode/extensions/angular.ng-template-0.1100.2/server/node_modules/@angular/language-service/bundles/language-service.js
+[Info  - 11:00:52 PM] Log file: /var/www/vik/~/.vscode-root/logs/20210102T154849/exthost1/Angular.ng-template/nglangsvc.log

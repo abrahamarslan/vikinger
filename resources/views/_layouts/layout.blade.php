@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{!! asset('theme/css/vendor/simplebar.css') !!}">
     <!-- tiny-slider styles -->
     <link rel="stylesheet" href="{!! asset('theme/css/vendor/tiny-slider.css') !!}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- favicon -->
     <link rel="icon" href="{!! asset('theme/img/favicon.ico') !!}">
     <title>@yield('title') | {!! env('APP_NAME') !!}</title>

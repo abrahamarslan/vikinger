@@ -144,7 +144,7 @@ class ForumPostController extends DefaultController
                 $this->data['members'] = User::where('id', '!=', $user->id)->get();
                 if($post) {
                     $this->data['topic'] = Ftopic::with('discussions')->find($topic);                    
-                    $this->data['post'] = $post;
+                    $this->data['post'] = $post;                                        
                     $this->data['voices'] = $post->replies()->select('freplies.user_id')->distinct()->get()->count();                                     
                     $this->data['allReplies'] = $post->replies()->count();                 
                     $this->data['replies'] = $post->replies()->with('user')->paginate(2);  
@@ -152,7 +152,7 @@ class ForumPostController extends DefaultController
                     //dd($this->data['replies']);
                     //dd($post);
                     $this->data['showChatBar'] = true;
-                    return view('front.fpost.single', $this->data);
+                    return view('front.fpost.fthread', $this->data);
                 }else {
                     dd('not found');
                     $this->messageBag->add('error', 'Not found');
