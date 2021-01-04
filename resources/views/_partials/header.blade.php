@@ -85,7 +85,7 @@
                 <!-- MENU MAIN ITEM -->
                 <li class="menu-main-item">
                     <!-- MENU MAIN ITEM LINK -->
-                    <p class="menu-main-item-link">
+                    <p class="menu-main-item-link more-link">
                         <!-- ICON DOTS -->
                         <svg class="icon-dots">
                             <use xlink:href="#svg-dots"></use>

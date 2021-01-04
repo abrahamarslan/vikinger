@@ -45,7 +45,7 @@ Route::group(array('prefix' => 'v1-api', 'middleware' => ['authentication','perm
         Route::post('post-discussion', array('uses'=>'forum\ForumPostController@store', 'as'=>'forum.post.api.store'));
         Route::post('post-reply', array('uses'=>'forum\ForumReplyAPIController@store', 'as'=>'forum.reply.api.store'));
         Route::post('post-report', array('uses'=>'forum\ForumReplyAPIController@report', 'as'=>'forum.report.api.store'));
-
+        Route::post('post-bookmark', array('uses'=>'forum\ForumBookmarkAPIController@store', 'as'=>'forum.bookmark.api.store'));
     });
 
 });

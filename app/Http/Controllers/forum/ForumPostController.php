@@ -147,7 +147,7 @@ class ForumPostController extends DefaultController
                     $this->data['post'] = $post;                                        
                     $this->data['voices'] = $post->replies()->select('freplies.user_id')->distinct()->get()->count();                                     
                     $this->data['allReplies'] = $post->replies()->count();                 
-                    $this->data['replies'] = $post->replies()->with('user')->paginate(2);  
+                    $this->data['replies'] = $post->replies()->with('user')->paginate(5);  
                     $this->data['last_reply'] = $post->replies()->with('user')->orderBy('created_at', 'DESC')->first();                 
                     //dd($this->data['replies']);
                     //dd($post);

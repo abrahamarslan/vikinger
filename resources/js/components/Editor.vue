@@ -164,7 +164,6 @@ export default {
                     };
                     ChatService.postBlog(data)
                         .then(response => {
-                            alert('Posted');
                             location.reload();
                         }).catch(error => {
                         alert('Error in fetching data');

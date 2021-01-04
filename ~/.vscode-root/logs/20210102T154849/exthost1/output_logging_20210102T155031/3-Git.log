@@ -1901,3 +1901,2552 @@ Open repository: /var/www/vik
 > git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
 > git show --textconv :resources/views/_modals/success.blade.php
 > git ls-files --stage -- /var/www/vik/resources/views/_modals/success.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success.blade.php
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git cat-file -s 18d17d4ecd6ca1a4b7ce63a421ad3d14d7d9a153
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success.blade.php
+> git cat-file -s 18d17d4ecd6ca1a4b7ce63a421ad3d14d7d9a153
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/_modals/success.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success.blade.php
+> git cat-file -s 18d17d4ecd6ca1a4b7ce63a421ad3d14d7d9a153
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :database/migrations/2020_12_26_095318_create_freplies_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2020_12_26_095318_create_freplies_table.php
+> git cat-file -s d315402215dc03a68fc03465aa030484cafc2de0
+> git show --textconv :database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :database/migrations/2020_12_26_095318_create_freplies_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2020_12_26_095318_create_freplies_table.php
+> git cat-file -s d315402215dc03a68fc03465aa030484cafc2de0
+> git show --textconv :database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git show --textconv :database/migrations/2020_12_26_095318_create_freplies_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2020_12_26_095318_create_freplies_table.php
+> git cat-file -s d315402215dc03a68fc03465aa030484cafc2de0
+> git show --textconv :database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :app/Http/Requests/category/CategoryStoreRequest.php
+> git ls-files --stage -- /var/www/vik/app/Http/Requests/category/CategoryStoreRequest.php
+> git cat-file -s d2cc111742df69649b4ae598f44cf339b189857e
+> git show --textconv :app/Http/Requests/fbookmark/FbookmarkStoreRequest.php
+> git ls-files --stage -- /var/www/vik/app/Http/Requests/fbookmark/FbookmarkStoreRequest.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkController.php
+> git show --textconv :app/Http/Controllers/forum/ForumCategoryController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumCategoryController.php
+> git cat-file -s b34063a4e556f912de3e39f58ef913dbfecda9ec
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :app/Http/Controllers/forum/ForumCategoryController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumCategoryController.php
+> git cat-file -s b34063a4e556f912de3e39f58ef913dbfecda9ec
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :app/fbookmarks.php
+> git ls-files --stage -- /var/www/vik/app/fbookmarks.php
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :app/fbookmarks.php
+> git ls-files --stage -- /var/www/vik/app/fbookmarks.php
+> git show --textconv :app/fbookmark.php
+> git ls-files --stage -- /var/www/vik/app/fbookmark.php
+> git check-ignore -v -z --stdin
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :app/Http/Controllers/forum/ForumPostController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumPostController.php
+> git cat-file -s 82a5c792772375b572bdfb194be5a56f1e7d9684
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :routes/v1.php
+> git ls-files --stage -- /var/www/vik/routes/v1.php
+> git cat-file -s 6239f410d896a849b30fd6c919927951e4613dbd
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :routes/v1.php
+> git ls-files --stage -- /var/www/vik/routes/v1.php
+> git cat-file -s 6239f410d896a849b30fd6c919927951e4613dbd
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git ls-files --stage -- /var/www/vik/database/migrations/2021_01_03_155807_create_fbookmarks_table.php
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :routes/v1.php
+> git ls-files --stage -- /var/www/vik/routes/v1.php
+> git cat-file -s 6239f410d896a849b30fd6c919927951e4613dbd
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success.blade.php
+> git cat-file -s 18d17d4ecd6ca1a4b7ce63a421ad3d14d7d9a153
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_link.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_link.blade.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/_modals/modal_link.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_link.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/_modals/modal_link.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_link.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_link.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_link.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_link.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_link.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :resources/views/_modals/success_report.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/success_report.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/fbookmark.php
+> git ls-files --stage -- /var/www/vik/app/fbookmark.php
+> git show --textconv :app/Http/Requests/fbookmark/FbookmarkStoreRequest.php
+> git ls-files --stage -- /var/www/vik/app/Http/Requests/fbookmark/FbookmarkStoreRequest.php
+> git show --textconv :resources/views/_modals/modal_link.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_link.blade.php
+> git show --textconv :routes/forum.php
+> git ls-files --stage -- /var/www/vik/routes/forum.php
+> git cat-file -s b872a1c1d343a157b55b2721214f61f20b28719b
+> git show --textconv :routes/v1.php
+> git ls-files --stage -- /var/www/vik/routes/v1.php
+> git cat-file -s 6239f410d896a849b30fd6c919927951e4613dbd
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git status -z -u
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :routes/v1.php
+> git ls-files --stage -- /var/www/vik/routes/v1.php
+> git cat-file -s 6239f410d896a849b30fd6c919927951e4613dbd
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fquote.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fquote.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :resources/views/_partials/floaty_bar.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_partials/floaty_bar.blade.php
+> git cat-file -s 193372550035f50d74ae219e132cb16fd2de9989
+> git show --textconv :resources/views/_partials/header.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_partials/header.blade.php
+> git cat-file -s d61e7defbab485ca7699542be5487703ccf25799
+> git show --textconv :resources/sass/custom.scss
+> git ls-files --stage -- /var/www/vik/resources/sass/custom.scss
+> git cat-file -s 06c09d87c87909bf7a3b9435a12783575408413a
+> git show --textconv :resources/views/_partials/header.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_partials/header.blade.php
+> git cat-file -s d61e7defbab485ca7699542be5487703ccf25799
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_post.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_post.blade.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_link.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_link.blade.php
+> git show --textconv :resources/views/_modals/modal_post.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_post.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_reply
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_reply
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_reply.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_reply.blade.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :app/Http/Controllers/forum/ForumReplyController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyController.php
+> git cat-file -s c7125c593ac7c8e6abe2ec1547fe5cf46e931b8b
+> git show --textconv :app/Http/Controllers/forum/ForumPostController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumPostController.php
+> git cat-file -s 82a5c792772375b572bdfb194be5a56f1e7d9684
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :app/Http/Controllers/forum/ForumPostController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumPostController.php
+> git cat-file -s 82a5c792772375b572bdfb194be5a56f1e7d9684
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :app/Http/Controllers/forum/ForumPostController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumPostController.php
+> git cat-file -s 82a5c792772375b572bdfb194be5a56f1e7d9684
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumPostController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumPostController.php
+> git cat-file -s 82a5c792772375b572bdfb194be5a56f1e7d9684
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :routes/forum.php
+> git ls-files --stage -- /var/www/vik/routes/forum.php
+> git cat-file -s b872a1c1d343a157b55b2721214f61f20b28719b
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/Http/Controllers/forum/ForumReplyAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumReplyAPIController.php
+> git cat-file -s 01dd50d3a76c1004aba5674286441fe3d720597d
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/create.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/create.blade.php
+> git cat-file -s 99946e5526c9525f1db0573971a3f2f48b5a1ad3
+> git show --textconv :resources/views/front/fpost/form.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/form.blade.php
+> git cat-file -s dc7a16fa755590830616983275cd18daf76c7ddb
+> git show --textconv :resources/js/components/Editor.vue
+> git ls-files --stage -- /var/www/vik/resources/js/components/Editor.vue
+> git cat-file -s 65db0c0311a5bfb67635e0690b462f00570d5971
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/js/components/Editor.vue
+> git ls-files --stage -- /var/www/vik/resources/js/components/Editor.vue
+> git cat-file -s 65db0c0311a5bfb67635e0690b462f00570d5971
+> git show --textconv :resources/js/components/Discussion.vue
+> git ls-files --stage -- /var/www/vik/resources/js/components/Discussion.vue
+> git cat-file -s ecab39641ecbe3542f9ebbb7c5f38e06b02219a4
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_reply.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_reply.blade.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/views/_modals/modal_bookmark.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_bookmark.blade.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_reply.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_reply.blade.php
+> git show --textconv :resources/views/_modals/modal_bookmark.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_bookmark.blade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/_modals/modal_bookmark.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/_modals/modal_bookmark.blade.php
+> git show --textconv :app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git ls-files --stage -- /var/www/vik/app/Http/Controllers/forum/ForumBookmarkAPIController.php
+> git show --textconv :resources/views/front/fpost/fthread.blade.php
+> git ls-files --stage -- /var/www/vik/resources/views/front/fpost/fthread.blade.php
+> git cat-file -s 015a987e07f80612136484a5c73dc1cd4893b6da
+> git show --textconv :resources/js/components/Editor.vue
+> git ls-files --stage -- /var/www/vik/resources/js/components/Editor.vue
+> git cat-file -s 65db0c0311a5bfb67635e0690b462f00570d5971
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/js/components/Discussion.vue
+> git ls-files --stage -- /var/www/vik/resources/js/components/Discussion.vue
+> git cat-file -s ecab39641ecbe3542f9ebbb7c5f38e06b02219a4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse devmain
+> git rev-parse --symbolic-full-name devmain@{u}
+> git rev-list --left-right devmain...refs/remotes/origin/devmain
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

@@ -69,10 +69,10 @@
                     <div class="forum-post-actions">
                     <p class="forum-post-action light" onclick="postReport({!! $post->id !!}, 'post')">Report</p>
                     <p class="forum-post-action" onclick="selectParent({!! $post->id !!}, {!! $post->id !!}, {!! $user->id !!}, 'post')">Reply</p>
-                    <p class="forum-post-action light" onclick="selectBookmark({!! $post->id !!}, {!! $post->id !!}, {!! $user->id !!}, 'post')">
+                    <p class="forum-post-action light" onclick="selectBookmark({!! $post->id !!}, {!! $user->id !!}, 'post')">
                       <i class="fa fa-bookmark" aria-hidden="true"></i>
                     </p>
-                    <p class="forum-post-action light" onclick="getShareLink({!! $post->id !!}, {!! $post->id !!}, {!! $user->id !!}, 'post')">
+                    <p class="forum-post-action light" onclick="getShareLink()">
                       <i class="fa fa-share-alt" aria-hidden="true"></i>
                     </p>
                   </div>
@@ -148,7 +148,7 @@
                   <!-- FORUM POST INFO -->
                   <div class="forum-post-info">
                     <!-- FORUM POST PARAGRAPH -->
-                    <div id="post-content">
+                    <div id="post-content">                      
                       @foreach($post->body as $element)
                         <?php 
                           if($element['type'] == 'paragraph') {
@@ -381,8 +381,52 @@
                           
                                 <!-- FORUM POST INFO -->
                                 <div class="forum-post-info">
+                                <?php 
+                                      if($reply->is_reply == 1) {
+                                        if($reply->is_reply_id != null && $reply->post_type=='post') {
+                                          $qpost = App\Fpost::where('id',$reply->is_reply_id)->first();
+                                          if($qpost) {
+                                            ?>
+                                              @include('front.fpost.fquote', $qpost)
+                                            <?php
+                                          } else {
+                                            ?>
+                                              <div class="post-quote">
+                                              <div class="post-quote-content">                                              
+                                                <p> Sorry, no post found.</p>
+                                              </div>
+                                              </div>
+                                            <?php
+                                          }
+                                        }
+                                        if($reply->is_reply_id != null && $reply->post_type=='reply') {
+                                          $qpost = App\Freplies::where('id',$reply->is_reply_id)->first();
+                                          if($qpost) {
+                                            ?>
+                                              <div class="post-quote">  
+                                              <p class="post-quote-reply-to"><i class="fa fa-reply"></i>&nbsp;In reply to: {!! $qpost->user()->first()->name !!}</p>
+                                                <div class="post-quote-content">                                              
+                                                  <div class="<?php echo (strlen($qpost->body) > 250 ? 'readmore' : ''); ?>">
+                                                    <p> {!! $qpost->body !!}</p>
+                                                    <span class="<?php echo (strlen($qpost->body) > 250 ? 'readmore-link' : ''); ?>"></span>   
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            <?php
+                                          } else {
+                                            ?>
+                                              <div class="post-quote">
+                                              <div class="post-quote-content">                                              
+                                                <p> Sorry, no post found.</p>
+                                              </div>
+                                              </div>
+                                            <?php
+                                          }
+                                        }
+                                      }
+                                ?>
                                   <!-- FORUM POST PARAGRAPH -->
-                                    <p class="forum-post-paragraph">
+                                    <p class="forum-post-paragraph">                                   
                                     {!! $reply->body !!}
                                     </p>
                                   <!-- /FORUM POST PARAGRAPH -->
@@ -513,7 +557,10 @@
         </div>
     <!-- /GRID -->
       </div>
-   @include('_modals.success');
+   @include('_modals.success_report')
+   @include('_modals.modal_link');
+   @include('_modals.modal_reply')
+   @include('_modals.modal_bookmark')
       
 
 @stop
@@ -532,6 +579,7 @@
     var postID = '{!! $post->id !!}';
     var postType = 'post';
     var userID = '{!! $user->id !!}';
+    var postType = '';
     var data = {};
     $.ajaxSetup({
       headers: {
@@ -550,9 +598,18 @@
 
     // Global configuration of data
     $(document).ready(function() {
+        MicroModal.init();
+        $('.mod-close').on('click', function() {
+          MicroModal.close('modal-success-report');
+          MicroModal.close('modal-success-link');
+          MicroModal.close('modal-success-reply');
+          MicroModal.close('modal-success-bookmark');
+        })
         $('#resetCommentElement').on('click', function() {
-            resetComment();
-            MicroModal.init();
+            resetComment();            
+        });
+        $('#postReplyElement').on('click', function() {
+            postReply();
         });
     });
 
@@ -576,13 +633,17 @@
             user_id: userID,
             post_type: postType
           }, 
-          function(data, status, xhr) {   
-              console.log(data);
-              console.log(status);
-              console.log(xhr);            
+          function(data, status, xhr) {  
+              if(data.data) {
+                var newURL = location.href.split("?")[0];
+                var nurl = newURL + '?page=' + data.data.last_page;
+                MicroModal.show('modal-success-reply');
+                setTimeout(function(){window.location = nurl;}, 3000); 
+              }
+                         
           })
           .done(function() { 
-            alert('Request done!'); 
+            
           })
           .fail(function(jqxhr, settings, ex) { 
             console.log(ex);            
@@ -605,16 +666,55 @@
       $.post(url,  
         { post_id: id, post_type: type }, 
         function(data, status, xhr) {   
-            console.log(data);
-            console.log(status);
-            console.log(xhr);            
+                    
         })
         .done(function() { 
-          MicroModal.show('modal-success'); // [1]
+          MicroModal.show('modal-success-report'); // [1]
         })
         .fail(function(jqxhr, settings, ex) { 
           console.log(ex);            
         });
     }
+
+    function selectBookmark(postid, userid, post_type) {          
+      var url = window.baseURL + '/' + 'forum/post-bookmark';
+      $.post(url,  
+        {user_id: userid, post_id: postid, type: post_type}, 
+        function(data, status, xhr) {   
+          if(data.data) {
+            if(data.data == 'delete') {
+              $('#bookmark-message').text('You have removed this post from your bookmarks.')
+            } else {
+              $('#bookmark-message').text('You have saved this post to your bookmarks.')
+            }
+            MicroModal.show('modal-success-bookmark');
+          }                       
+        })
+        .done(function() {           
+          
+        })
+        .fail(function(jqxhr, settings, ex) { 
+          console.log(ex);            
+        });
+    }
+    function getShareLink() {                
+      $('#share-link-p').html(window.location.href);
+      MicroModal.show('modal-success-link');
+    }
+
+    $(".readmore-link").click( function(e) {
+    // record if our text is expanded
+    var isExpanded =  $(e.target).hasClass("expand");
+    
+    //close all open paragraphs
+    $(".readmore.expand").removeClass("expand");
+    $(".readmore-link.expand").removeClass("expand");
+    
+    // if target wasn't expand, then expand it
+    if (!isExpanded){
+      $( e.target ).parent( ".readmore" ).addClass( "expand" );
+      $(e.target).addClass("expand");  
+    } 
+  });
     </script>
 @stop

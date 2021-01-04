@@ -24,6 +24,7 @@ class ForumReplyAPIController extends DefaultController
             $isReply = $request->get('is_reply');
             $isReplyID = $request->get('is_reply_id');
             $status = 'active';        
+            $postType = $request->get('post_type');
             $userID = $request->get('user_id');            
             $postID = $request->get('post_id');
             //return $request->all();
@@ -34,12 +35,18 @@ class ForumReplyAPIController extends DefaultController
                 $blog->is_reply = $isReply;
                 $blog->is_reply_id = $isReplyID;
                 $blog->fpost_id = $postID;
+                $blog->post_type = $postType;
                 $blog->post_status = $status;
                 $blog->save();
+                $post = Fpost::with(['replies', 'replies.user'])->where('id',$postID)->first();
+                $lastPage = $post->replies()->paginate(5)->lastPage();
                 $data = [
                     'type' => 'success',
                     'message' => 'records',
-                    'data' => $blog,
+                    'data' => [
+                        'reply' => $blog,
+                        'last_page' => $lastPage
+                    ],
                     'code' => 200
                 ];
                 return response()->json($data,200);
@@ -77,7 +84,7 @@ class ForumReplyAPIController extends DefaultController
                 if($type == 'reply') {
                     $post = Freplies::find($postID);
                 } else {
-                    $post = Ftopic::find($postID);
+                    $post = Fpost::find($postID);
                 }
                 $post->increment('reported');
                 $post->save();                

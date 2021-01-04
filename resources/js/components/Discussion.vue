@@ -190,7 +190,6 @@ export default {
                     };
                     ChatService.postForum(data)
                         .then(response => {
-                            alert('Posted');
                             location.reload();
                         }).catch(error => {
                         alert('Error in fetching data');
